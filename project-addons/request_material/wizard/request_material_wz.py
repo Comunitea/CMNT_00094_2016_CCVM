@@ -135,7 +135,7 @@ class WzRequestMaterial(models.TransientModel):
 
             if create_pick:
                 new_request.create_pick()
-                new_request.do_requested_pick()
+                #new_request.do_requested_pick()
 
         context = dict(self.env.context or {})
         return {

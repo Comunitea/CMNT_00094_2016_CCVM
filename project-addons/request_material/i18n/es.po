@@ -1,0 +1,823 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* request_material
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-02 18:42+0000\n"
+"PO-Revision-Date: 2017-02-02 18:42+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_res_users_sale_order_count
+msgid "# of Sales Order"
+msgstr "Nº de pedido de venta"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "/ Requested:"
+msgstr "/ Solicitado:"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "Change qty to deliver"
+msgstr "Cant. a entregar"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "Change qty to return"
+msgstr "Cant. a retornar"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "Change request quatities?"
+msgstr "Cambiar las cantidades solicitadas !"
+
+#. module: request_material
+#: model:ir.actions.act_window,help:request_material.action_request_material_form
+#: model:ir.actions.act_window,help:request_material.action_request_material_kanban
+msgid "Click to create a request material."
+msgstr "Click para crear una nueva solicitud de material"
+
+#. module: request_material
+#: selection:request.material.line,state:0
+#: selection:request.material.wz.line,state:0
+msgid "Closed"
+msgstr "Cerrada"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_request_material_line_notes
+#: model:ir.model.fields,help:request_material.field_request_material_wz_line_notes
+msgid "Comments about this request"
+msgstr "Notas sobre esta solicitud"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+msgid "Create Day"
+msgstr "Create Day"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "Create Return"
+msgstr "Crear devolucion"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "Create new request material. If selected is checked, this will create new requests picks from\n"
+"                        this request material"
+msgstr "Crea una nueva solicitud de material para el almacen.\nSe crearan nuevos albaranes de salidad de almacen"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "Create request"
+msgstr "Crear una nueva solicitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_create_uid
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_create_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_create_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_create_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_create_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_create_date
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_create_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_create_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_create_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_create_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "Date:"
+msgstr "Dia:"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "De"
+msgstr "De"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_res_users_default_outbuilding_location_id
+msgid "Default Outbuilding Location"
+msgstr "Dependencia por defecto"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_request_change_qties_uom_id
+#: model:ir.model.fields,help:request_material.field_request_material_line_uom_id
+#: model:ir.model.fields,help:request_material.field_request_material_wz_line_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "Unidad de medida por defecto utilizada para todas las operaciones de stock."
+
+#. module: request_material
+#: selection:request.material.line,state:0
+#: selection:request.material.wz.line,state:0
+msgid "Delivered"
+msgstr "Entregado"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_display_name
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_display_name
+#: model:ir.model.fields,field_description:request_material.field_request_material_display_name
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_display_name
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_display_name
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:135
+#: code:addons/request_material/models/request_material.py:367
+#: code:addons/request_material/models/request_material.py:375
+#, python-format
+msgid "Error en action assign. No stock"
+msgstr "Error en action assign. No stock"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:131
+#: code:addons/request_material/models/request_material.py:365
+#: code:addons/request_material/models/request_material.py:373
+#, python-format
+msgid "Error en action confirm"
+msgstr "Error en action confirm"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:60
+#, python-format
+msgid "Expend picking type not found"
+msgstr "Expend picking type not found"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_expended_qty
+msgid "Expended quantity"
+msgstr "Cantidad utilizada"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_stock_warehouse_expend_type_id
+msgid "Expends Type"
+msgstr "Tipo de utilizacion"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "From"
+msgstr "De"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "Hide"
+msgstr "Ocultar"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_id
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_by_us
+msgid "In use by us"
+msgstr "Uso local"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:64
+#, python-format
+msgid "Incorrect request state to ceate a request pick"
+msgstr "Estado incorrecto de la solicitud para crear un albaran"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_default_code
+msgid "Internal Reference"
+msgstr "Referencia interna"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicaciones de inventario"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_color
+msgid "Kanban State Color Index"
+msgstr "Kanban State Color Index"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties___last_update
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer___last_update
+#: model:ir.model.fields,field_description:request_material.field_request_material___last_update
+#: model:ir.model.fields,field_description:request_material.field_request_material_line___last_update
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz___last_update
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_write_uid
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_write_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_write_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_write_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_write_uid
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_write_date
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_write_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_write_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_write_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_write_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_ids
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_ids
+msgid "Line ids"
+msgstr "Lista de solicitudes"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_location_dest_id
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_location_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_location_name
+msgid "Location Name"
+msgstr "Nombre ubicación"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_location_id
+msgid "Location id"
+msgstr "Ubicacion"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_stock_location_outbuilding_location
+msgid "Location to select in material request"
+msgstr "Dependencia"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "Locations"
+msgstr "Ubicaciones"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_res_users_sale_warn_msg
+msgid "Message for Sales Order"
+msgstr "Mensaje para el pedido de venta"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_move_line_id
+msgid "Move line id"
+msgstr "Id del movimiento"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:319
+#, python-format
+msgid "Move not in \"assigned\" state"
+msgstr "El movimiento no esta en estado 'asignado'"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+msgid "My requests"
+msgstr "Mis solicitudes"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: request_material
+#: selection:request.material.line,state:0
+#: selection:request.material.wz.line,state:0
+msgid "New"
+msgstr "Nuevo"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "New request material"
+msgstr "Nueva solictud de material"
+
+#. module: request_material
+#: code:addons/request_material/wizard/request_material_wz.py:133
+#, python-format
+msgid "No lines"
+msgstr "Sin lineas"
+
+#. module: request_material
+#: code:addons/request_material/wizard/request_material_wz.py:153
+#, python-format
+msgid "No lines to create request"
+msgstr "Sin lineas para crear la solicitud"
+
+#. module: request_material
+#: code:addons/request_material/wizard/request_material_wz.py:58
+#, python-format
+msgid "No lines to create returns"
+msgstr "Sin lineas para crear el albaran de devolucion"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_notes
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+#: selection:request.material.wz.line,state:0
+msgid "Open"
+msgstr "Abierta"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_location_dest_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_outbuilding
+#: model:ir.model.fields,field_description:request_material.field_request_material_location_dest_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_location_dest_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_location_dest_id
+msgid "Outbuilding"
+msgstr "Dependencia"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_stock_location_outbuilding_location
+msgid "Outbuilding Location"
+msgstr "Dependencia"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_pack_operation_product_id
+msgid "Pack operation product id"
+msgstr "Operacion asociada al producto"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_partner_id
+msgid "Partner id"
+msgstr "Cliente"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:128
+#: code:addons/request_material/models/request_material.py:203
+#, python-format
+msgid "Pick Error"
+msgstr "Error en el albaran"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_pick_id
+msgid "Pick id"
+msgstr "ID Albarán"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+msgid "Picking"
+msgstr "Albarán"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_picking_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_picking_id
+msgid "Picking id"
+msgstr "ID Albarán"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_product_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_product_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_product_id
+msgid "Product id"
+msgstr "Producto"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "Products"
+msgstr "Productos"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "Quantity:"
+msgstr "Cantidad:"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+#: model:ir.ui.view,arch_db:request_material.view_users_form_outbuildindg
+#: selection:request.material.wz,wz_type:0
+msgid "Request"
+msgstr "Solicitud"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
+msgid "Request Immediate transfer?"
+msgstr "Request Immediate transfer?"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:215
+#: code:addons/request_material/models/request_material.py:351
+#: code:addons/request_material/models/request_material.py:421
+#: code:addons/request_material/wizard/request_material_wz.py:86
+#: code:addons/request_material/wizard/request_material_wz.py:142
+#: model:ir.actions.act_window,name:request_material.action_request_material_kanban
+#: model:ir.model,name:request_material.model_request_material_line
+#: model:ir.model.fields,field_description:request_material.field_stock_picking_request_material_id
+#, python-format
+msgid "Request Material"
+msgstr "Solicitud de material."
+
+#. module: request_material
+#: model:ir.actions.act_window,name:request_material.action_request_material_form
+msgid "Request Material Form"
+msgstr "Formulario de solicitud de material"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_stock_move_request_material_line_id
+msgid "Request Material Line"
+msgstr "Linea de solicitud de material"
+
+#. module: request_material
+#: model:ir.actions.act_window,name:request_material.request_material_wz
+#: model:ir.ui.menu,name:request_material.menu_request_material_wz
+msgid "Request Material Wizard"
+msgstr "Asistente de solicitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_stock_warehouse_request_type_id
+msgid "Request Type"
+msgstr "Tipo de solicitud"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_request_change_qties
+msgid "Request change quantities"
+msgstr "Cambio de las cantidades solicitadas"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:385
+#, python-format
+msgid "Request change quantity?"
+msgstr "Cambiar la cantidad solicitada"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_request_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_request_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_date
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_request_date
+msgid "Request date"
+msgstr "Fecha de solicitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_request_line_id
+msgid "Request line id"
+msgstr "Linea de solcitud"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "Request material creation"
+msgstr "Creacion de solicitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_request_material_id
+msgid "Request material id"
+msgstr "Id de la solicitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_material_line_id
+msgid "Request material line id"
+msgstr "Id de la linea de solicitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_material_wz_id
+msgid "Request material wz id"
+msgstr "Id del asistente de solicitud"
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:54
+#, python-format
+msgid "Request picking type not found"
+msgstr "No se encuentra el albaran asociado a esta solacitud"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_requested_qty
+msgid "Request quantity"
+msgstr "Cantidad solicitada"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_request_immediate_transfer
+msgid "Request transfer"
+msgstr "Solicitud transferida"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_product_product_request_type
+#: model:ir.model.fields,field_description:request_material.field_product_template_request_type
+msgid "Request type"
+msgstr "Tipo de utilizacion"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_requested_qty
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_requested_qty
+msgid "Requested quantity"
+msgstr "Cantidad solicitada"
+
+#. module: request_material
+#: model:ir.ui.menu,name:request_material.menu_request_material
+msgid "Requests"
+msgstr "Listado de Solicitudes"
+
+#. module: request_material
+#: model:ir.ui.menu,name:request_material.menu_stock_request_material_control
+msgid "Requests Material"
+msgstr "Solicitudes de material"
+
+#. module: request_material
+#: selection:request.material.wz,wz_type:0
+msgid "Return"
+msgstr "Atras"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "Return material"
+msgstr "Devolucion de material"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "Return material. Check the returned quantity and check returned line. This will close the\n"
+"                        request if all is done"
+msgstr "Material devuelto. Comprueba las cantidades devueltas."
+
+#. module: request_material
+#: code:addons/request_material/models/request_material.py:57
+#, python-format
+msgid "Return picking type not found"
+msgstr "Albaran de devolucion asociado no encontrado"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_returned_qty
+msgid "Return quantity"
+msgstr "Cantidad a devolver"
+
+#. module: request_material
+#: selection:request.material.line,state:0
+msgid "Returned"
+msgstr "Devolucion"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_returned_qty
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_returned_qty
+msgid "Returned quantity"
+msgstr "Cantidad a devolver"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "Returned:"
+msgstr "Devuelta:"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_res_users_sale_order_ids
+#: model:ir.model.fields,field_description:request_material.field_res_users_sale_warn
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: request_material
+#: selection:product.template,request_type:0
+#: selection:request.material.line,request_type:0
+#: selection:request.material.wz.line,request_type:0
+msgid "Scrap"
+msgstr "Consumible"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_request_material_line_request_type
+msgid "Scrap: Material will be moved to scrap location, \n"
+"To return: Material must be returned (Quantities)\n"
+"Too : Must be returned always"
+msgstr "Consumible: Todo el material se dara de baja, \n"
+"A devolver: Puede consumirse y/o devolverse una cantidad de material\n"
+"Herramientas : Siempre se devuelve al almacen"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_request_material_wz_line_request_type
+msgid "Scrap: Material will be moved to scrap location, \n"
+"To return: Material must be returned (Quantities)\n"
+"Tool : Must be returned always"
+msgstr "Consumible: Todo el material se da de baja, \n"
+"A devolver: Puede consumirse y/o devolverse una cantidad de material\n"
+"Herramientas : Siempre se devuelve al almacen"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_selected
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_selected
+msgid "Selected"
+msgstr "Seleccionado"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_res_users_sale_warn
+msgid "Selecting the \"Warning\" option will notify user with the message, Selecting \"Blocking Message\" will throw an exception with the message and block the flow. The Message has to be written in the next field."
+msgstr "Si selecciona la opción \"Aviso\" se notificará a los usuarios con el mensaje, si selecciona \"Mensaje de bloqueo\" se lanzará una excepción con el mensaje y se bloqueará el flujo. El mensaje debe escribirse en el siguiente campo."
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+msgid "State"
+msgstr "Estado"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_state
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_state
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_state
+msgid "Status"
+msgstr "Estado"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_stock_picking_type
+msgid "The picking type determines the picking view"
+msgstr "El tipo de albarán determina la vista de albarán"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "To Deliver"
+msgstr "Para entregar"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+#: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
+msgid "To Return"
+msgstr "Para devolver"
+
+#. module: request_material
+#: selection:product.template,request_type:0
+#: selection:request.material.line,request_type:0
+#: selection:request.material.wz.line,request_type:0
+msgid "To return"
+msgstr "Para devolver"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_request_type
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_type
+msgid "To scrap"
+msgstr "Para dar de baja"
+
+#. module: request_material
+#: selection:product.template,request_type:0
+#: selection:request.material.line,request_type:0
+#: selection:request.material.wz.line,request_type:0
+msgid "Tool"
+msgstr "Herramienta"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.material_line_search_view
+msgid "Tools"
+msgstr "Herramientas"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_change_qties_uom_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_uom_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_uom_id
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_user_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_user_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_user_id
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_user_id
+msgid "User id"
+msgstr "Usuario"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_res_users
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_stock_warehouse
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_product_template_request_type
+msgid "What happen with this product by default when his requests are closed:\n"
+"Scrap: Material will be moved to scrap location, \n"
+"To return: Material must be returned (Quantities)\n"
+"Tool : Must be returned always"
+msgstr "Cual es el uso de este producto por defecto:\n"
+"Consumible: Todo el material se dara de baja, \n"
+"A devolver: Puede consumirse y/o devolverse una cantidad de material\n"
+"Herramientas : Siempre se devuelve al almacen"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_product_product_request_type
+msgid "What happen with this product when his requests are closed:\n"
+"Scrap: Material will be moved to scrap location, \n"
+"To return: Material must be returned (Quantities)\n"
+"Tool : Must be returned always"
+msgstr "Cual es el uso de este producto por defecto:\n"
+"Consumible: Todo el material se dara de baja, \n"
+"A devolver: Puede consumirse y/o devolverse una cantidad de material\n"
+"Herramientas : Siempre se devuelve al almacen"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_wz_wz_type
+msgid "Wz type"
+msgstr "Tipo de asistente"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "You can change product quantities in this request.\n"
+"                            If request is not delivered, you can change outbuilding too."
+msgstr "Puedes cambiar las cantidades a retornar.\n"
+"Si ni no ha sido devuelto, puedes cambiar la ubicacion donde se guardara."
+
+#. module: request_material
+#: code:addons/request_material/wizard/request_material_wz.py:71
+#, python-format
+msgid "You can only return delivered material"
+msgstr "Solo puedes devolver material entregado"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
+msgid "You have product that are no tools.\n"
+"                            Click <i>apply</i> and Odoo will return all quantities delivered.\n"
+"                            Click <i>scrap</i> to change quantities to return."
+msgstr "You have product that are no tools.\n"
+"                            Click <i>apply</i> and Odoo will return all quantities delivered.\n"
+"                            Click <i>scrap</i> to change quantities to return."
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "_Apply"
+msgstr "_Aplicar"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
+msgid "_Scrap"
+msgstr "_Baja"
+
+#. module: request_material
+#: model:ir.model.fields,help:request_material.field_request_material_line_by_us
+msgid "if check, we use the material, else partners use the material"
+msgstr "Si esta marcado, es uso interno, si no uso por clientes."
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_request_material
+msgid "request.material"
+msgstr "request.material"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_request_material_wz
+msgid "request.material.wz"
+msgstr "request.material.wz"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_request_material_wz_line
+msgid "request.material.wz.line"
+msgstr "request.material.wz.line"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.view_request_change_qties
+msgid "to"
+msgstr "a"
+
