@@ -1,0 +1,804 @@
+code,DESCRIPCION,STOCK,UBICACION,ALMACEN,ACTIVIDAD,COD.PROV,PRECIO,PROVEEDOR,PEDIR,,Almacén,,categoria,alamcen
+1 - 0  0  1,ASPERSORES TORO Serie 730,,1    -       -        -  ,,,,,,1-001,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  2,ASPERSORES TORO Serie 855 S,,1    -       -        -  ,,,,,,1-002,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  3,REDUCCIONES - Varios,,1    -       -        -  ,,,,,,1-003,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  4,"COLLARINES AVK Serie 10 Ø 125 x 1 1/2""",,1    -       -        -  ,,,,,,1-004,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  5,"COLLARINES AVK Serie 10 Ø 110 x 1 1/4""",,1    -       -        -  ,,,,,,1-005,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  6,"COLLARINES AVK Serie 10 Ø 90 x 1 1/4""",,1    -       -        -  ,,,,,,1-006,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  7,"COLLARINES AVK Serie 10 Ø 75 x 1 1/4""",,1    -       -        -  ,,,,,,1-007,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  8,"COLLARINES AVK Serie 10 Ø 63 x 1""",,1    -       -        -  ,,,,,,1-008,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  0  9,"COLLARINES AVK Serie 10 Ø 50 x 1""",,1    -       -        -  ,,,,,,1-009,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  0,"COLLARINES AVK Serie 10 Ø 40 x 1 3/4""",,1    -       -        -  ,,,,,,1-010,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  1,"COLLARINES AVK Serie 10 Ø 90 x 1""",,1    -       -        -  ,,,,,,1-011,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  2,T.E en PVC Evacuación Ø 125 ,,1    -       -        -  ,,,,,,1-012,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  3,T.E en PVC Evacuación Ø 110 ,,1    -       -        -  ,,,,,,1-013,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  4,T.E en PVC Evacuación Ø 90 ,,1    -       -        -  ,,,,,,1-014,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  5,T.E en PVC Evacuación Ø 75,,1    -       -        -  ,,,,,,1-015,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  6,T.E en PVC Evacuación Ø 63 ,,1    -       -        -  ,,,,,,1-016,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  7,T.E en PVC Evacuación Ø 50 ,,1    -       -        -  ,,,,,,1-017,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  8,T.E en PVC Evacuación Ø 40 ,,1    -       -        -  ,,,,,,1-018,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  1  9,T.E en PVC Evacuación Ø 32 ,,1    -       -        -  ,,,,,,1-019,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  0,INJERTO en PVC Evacuación Ø 125 x 67º,,1    -       -        -  ,,,,,,1-020,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  1,INJERTO en PVC Evacuación Ø 110 x 67º,,1    -       -        -  ,,,,,,1-021,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  2,INJERTO en PVC Evacuación Ø 90 x 67º,,1    -       -        -  ,,,,,,1-022,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  3,INJERTO en PVC Evacuación Ø 75 x 67º,,1    -       -        -  ,,,,,,1-023,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  4,INJERTO en PVC Evacuación Ø 63 x 67º,,1    -       -        -  ,,,,,,1-024,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  5,INJERTO en PVC Evacuación Ø 50 x 67º,,1    -       -        -  ,,,,,,1-025,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  6,INJERTO en PVC Evacuación Ø 40 x 67º,,1    -       -        -  ,,,,,,1-026,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  7,INJERTO en PVC Evacuación Ø 32 x 67º,,1    -       -        -  ,,,,,,1-027,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  8,INJERTO en PVC Evacuación Ø 125 x 45º,,1    -       -        -  ,,,,,,1-028,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  2  9,INJERTO en PVC Evacuación Ø 110 x 45º,,1    -       -        -  ,,,,,,1-029,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  0,INJERTO en PVC Evacuación Ø 90 x 45º,,1    -       -        -  ,,,,,,1-030,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  1,INJERTO en PVC Evacuación Ø 75 x 45º,,1    -       -        -  ,,,,,,1-031,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  2,INJERTO en PVC Evacuación Ø 63 x 45º,,1    -       -        -  ,,,,,,1-032,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  3,INJERTO en PVC Evacuación Ø 50 x 45º,,1    -       -        -  ,,,,,,1-033,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  4,INJERTO en PVC Evacuación Ø 40 x 45º,,1    -       -        -  ,,,,,,1-034,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  5,INJERTO en PVC Evacuación Ø 32 x 45º,,1    -       -        -  ,,,,,,1-035,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  6,CODO en PVC Evacuación Ø 125 x 87º,,1    -       -        -  ,,,,,,1-036,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  7,CODO en PVC Evacuación Ø 110 x 87º,,1    -       -        -  ,,,,,,1-037,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  8,CODO en PVC Evacuación Ø 90 x 87º,,1    -       -        -  ,,,,,,1-038,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  3  9,CODO en PVC Evacuación Ø 75 x 87º,,1    -       -        -  ,,,,,,1-039,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  0,CODO en PVC Evacuación Ø 63 x 87º,,1    -       -        -  ,,,,,,1-040,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  1,CODO en PVC Evacuación Ø 50 x 87º,,1    -       -        -  ,,,,,,1-041,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  2,CODO en PVC Evacuación Ø 40 x 87º,,1    -       -        -  ,,,,,,1-042,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  3,CODO en PVC Evacuación Ø 32 x 87º,,1    -       -        -  ,,,,,,1-043,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  4,CODO en PVC Evacuación Ø 125 x 67º,,1    -       -        -  ,,,,,,1-044,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  5,CODO en PVC Evacuación Ø 110 x 67º,,1    -       -        -  ,,,,,,1-045,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  6,CODO en PVC Evacuación Ø 90 x 67º,,1    -       -        -  ,,,,,,1-046,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  7,CODO en PVC Evacuación Ø 75 x 67º,,1    -       -        -  ,,,,,,1-047,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  8,CODO en PVC Evacuación Ø 63 x 67º,,1    -       -        -  ,,,,,,1-048,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  4  9,CODO en PVC Evacuación Ø 50 x 67º,,1    -       -        -  ,,,,,,1-049,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  0,CODO en PVC Evacuación Ø 40 x 67º,,1    -       -        -  ,,,,,,1-050,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  1,CODO en PVC Evacuación Ø 32 x 67º,,1    -       -        -  ,,,,,,1-051,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  2,CODO en PVC Evacuación Ø 125 x 45º,,1    -       -        -  ,,,,,,1-052,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  3,CODO en PVC Evacuación Ø 110 x 45º,,1    -       -        -  ,,,,,,1-053,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  4,CODO en PVC Evacuación Ø 90 x 45º,,1    -       -        -  ,,,,,,1-054,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  5,CODO en PVC Evacuación Ø 75 x 45º,,1    -       -        -  ,,,,,,1-055,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  6,CODO en PVC Evacuación Ø 63 x 45º,,1    -       -        -  ,,,,,,1-056,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  7,CODO en PVC Evacuación Ø 50 x 45º,,1    -       -        -  ,,,,,,1-057,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  8,CODO en PVC Evacuación Ø 40 x 45º,,1    -       -        -  ,,,,,,1-058,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  5  9,CODO en PVC Evacuación Ø 32 x 45º,,1    -       -        -  ,,,,,,1-059,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  0,MANGUITO en PVC Evacuación Ø 125,,1    -       -        -  ,,,,,,1-060,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  1,MANGUITO en PVC Evacuación Ø 110,,1    -       -        -  ,,,,,,1-061,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  2,MANGUITO en PVC Evacuación Ø 90,,1    -       -        -  ,,,,,,1-062,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  3,MANGUITO en PVC Evacuación Ø 75,,1    -       -        -  ,,,,,,1-063,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  4,MANGUITO en PVC Evacuación Ø 63,,1    -       -        -  ,,,,,,1-064,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  5,MANGUITO en PVC Evacuación Ø 50,,1    -       -        -  ,,,,,,1-065,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  6,MANGUITO en PVC Evacuación Ø 40,,1    -       -        -  ,,,,,,1-066,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  7,MANGUITO en PVC Evacuación Ø 32,,1    -       -        -  ,,,,,,1-067,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  8,"CODO en LATÓN Ø 125 3"" H - H",,1    -       -        -  ,,,,,,1-068,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  6  9,"CODO en LATÓN Ø 110 3"" H - H",,1    -       -        -  ,,,,,,1-069,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  0,"CODO en LATÓN Ø 90 3"" H - H",,1    -       -        -  ,,,,,,1-070,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  1,"CODO en LATÓN Ø 75 3"" H - H",,1    -       -        -  ,,,,,,1-071,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  2,"CODO en LATÓN Ø 63 3"" H - H",,1    -       -        -  ,,,,,,1-072,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  3,"CODO en LATÓN Ø 50 3"" H - H",,1    -       -        -  ,,,,,,1-073,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  4,"CODO en LATÓN Ø 40 3"" H - H",,1    -       -        -  ,,,,,,1-074,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  5,"CODO en LATÓN Ø 32 3"" H - H",,1    -       -        -  ,,,,,,1-075,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  6,"CODO en LATÓN Ø 125 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-076,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  7,"CODO en LATÓN Ø 110 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-077,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  8,"CODO en LATÓN Ø 90 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-078,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  7  9,"CODO en LATÓN Ø 75 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-079,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  0,"CODO en LATÓN Ø 63 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-080,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  1,"CODO en LATÓN Ø 50 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-081,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  2,"CODO en LATÓN Ø 40 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-082,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  3,"CODO en LATÓN Ø 32 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-083,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  4,"CODO en LATÓN Ø 125 2"" H - H",,1    -       -        -  ,,,,,,1-084,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  5,"CODO en LATÓN Ø 110 2"" H - H",,1    -       -        -  ,,,,,,1-085,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  6,"CODO en LATÓN Ø 90 2"" H - H",,1    -       -        -  ,,,,,,1-086,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  7,"CODO en LATÓN Ø 75 2"" H - H",,1    -       -        -  ,,,,,,1-087,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  8,"CODO en LATÓN Ø 63 2"" H - H",,1    -       -        -  ,,,,,,1-088,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  8  9,"CODO en LATÓN Ø 50 2"" H - H",,1    -       -        -  ,,,,,,1-089,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  0,"CODO en LATÓN Ø 40 2"" H - H",,1    -       -        -  ,,,,,,1-090,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  1,"CODO en LATÓN Ø 32 2"" H - H",,1    -       -        -  ,,,,,,1-091,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  2,"CODO en LATÓN Ø 125 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-092,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  3,"CODO en LATÓN Ø 110 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-093,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  4,"CODO en LATÓN Ø 90 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-094,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  5,"CODO en LATÓN Ø 75 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-095,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  6,"CODO en LATÓN Ø 63 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-096,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  7,"CODO en LATÓN Ø 50 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-097,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  8,"CODO en LATÓN Ø 40 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-098,1,Fontanería,Fontanería,Fontanería,1
+1 - 0  9  9,"CODO en LATÓN Ø 32 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-099,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  0,"CODO en LATÓN Ø 125 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-100,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  1,"CODO en LATÓN Ø 110 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-101,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  2,"CODO en LATÓN Ø 90 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-102,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  3,"CODO en LATÓN Ø 75 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-103,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  4,"CODO en LATÓN Ø 63 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-104,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  5,"CODO en LATÓN Ø 50 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-105,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  6,"CODO en LATÓN Ø 40 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-106,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  7,"CODO en LATÓN Ø 32 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-107,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  8,"CODO en LATÓN Ø 125 1"" H - H",,1    -       -        -  ,,,,,,1-108,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  0  9,"CODO en LATÓN Ø 110 1"" H - H",,1    -       -        -  ,,,,,,1-109,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  0,"CODO en LATÓN Ø 90 1"" H - H",,1    -       -        -  ,,,,,,1-110,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  1,"CODO en LATÓN Ø 75 1"" H - H",,1    -       -        -  ,,,,,,1-111,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  2,"CODO en LATÓN Ø 63 1"" H - H",,1    -       -        -  ,,,,,,1-112,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  3,"CODO en LATÓN Ø 50 1"" H - H",,1    -       -        -  ,,,,,,1-113,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  4,"CODO en LATÓN Ø 40 1"" H - H",,1    -       -        -  ,,,,,,1-114,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  5,"CODO en LATÓN Ø 32 1"" H - H",,1    -       -        -  ,,,,,,1-115,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  6,"CODO en LATÓN Ø 125 3/4"" H - H",,1    -       -        -  ,,,,,,1-116,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  7,"CODO en LATÓN Ø 110 3/4"" H - H",,1    -       -        -  ,,,,,,1-117,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  8,"CODO en LATÓN Ø 90 3/4"" H - H",,1    -       -        -  ,,,,,,1-118,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  1  9,"CODO en LATÓN Ø 75 3/4"" H - H",,1    -       -        -  ,,,,,,1-119,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  0,"CODO en LATÓN Ø 63 3/4"" H - H",,1    -       -        -  ,,,,,,1-120,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  1,"CODO en LATÓN Ø 50 3/4"" H - H",,1    -       -        -  ,,,,,,1-121,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  2,"CODO en LATÓN Ø 40 3/4"" H - H",,1    -       -        -  ,,,,,,1-122,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  3,"CODO en LATÓN Ø 32 3/4"" H - H",,1    -       -        -  ,,,,,,1-123,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  4,"CODO en LATÓN Ø 125 1/2"" H - H",,1    -       -        -  ,,,,,,1-124,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  5,"CODO en LATÓN Ø 110 1/2"" H - H",,1    -       -        -  ,,,,,,1-125,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  6,"CODO en LATÓN Ø 90 1/2"" H - H",,1    -       -        -  ,,,,,,1-126,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  7,"CODO en LATÓN Ø 75 1/2"" H - H",,1    -       -        -  ,,,,,,1-127,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  8,"CODO en LATÓN Ø 63 1/2"" H - H",,1    -       -        -  ,,,,,,1-128,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  2  9,"CODO en LATÓN Ø 50 1/2"" H - H",,1    -       -        -  ,,,,,,1-129,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  0,"CODO en LATÓN Ø 40 1/2"" H - H",,1    -       -        -  ,,,,,,1-130,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  1,"CODO en LATÓN Ø 32 1/2"" H - H",,1    -       -        -  ,,,,,,1-131,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  2,"CODO en LATÓN Ø 125 3/8"" H - H",,1    -       -        -  ,,,,,,1-132,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  3,"CODO en LATÓN Ø 110 3/8"" H - H",,1    -       -        -  ,,,,,,1-133,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  4,"CODO en LATÓN Ø 90 3/8"" H - H",,1    -       -        -  ,,,,,,1-134,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  5,"CODO en LATÓN Ø 75 3/8"" H - H",,1    -       -        -  ,,,,,,1-135,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  6,"CODO en LATÓN Ø 63 3/8"" H - H",,1    -       -        -  ,,,,,,1-136,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  7,"CODO en LATÓN Ø 50 3/8"" H - H",,1    -       -        -  ,,,,,,1-137,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  8,"CODO en LATÓN Ø 40 3/8"" H - H",,1    -       -        -  ,,,,,,1-138,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  3  9,"CODO en LATÓN Ø 32 3/8"" H - H",,1    -       -        -  ,,,,,,1-139,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  0,"CODO en LATÓN Ø 125 3"" M - H",,1    -       -        -  ,,,,,,1-140,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  1,"CODO en LATÓN Ø 110 3"" M - H",,1    -       -        -  ,,,,,,1-141,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  2,"CODO en LATÓN Ø 90 3"" M - H",,1    -       -        -  ,,,,,,1-142,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  3,"CODO en LATÓN Ø 75 3"" M - H",,1    -       -        -  ,,,,,,1-143,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  4,"CODO en LATÓN Ø 63 3"" M - H",,1    -       -        -  ,,,,,,1-144,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  5,"CODO en LATÓN Ø 50 3"" M - H",,1    -       -        -  ,,,,,,1-145,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  6,"CODO en LATÓN Ø 40 3"" M - H",,1    -       -        -  ,,,,,,1-146,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  7,"CODO en LATÓN Ø 32 3"" M - H",,1    -       -        -  ,,,,,,1-147,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  8,"CODO en LATÓN Ø 125 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-148,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  4  9,"CODO en LATÓN Ø 110 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-149,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  0,"CODO en LATÓN Ø 90 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-150,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  1,"CODO en LATÓN Ø 75 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-151,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  2,"CODO en LATÓN Ø 63 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-152,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  3,"CODO en LATÓN Ø 50 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-153,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  4,"CODO en LATÓN Ø 40 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-154,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  5,"CODO en LATÓN Ø 32 2 1/2"" M - H",,1    -       -        -  ,,,,,,1-155,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  6,"CODO en LATÓN Ø 125 2"" M - H",,1    -       -        -  ,,,,,,1-156,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  7,"CODO en LATÓN Ø 110 2"" M - H",,1    -       -        -  ,,,,,,1-157,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  8,"CODO en LATÓN Ø 90 2"" M - H",,1    -       -        -  ,,,,,,1-158,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  5  9,"CODO en LATÓN Ø 75 2"" M - H",,1    -       -        -  ,,,,,,1-159,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  0,"CODO en LATÓN Ø 63 2"" M - H",,1    -       -        -  ,,,,,,1-160,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  1,"CODO en LATÓN Ø 50 2"" M - H",,1    -       -        -  ,,,,,,1-161,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  2,"CODO en LATÓN Ø 40 2"" M - H",,1    -       -        -  ,,,,,,1-162,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  3,"CODO en LATÓN Ø 32 2"" M - H",,1    -       -        -  ,,,,,,1-163,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  4,"CODO en LATÓN Ø 125 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-164,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  5,"CODO en LATÓN Ø 110 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-165,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  6,"CODO en LATÓN Ø 90 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-166,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  7,"CODO en LATÓN Ø 75 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-167,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  8,"CODO en LATÓN Ø 63 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-168,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  6  9,"CODO en LATÓN Ø 50 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-169,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  0,"CODO en LATÓN Ø 40 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-170,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  1,"CODO en LATÓN Ø 32 1 1/2"" M - H",,1    -       -        -  ,,,,,,1-171,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  2,"CODO en LATÓN Ø 125 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-172,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  3,"CODO en LATÓN Ø 110 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-173,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  4,"CODO en LATÓN Ø 90 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-174,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  5,"CODO en LATÓN Ø 75 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-175,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  6,"CODO en LATÓN Ø 63 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-176,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  7,"CODO en LATÓN Ø 50 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-177,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  8,"CODO en LATÓN Ø 40 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-178,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  7  9,"CODO en LATÓN Ø 32 1 1/4"" M - H",,1    -       -        -  ,,,,,,1-179,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  0,"CODO en LATÓN Ø 125 1"" M - H",,1    -       -        -  ,,,,,,1-180,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  1,"CODO en LATÓN Ø 110 1"" M - H",,1    -       -        -  ,,,,,,1-181,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  2,"CODO en LATÓN Ø 90 1"" M - H",,1    -       -        -  ,,,,,,1-182,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  3,"CODO en LATÓN Ø 75 1"" M - H",,1    -       -        -  ,,,,,,1-183,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  4,"CODO en LATÓN Ø 63 1"" M - H",,1    -       -        -  ,,,,,,1-184,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  5,"CODO en LATÓN Ø 50 1"" M - H",,1    -       -        -  ,,,,,,1-185,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  6,"CODO en LATÓN Ø 40 1"" M - H",,1    -       -        -  ,,,,,,1-186,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  7,"CODO en LATÓN Ø 32 1"" M - H",,1    -       -        -  ,,,,,,1-187,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  8,"CODO en LATÓN Ø 125 3/4"" M - H",,1    -       -        -  ,,,,,,1-188,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  8  9,"CODO en LATÓN Ø 110 3/4"" M - H",,1    -       -        -  ,,,,,,1-189,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  0,"CODO en LATÓN Ø 90 3/4"" M - H",,1    -       -        -  ,,,,,,1-190,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  1,"CODO en LATÓN Ø 75 3/4"" M - H",,1    -       -        -  ,,,,,,1-191,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  2,"CODO en LATÓN Ø 63 3/4"" M - H",,1    -       -        -  ,,,,,,1-192,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  3,"CODO en LATÓN Ø 50 3/4"" M - H",,1    -       -        -  ,,,,,,1-193,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  4,"CODO en LATÓN Ø 40 3/4"" M - H",,1    -       -        -  ,,,,,,1-194,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  5,"CODO en LATÓN Ø 32 3/4"" M - H",,1    -       -        -  ,,,,,,1-195,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  6,"CODO en LATÓN Ø 125 1/2"" M - H",,1    -       -        -  ,,,,,,1-196,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  7,"CODO en LATÓN Ø 110 1/2"" M - H",,1    -       -        -  ,,,,,,1-197,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  8,"CODO en LATÓN Ø 90 1/2"" M - H",,1    -       -        -  ,,,,,,1-198,1,Fontanería,Fontanería,Fontanería,1
+1 - 1  9  9,"CODO en LATÓN Ø 75 1/2"" M - H",,1    -       -        -  ,,,,,,1-199,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  0,"CODO en LATÓN Ø 63 1/2"" M - H",,1    -       -        -  ,,,,,,1-200,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  1,"CODO en LATÓN Ø 50 1/2"" M - H",,1    -       -        -  ,,,,,,1-201,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  2,"CODO en LATÓN Ø 40 1/2"" M - H",,1    -       -        -  ,,,,,,1-202,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  3,"CODO en LATÓN Ø 32 1/2"" M - H",,1    -       -        -  ,,,,,,1-203,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  4,"CODO en LATÓN Ø 125 3/8"" M - H",,1    -       -        -  ,,,,,,1-204,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  5,"CODO en LATÓN Ø 110 3/8"" M - H",,1    -       -        -  ,,,,,,1-205,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  6,"CODO en LATÓN Ø 90 3/8"" M - H",,1    -       -        -  ,,,,,,1-206,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  7,"CODO en LATÓN Ø 75 3/8"" M - H",,1    -       -        -  ,,,,,,1-207,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  8,"CODO en LATÓN Ø 63 3/8"" M - H",,1    -       -        -  ,,,,,,1-208,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  0  9,"CODO en LATÓN Ø 50 3/8"" M - H",,1    -       -        -  ,,,,,,1-209,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  0,"CODO en LATÓN Ø 40 3/8"" M - H",,1    -       -        -  ,,,,,,1-210,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  1,"CODO en LATÓN Ø 32 3/8"" M - H",,1    -       -        -  ,,,,,,1-211,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  2,"MANGUITO en LATÓN Ø 125 3"" H - H",,1    -       -        -  ,,,,,,1-212,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  3,"MANGUITO en LATÓN Ø 110 3"" H - H",,1    -       -        -  ,,,,,,1-213,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  4,"MANGUITO en LATÓN Ø 90 3"" H - H",,1    -       -        -  ,,,,,,1-214,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  5,"MANGUITO en LATÓN Ø 75 3"" H - H",,1    -       -        -  ,,,,,,1-215,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  6,"MANGUITO en LATÓN Ø 63 3"" H - H",,1    -       -        -  ,,,,,,1-216,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  7,"MANGUITO en LATÓN Ø 50 3"" H - H",,1    -       -        -  ,,,,,,1-217,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  8,"MANGUITO en LATÓN Ø 40 3"" H - H",,1    -       -        -  ,,,,,,1-218,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  1  9,"MANGUITO en LATÓN Ø 32 3"" H - H",,1    -       -        -  ,,,,,,1-219,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  0,"MANGUITO en LATÓN Ø 125 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-220,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  1,"MANGUITO en LATÓN Ø 110 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-221,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  2,"MANGUITO en LATÓN Ø 90 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-222,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  3,"MANGUITO en LATÓN Ø 75 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-223,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  4,"MANGUITO en LATÓN Ø 63 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-224,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  5,"MANGUITO en LATÓN Ø 50 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-225,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  6,"MANGUITO en LATÓN Ø 40 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-226,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  7,"MANGUITO en LATÓN Ø 32 2 1/2"" H - H",,1    -       -        -  ,,,,,,1-227,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  8,"MANGUITO en LATÓN Ø 125 2"" H - H",,1    -       -        -  ,,,,,,1-228,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  2  9,"MANGUITO en LATÓN Ø 110 2"" H - H",,1    -       -        -  ,,,,,,1-229,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  0,"MANGUITO en LATÓN Ø 90 2"" H - H",,1    -       -        -  ,,,,,,1-230,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  1,"MANGUITO en LATÓN Ø 75 2"" H - H",,1    -       -        -  ,,,,,,1-231,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  2,"MANGUITO en LATÓN Ø 63 2"" H - H",,1    -       -        -  ,,,,,,1-232,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  3,"MANGUITO en LATÓN Ø 50 2"" H - H",,1    -       -        -  ,,,,,,1-233,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  4,"MANGUITO en LATÓN Ø 40 2"" H - H",,1    -       -        -  ,,,,,,1-234,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  5,"MANGUITO en LATÓN Ø 32 2"" H - H",,1    -       -        -  ,,,,,,1-235,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  6,"MANGUITO en LATÓN Ø 125 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-236,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  7,"MANGUITO en LATÓN Ø 110 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-237,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  8,"MANGUITO en LATÓN Ø 90 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-238,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  3  9,"MANGUITO en LATÓN Ø 75 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-239,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  0,"MANGUITO en LATÓN Ø 63 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-240,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  1,"MANGUITO en LATÓN Ø 50 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-241,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  2,"MANGUITO en LATÓN Ø 40 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-242,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  3,"MANGUITO en LATÓN Ø 32 1 1/2"" H - H",,1    -       -        -  ,,,,,,1-243,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  4,"MANGUITO en LATÓN Ø 125 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-244,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  5,"MANGUITO en LATÓN Ø 110 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-245,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  6,"MANGUITO en LATÓN Ø 90 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-246,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  7,"MANGUITO en LATÓN Ø 75 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-247,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  8,"MANGUITO en LATÓN Ø 63 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-248,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  4  9,"MANGUITO en LATÓN Ø 50 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-249,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  0,"MANGUITO en LATÓN Ø 40 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-250,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  1,"MANGUITO en LATÓN Ø 32 1 1/4"" H - H",,1    -       -        -  ,,,,,,1-251,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  2,"MANGUITO en LATÓN Ø 125 1"" H - H",,1    -       -        -  ,,,,,,1-252,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  3,"MANGUITO en LATÓN Ø 110 1"" H - H",,1    -       -        -  ,,,,,,1-253,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  4,"MANGUITO en LATÓN Ø 90 1"" H - H",,1    -       -        -  ,,,,,,1-254,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  5,"MANGUITO en LATÓN Ø 75 1"" H - H",,1    -       -        -  ,,,,,,1-255,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  6,"MANGUITO en LATÓN Ø 63 1"" H - H",,1    -       -        -  ,,,,,,1-256,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  7,"MANGUITO en LATÓN Ø 50 1"" H - H",,1    -       -        -  ,,,,,,1-257,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  8,"MANGUITO en LATÓN Ø 40 1"" H - H",,1    -       -        -  ,,,,,,1-258,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  5  9,"MANGUITO en LATÓN Ø 32 1"" H - H",,1    -       -        -  ,,,,,,1-259,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  0,"MANGUITO en LATÓN Ø 125 3/4"" H - H",,1    -       -        -  ,,,,,,1-260,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  1,"MANGUITO en LATÓN Ø 110 3/4"" H - H",,1    -       -        -  ,,,,,,1-261,1,Fontanería,Fontanería,Fontanería,1
+1 - 12  6  2,"MANGUITO en LATÓN Ø 90 3/4"" H - H",,1    -       -        -  ,,,,,,1-1262,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  3,"MANGUITO en LATÓN Ø 75 3/4"" H - H",,1    -       -        -  ,,,,,,1-263,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  4,"MANGUITO en LATÓN Ø 63 3/4"" H - H",,1    -       -        -  ,,,,,,1-264,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  5,"MANGUITO en LATÓN Ø 50 3/4"" H - H",,1    -       -        -  ,,,,,,1-265,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  6,"MANGUITO en LATÓN Ø 40 3/4"" H - H",,1    -       -        -  ,,,,,,1-266,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  7,"MANGUITO en LATÓN Ø 32 3/4"" H - H",,1    -       -        -  ,,,,,,1-267,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  8,"MANGUITO en LATÓN Ø 125 1/2"" H - H",,1    -       -        -  ,,,,,,1-268,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  6  9,"MANGUITO en LATÓN Ø 110 1/2"" H - H",,1    -       -        -  ,,,,,,1-269,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  0,"MANGUITO en LATÓN Ø 90 1/2"" H - H",,1    -       -        -  ,,,,,,1-270,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  1,"MANGUITO en LATÓN Ø 75 1/2"" H - H",,1    -       -        -  ,,,,,,1-271,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  2,"MANGUITO en LATÓN Ø 63 1/2"" H - H",,1    -       -        -  ,,,,,,1-272,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  3,"MANGUITO en LATÓN Ø 50 1/2"" H - H",,1    -       -        -  ,,,,,,1-273,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  4,"MANGUITO en LATÓN Ø 40 1/2"" H - H",,1    -       -        -  ,,,,,,1-274,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  5,"MANGUITO en LATÓN Ø 32 1/2"" H - H",,1    -       -        -  ,,,,,,1-275,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  6,"MANGUITO en LATÓN Ø 125 3/8"" H - H",,1    -       -        -  ,,,,,,1-276,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  7,"MANGUITO en LATÓN Ø 110 3/8"" H - H",,1    -       -        -  ,,,,,,1-277,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  8,"MANGUITO en LATÓN Ø 90 3/8"" H - H",,1    -       -        -  ,,,,,,1-278,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  7  9,"MANGUITO en LATÓN Ø 75 3/8"" H - H",,1    -       -        -  ,,,,,,1-279,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  0,"MANGUITO en LATÓN Ø 63 3/8"" H - H",,1    -       -        -  ,,,,,,1-280,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  1,"MANGUITO en LATÓN Ø 50 3/8"" H - H",,1    -       -        -  ,,,,,,1-281,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  2,"MANGUITO en LATÓN Ø 40 3/8"" H - H",,1    -       -        -  ,,,,,,1-282,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  3,"MANGUITO en LATÓN Ø 32 3/8"" H - H",,1    -       -        -  ,,,,,,1-283,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  4,"MACHONES en LATÓN Ø 125 3"" ",,1    -       -        -  ,,,,,,1-284,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  5,"MACHONES en LATÓN Ø 110 3"" ",,1    -       -        -  ,,,,,,1-285,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  6,"MACHONES en LATÓN Ø 90 3""",,1    -       -        -  ,,,,,,1-286,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  7,"MACHONES en LATÓN Ø 75 3"" ",,1    -       -        -  ,,,,,,1-287,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  8,"MACHONES en LATÓN Ø 63 3"" ",,1    -       -        -  ,,,,,,1-288,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  8  9,"MACHONES en LATÓN Ø 50 3"" ",,1    -       -        -  ,,,,,,1-289,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  0,"MACHONES en LATÓN Ø 40 3"" ",,1    -       -        -  ,,,,,,1-290,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  1,"MACHONES en LATÓN Ø 32 3""",,1    -       -        -  ,,,,,,1-291,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  2,"MACHONES en LATÓN Ø 125 2 1/2""",,1    -       -        -  ,,,,,,1-292,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  3,"MACHONES en LATÓN Ø 110 2 1/2"" ",,1    -       -        -  ,,,,,,1-293,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  4,"MACHONES en LATÓN Ø 90 2 1/2"" ",,1    -       -        -  ,,,,,,1-294,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  5,"MACHONES en LATÓN Ø 75 2 1/2""",,1    -       -        -  ,,,,,,1-295,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  6,"MACHONES en LATÓN Ø 63 2 1/2"" ",,1    -       -        -  ,,,,,,1-296,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  7,"MACHONES en LATÓN Ø 50 2 1/2"" ",,1    -       -        -  ,,,,,,1-297,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  8,"MACHONES en LATÓN Ø 40 2 1/2"" ",,1    -       -        -  ,,,,,,1-298,1,Fontanería,Fontanería,Fontanería,1
+1 - 2  9  9,"MACHONES en LATÓN Ø 32 2 1/2"" ",,1    -       -        -  ,,,,,,1-299,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  0,"MACHONES en LATÓN Ø 125 2""",,1    -       -        -  ,,,,,,1-300,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  1,"MACHONES en LATÓN Ø 110 2""",,1    -       -        -  ,,,,,,1-301,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  2,"MACHONES en LATÓN Ø 90 2"" ",,1    -       -        -  ,,,,,,1-302,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  3,"MACHONES en LATÓN Ø 75 2"" ",,1    -       -        -  ,,,,,,1-303,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  4,"MACHONES en LATÓN Ø 63 2"" ",,1    -       -        -  ,,,,,,1-304,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  5,"MACHONES en LATÓN Ø 50 2""",,1    -       -        -  ,,,,,,1-305,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  6,"MACHONES en LATÓN Ø 40 2""",,1    -       -        -  ,,,,,,1-306,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  7,"MACHONES en LATÓN Ø 32 2""",,1    -       -        -  ,,,,,,1-307,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  8,"MACHONES en LATÓN Ø 125 1 1/2""",,1    -       -        -  ,,,,,,1-308,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  0  9,"MACHONES en LATÓN Ø 110 1 1/2"" ",,1    -       -        -  ,,,,,,1-309,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  0,"MACHONES en LATÓN Ø 90 1 1/2""",,1    -       -        -  ,,,,,,1-310,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  1,"MACHONES en LATÓN Ø 75 1 1/2"" ",,1    -       -        -  ,,,,,,1-311,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  2,"MACHONES en LATÓN Ø 63 1 1/2""",,1    -       -        -  ,,,,,,1-312,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  3,"MACHONES en LATÓN Ø 50 1 1/2"" ",,1    -       -        -  ,,,,,,1-313,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  4,"MACHONES en LATÓN Ø 40 1 1/2""",,1    -       -        -  ,,,,,,1-314,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  5,"MACHONES en LATÓN Ø 32 1 1/2""",,1    -       -        -  ,,,,,,1-315,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  6,"MACHONES en LATÓN Ø 125 1 1/4""",,1    -       -        -  ,,,,,,1-316,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  7,"MACHONES en LATÓN Ø 110 1 1/4""",,1    -       -        -  ,,,,,,1-317,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  8,"MACHONES en LATÓN Ø 90 1 1/4""",,1    -       -        -  ,,,,,,1-318,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  1  9,"MACHONES en LATÓN Ø 75 1 1/4""",,1    -       -        -  ,,,,,,1-319,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  0,"MACHONES en LATÓN Ø 63 1 1/4""",,1    -       -        -  ,,,,,,1-320,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  1,"MACHONES en LATÓN Ø 50 1 1/4""",,1    -       -        -  ,,,,,,1-321,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  2,"MACHONES en LATÓN Ø 40 1 1/4"" ",,1    -       -        -  ,,,,,,1-322,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  3,"MACHONES en LATÓN Ø 32 1 1/4""",,1    -       -        -  ,,,,,,1-323,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  4,"MACHONES en LATÓN Ø 125 1""",,1    -       -        -  ,,,,,,1-324,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  5,"MACHONES en LATÓN Ø 110 1""",,1    -       -        -  ,,,,,,1-325,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  6,"MACHONES en LATÓN Ø 90 1"" ",,1    -       -        -  ,,,,,,1-326,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  7,"MACHONES en LATÓN Ø 75 1""",,1    -       -        -  ,,,,,,1-327,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  8,"MACHONES en LATÓN Ø 63 1""",,1    -       -        -  ,,,,,,1-328,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  2  9,"MACHONES en LATÓN Ø 50 1"" ",,1    -       -        -  ,,,,,,1-329,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  0,"MACHONES en LATÓN Ø 40 1""",,1    -       -        -  ,,,,,,1-330,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  1,"MACHONES en LATÓN Ø 32 1""",,1    -       -        -  ,,,,,,1-331,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  2,"MACHONES en LATÓN Ø 125 3/4""",,1    -       -        -  ,,,,,,1-332,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  3,"MACHONES en LATÓN Ø 110 3/4""",,1    -       -        -  ,,,,,,1-333,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  4,"MACHONES en LATÓN Ø 90 3/4""",,1    -       -        -  ,,,,,,1-334,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  5,"MACHONES en LATÓN Ø 75 3/4""",,1    -       -        -  ,,,,,,1-335,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  6,"MACHONES en LATÓN Ø 63 3/4""",,1    -       -        -  ,,,,,,1-336,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  7,"MACHONES en LATÓN Ø 50 3/4""",,1    -       -        -  ,,,,,,1-337,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  8,"MACHONES en LATÓN Ø 40 3/4""",,1    -       -        -  ,,,,,,1-338,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  3  9,"MACHONES en LATÓN Ø 32 3/4""",,1    -       -        -  ,,,,,,1-339,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  0,"MACHONES en LATÓN Ø 125 1/2""",,1    -       -        -  ,,,,,,1-340,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  1,"MACHONES en LATÓN Ø 110 1/2""",,1    -       -        -  ,,,,,,1-341,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  2,"MACHONES en LATÓN Ø 90 1/2""",,1    -       -        -  ,,,,,,1-342,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  3,"MACHONES en LATÓN Ø 75 1/2""",,1    -       -        -  ,,,,,,1-343,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  4,"MACHONES en LATÓN Ø 63 1/2""",,1    -       -        -  ,,,,,,1-344,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  5,"MACHONES en LATÓN Ø 50 1/2""",,1    -       -        -  ,,,,,,1-345,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  6,"MACHONES en LATÓN Ø 40 1/2""",,1    -       -        -  ,,,,,,1-346,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  7,"MACHONES en LATÓN Ø 32 1/2""",,1    -       -        -  ,,,,,,1-347,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  8,"MACHONES en LATÓN Ø 125 3/8""",,1    -       -        -  ,,,,,,1-348,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  4  9,"MACHONES en LATÓN Ø 110 3/8""",,1    -       -        -  ,,,,,,1-349,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  0,"MACHONES en LATÓN Ø 90 3/8""",,1    -       -        -  ,,,,,,1-350,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  1,"MACHONES en LATÓN Ø 75 3/8""",,1    -       -        -  ,,,,,,1-351,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  2,"MACHONES en LATÓN Ø 63 3/8"" ",,1    -       -        -  ,,,,,,1-352,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  3,"MACHONES en LATÓN Ø 50 3/8""",,1    -       -        -  ,,,,,,1-353,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  4,"MACHONES en LATÓN Ø 40 3/8""",,1    -       -        -  ,,,,,,1-354,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  5,"MACHONES en LATÓN Ø 32 3/8"" ",,1    -       -        -  ,,,,,,1-355,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  6,Te M-H-H en PVC Evacuación Ø 125,,1    -       -        -  ,,,,,,1-356,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  7,Te M-H-H en PVC Evacuación Ø 110,,1    -       -        -  ,,,,,,1-357,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  8,Te M-H-H en PVC Evacuación Ø 90,,1    -       -        -  ,,,,,,1-358,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  5  9,Te M-H-H en PVC Evacuación Ø 75,,1    -       -        -  ,,,,,,1-359,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  0,Te M-H-H en PVC Evacuación Ø 63,,1    -       -        -  ,,,,,,1-360,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  1,Te M-H-H en PVC Evacuación Ø 50,,1    -       -        -  ,,,,,,1-361,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  2,Te M-H-H en PVC Evacuación Ø 40,,1    -       -        -  ,,,,,,1-362,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  3,Te M-H-H en PVC Evacuación Ø 32,,1    -       -        -  ,,,,,,1-363,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  4,INJERTO M-H-H en PVC Evacuación Ø 125,,1    -       -        -  ,,,,,,1-364,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  5,INJERTO M-H-H en PVC Evacuación Ø 110,,1    -       -        -  ,,,,,,1-365,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  6,INJERTO M-H-H en PVC Evacuación Ø 90,,1    -       -        -  ,,,,,,1-366,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  7,INJERTO M-H-H en PVC Evacuación Ø 75,,1    -       -        -  ,,,,,,1-367,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  8,INJERTO M-H-H en PVC Evacuación Ø 63,,1    -       -        -  ,,,,,,1-368,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  6  9,INJERTO M-H-H en PVC Evacuación Ø 50,,1    -       -        -  ,,,,,,1-369,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  0,INJERTO M-H-H en PVC Evacuación Ø 40,,1    -       -        -  ,,,,,,1-370,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  1,INJERTO M-H-H en PVC Evacuación Ø 32,,1    -       -        -  ,,,,,,1-371,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  2,"TUERCA REDUCIDA EN LATÓN Ø 3"" MX2 1/2"" H",,1    -       -        -  ,,,,,,1-372,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  3,"TUERCA REDUCIDA EN LATÓN Ø 2 1/2"" MX2"" H",,1    -       -        -  ,,,,,,1-373,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  4,"TUERCA REDUCIDA EN LATÓN Ø 2"" MX1 1/2"" H",,1    -       -        -  ,,,,,,1-374,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  5,"TUERCA REDUCIDA EN LATÓN Ø 1 1/2"" MX1 1/4"" H",,1    -       -        -  ,,,,,,1-375,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  6,"TUERCA REDUCIDA EN LATÓN Ø 1 1/4"" MX1"" H",,1    -       -        -  ,,,,,,1-376,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  7,"TUERCA REDUCIDA EN LATÓN Ø 1"" MX3/4"" H",,1    -       -        -  ,,,,,,1-377,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  8,"TUERCA REDUCIDA EN LATÓN Ø 3/4"" MX1/2"" H",,1    -       -        -  ,,,,,,1-378,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  7  9,"TUERCA REDUCIDA EN LATÓN Ø 1/2"" MX3/8"" H",,1    -       -        -  ,,,,,,1-379,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  0,"MACHONES REDUCIDOS Ø 3"" MX2 1/2"" H",,1    -       -        -  ,,,,,,1-380,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  1,"MACHONES REDUCIDOS Ø 2 1/2"" MX2"" H",,1    -       -        -  ,,,,,,1-381,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  2,"MACHONES REDUCIDOS Ø 2"" MX1 1/2"" H",,1    -       -        -  ,,,,,,1-382,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  3,"MACHONES REDUCIDOS Ø 1 1/2"" MX1 1/4"" H",,1    -       -        -  ,,,,,,1-383,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  4,"MACHONES REDUCIDOS Ø 1 1/4"" MX1"" H",,1    -       -        -  ,,,,,,1-384,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  5,"MACHONES REDUCIDOS Ø 1"" MX3/4"" H",,1    -       -        -  ,,,,,,1-385,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  6,"MACHONES REDUCIDOS Ø 3/4"" MX1/2"" H",,1    -       -        -  ,,,,,,1-386,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  7,"MACHONES REDUCIDOS Ø 1/2"" MX3/8"" H",,1    -       -        -  ,,,,,,1-387,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  8,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 3"" H - H PN16",,1    -       -        -  ,,,,,,1-388,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  8  9,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 2 1/2"" H - H PN16",,1    -       -        -  ,,,,,,1-389,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  0,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 2""  H - H PN16",,1    -       -        -  ,,,,,,1-390,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  1,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 1 1/2"" H - H PN16",,1    -       -        -  ,,,,,,1-391,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  2,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 1 1/4"" H - H PN16",,1    -       -        -  ,,,,,,1-392,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  3,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 1"" H - H PN16",,1    -       -        -  ,,,,,,1-393,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  4,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 3/4"" H - H PN16",,1    -       -        -  ,,,,,,1-394,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  5,"LLAVES DE COMPUERTA CON ASIENTO ELÁSTICO Ø 1/2"" H - H PN16",,1    -       -        -  ,,,,,,1-395,1,Fontanería,Fontanería,Fontanería,1
+1 - 3  9  6,,,,,,,,,1-396,1,,0,0,
+1 - 3  9  7,,,,,,,,,1-397,1,,0,0,
+1 - 3  9  8,,,,,,,,,1-398,1,,0,0,
+1 - 3  9  9,,,,,,,,,1-399,1,,0,0,
+1 - 4  0  0,,,,,,,,,1-400,1,,0,0,
+4 - 0  0  1,"E14 5.5W 3000K ""CANDLE""""VELA""",,4    -       -        -  ,ELECTRICIDAD,,,,"LUCES DE LED ""CANDLE"" vela",4-001,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  2,E27 12W 3000K * 220V/50Hz - BOMBILLA ESFÉRICA,0 ,4    -       -        -  ,ELECTRICIDAD,,,,E27 10W - DEJA DE FABRICARSE,4-002,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  3,E27 6W 3000K * 6 WATT/220V,,4    -       -        -  ,ELECTRICIDAD,,,,"LUCES DE LED ""MASLIGHTING""",4-003,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  4,E14 6W 3000K * 6 WATT/220V,,4    -       -        -  ,ELECTRICIDAD,,,,"LUCES DE LED ""MASLIGHTING""",4-004,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  5,LÁMPARA SPIRAL 45W E-27 6400K RAYTOWN,,4    -       -        -  ,ELECTRICIDAD,,,,LUCES DE LED,4-005,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  6,GU10 LÁMPARA LED 8W 4000/4500K,10 ,4    -       -        -  ,ELECTRICIDAD,,,,LUCES DE LED,4-006,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  7,6.5W E27 220-240 V 40º 750cd 43mA 2700K,,4    -       -        -  ,ELECTRICIDAD,,,,LEDspot PAR20 MASTER,4-007,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  8,LEDspot PAR20 6.5W 400 lumen,,4    -       -        -  ,ELECTRICIDAD,,,,,4-008,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  0  9,E27 15W 4000K 00420 MEGAMAN,,4    -       -        -  ,ELECTRICIDAD,,,,LÁMPARAS STANDARD BAJO CONSUMO,4-009,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  0,PORTALÁMPARAS - B/N,,4    -       -        -  ,ELECTRICIDAD,,,,CASQUILLOS: BLANCOS Y NEGROS,4-010,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  1,PORTALÁMPARAS GU10,40 ,4   - 1 - 3 - 3,ELECTRICIDAD,,,"909,00 €",LUCES DE LED COB  FP>0.84 GU10,4-011,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4-1-3-3
+4 - 0  1  2,26W G24d-3 Biaxth D,,4    -       -        -  ,ELECTRICIDAD,,,,"A EXTINGUIR: ""C. PRACTICAS""",4-012,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  3,FLUORESCENTES 58/860,,4    -       -        -  ,ELECTRICIDAD,,,,TUBOS ALARGADOS,4-013,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  4,FLUORESCENTES 18W/860,,4    -       -        -  ,ELECTRICIDAD,,,,,4-014,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  5,E27 LAMPARA RAYTOWN 45W 6400K E27,,4    -       -        -  ,ELECTRICIDAD,,,,,4-015,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  6,E27 10W 4500K * 220V/50Hz,0 ,4    -       -        -  ,ELECTRICIDAD,,,,,4-016,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  7,E27 5000K 12W BLANCA ESFERICA,0 ,4    -       -        -  ,ELECTRICIDAD,,,,,4-017,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+4 - 0  1  8,GU10 LÁMPARA LED 8W 3000K,25 ,4    -       -        -  ,ELECTRICIDAD,,,,LUCES DE LED,4-018,4,Electricidad,ELECTRICIDAD,ELECTRICIDAD,4
+5 - 1  1  8,REPUESTO MOPA CISNE MAT-100cm,0,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,CISNE,"7,23 €",DROGUERÍA,5-118,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 0  7  1,T-L POLO VERANO ENCARGADOS,,5    -       -        -  ,HOT ROOM,VEST. PERSONAL,,,VESTUARIO DE VERANO DEL PERSONAL,5-071,5,Hot Room,HOT ROOM,VEST. PERSONAL,5
+5 - 0  7  2,T-M POLO VERANO ENCARGADOS,,5    -       -        -  ,HOT ROOM,VEST. PERSONAL,,,VESTUARIO DE VERANO DEL PERSONAL,5-072,5,Hot Room,HOT ROOM,VEST. PERSONAL,5
+5 - 0  7  3,T-S POLO VERANO ENCARGADOS,,5    -       -        -  ,HOT ROOM,VEST. PERSONAL,,,VESTUARIO DE VERANO DEL PERSONAL,5-073,5,Hot Room,HOT ROOM,VEST. PERSONAL,5
+5 - 0  7  4,T-XL POLO VERANO ENCARGADOS,,5    -       -        -  ,HOT ROOM,VEST. PERSONAL,,,VESTUARIO DE VERANO DEL PERSONAL,5-074,5,Hot Room,HOT ROOM,VEST. PERSONAL,5
+5 - 0  7  5,T-XXL POLO VERANO ENCARGADOS,,5    -       -        -  ,HOT ROOM,VEST. PERSONAL,,,VESTUARIO DE VERANO DEL PERSONAL,5-075,5,Hot Room,HOT ROOM,VEST. PERSONAL,5
+5 - 1  0  1,KH-7 DESENGRASANTE 750 ML PULVERIZADOR,0,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,KH-7,"2,39 €",DROGUERÍA,5-101,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  7  7,CANDADOS con LLAVE ÚNICA,10,5    -       -        -  ,HOT ROOM,VARIOS,,,,5-077,5,Hot Room,HOT ROOM,VARIOS,5
+5 - 0  8  1,BOLSAS DE BASURA 85X105 G140 NEGRA CJ-250U - MEDIANAS,4,PALET - SUELO izdo.,HOT ROOM,DROG. / PERF.,,"27,36 €",DROGUERÍA,5-081,5,Hot Room,HOT ROOM,DROG. / PERF.,PALET-SUELOizdo.
+5 - 0  9  6,GEL SANITARIO (SIN AGUA) S NONAS 500 ml,0,5   - 1  -        -  ,HOT ROOM,DROG. / PERF.,500 ml,"2,18 €",DROGUERÍA,5-096,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1--
+5 - 1  3  5,POLITUS 375 ml PULVERIZADOR SUPERFICIES BARNIZADAS,3,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,POLITUS,,DROGUERÍA,5-135,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  2  8,RECAMBIO AMBI PUR AMBIENTADOR ELÉCTRICO FRUTAS SILVESTRES,2,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,,"3,22 €",DROGUERÍA,5-128,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  0  3,LIMPIACRISTALES MULTIGLASS SPRAY 750 ml E-260,3,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,,"1,64 €",DROGUERÍA,5-103,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 1  1  5,QUITAGRASA C/P 750 ML E-251,2,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,,"1,81 €",DROGUERÍA,5-115,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 1  0  6,LIMPIADOR SUELOS BIALCOHOL BIO FRESH MORA E-100M 5 lts ,12,5    -  1  -  1  -  1,HOT ROOM,DROG. / PERF.,BIO FRESH,"4,44 €",DROGUERÍA,5-106,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-1
+5 - 0  8  3,CALZADOR METÁLICO AZUL 15 cm,2,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,,"2,86 €",DROGUERÍA,5-083,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  8  5,INSECTICIDA CASA JARDIN,6,ARMARIO,OFICINA,DROG. / PERF.,,,DROGUERÍA,5-185,5,Hot Room,OFICINA,DROG. / PERF.,ARMARIO
+5 - 1  1  1,PEINE CABALLERO MILAN Nº7 COLOR CONCHA,0,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,MILAN,"0,94 €",DROGUERÍA,5-111,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 0  8  7,COLONIA GOTAS DE ORO 750 ml (CRISTAL),12,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,GOTAS DE ORO,"5,28 €",DROG. ALMOAL  /  VESTUARIOS del CCVM,5-087,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 0  7  8,AMONIACO PERFUMADO CJ 15x1L CASABLANCA,100,5    -  1  -  1  -  1,HOT ROOM,DROG. / PERF.,CASABLANCA,"4,79 €",DROGUERÍA,5-078,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-1
+5 - 1  5  3,PAPEL HIGIENICO ROLLOS - vestuarios,,5    -    FUERA,HOT ROOM,DROG. / PERF.,,,FARDOS DE 18 Rollos,5-153,5,Hot Room,HOT ROOM,DROG. / PERF.,5-FUERA
+5 - 1  5  2,TOALLITAS - Z  (Servilletas vestuarios),,5    -    FUERA,HOT ROOM,DROG. / PERF.,,,CAJAS DE 20 PAQUETES,5-152,5,Hot Room,HOT ROOM,DROG. / PERF.,5-FUERA
+5 - 0  8  9,CUBREZAPATOS (PISCINA) PLASTICO POLIETILENO AZUL (CJ20X100U),2,5    -  1  -  3  -  5,HOT ROOM,DROG. / PERF.,1000 ud,"49,17 €",DROGUERÍA,5-089,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-3-5
+5 - 0  7  9,BAYETA PARA CRISTALES S/B 300 ROLLO 4 m X 38 cm SCOTCH BRITE,1,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,SCOTCH BRITE,"23,66 €",DROGUERÍA,5-079,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  9  0,DESENGRASANTE GENERAL 5L MASSCLEAN E-245,1,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,MASSCLEAN,"5,17 €",DROGUERÍA,5-090,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  0  5,LIMPIADOR MADERA JABONOSO MASSLIMP WOOD-TR H-110R 1L,5,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,MASSLIMP,"2,05 €",DROGUERÍA,5-105,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 1  2  7,"MISTOL LAVAVAJILLAS TRADICIONAL 3,5L",4,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,"3,5L","4,55 €",DROGUERÍA,5-127,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 0  9  7,CABEZAL MOTOGÜADAÑA STIHL autocut 25-2,2,ARMARIO,OFICINA,,STIHL,,,5-097,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  3  6,RECAMBIO AIR WICK FRESHMATIC MAX,2,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,250 ml,,DROGUERÍA,5-136,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  8  8,"SACO LONA PLASTIFICADA, CARRO X PEQUEÑO",3,5    -       -        -  ,HOT ROOM,DROG. / PERF.,,,DROGUERÍA,5-188,5,Hot Room,HOT ROOM,DROG. / PERF.,5
+5 - 1  2  4,ABSORBE OLORES AMBIPUR BRISE GLADE,3,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,,"1,69 €",DROGUERÍA,5-124,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  1  6,RECOGEDOR CON PALO ALTO NEO CON GOMA,5,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,NEO,"1,36 €",DROGUERÍA,5-116,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  2  3,VIM CLOREX 750 grs (cj.20 unds),1,5    -  1  -  2  -  4,HOT ROOM,DROG. / PERF.,VIM,"1,20 €",DROGUERÍA,5-123,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-4
+5 - 0  9  1,ESCOBILLERO WC ANTIDESLIZANTE,8,5    -  1  -  2  -  4,HOT ROOM,DROG. / PERF.,,"1,81 €",DROGUERÍA,5-091,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-4
+5 - 0  7  6,AMBIENTADOR CAMPERO 750 CC CLASSIC,5,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,CAMPERO,"3,12 €",DROGUERÍA,5-076,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  0  9,"PALO ALUMINIO ANODIZADO 1,50 mts MAYA",8,5  -  CAJÓN,HOT ROOM,DROG. / PERF.,MAYA,"2,72 €",DROGUERÍA,5-109,5,Hot Room,HOT ROOM,DROG. / PERF.,5-CAJÓN
+5 - 1  0  2,"LEJIA DETERGENTE PINO 1,6 L CJ-8 U CASABLANCA",16,5    -  1  -  2  -  1,HOT ROOM,DROG. / PERF.,CASABLANCA,"1,25 €",DROGUERÍA / CAJA,5-102,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-1
+5 - 1  0  7,GAFAS SOBRE GAFAS - PROTECTOR,6,ARMARIO,HOT ROOM,SAFETY eyewear,,,EQUIPO DE PROTECCIÓN INDIVIDUAL,5-107,5,Hot Room,HOT ROOM,SAFETY eyewear,ARMARIO
+5 - 1  1  4,PULVERIZADOR PLÁSTICO 250 CC,0,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,,"1,38 €",DROGUERÍA  -  TRAIDOR,5-114,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 0  8  5,CEPILLO DE BARRER AMAPOLA AZUL SIN MANGO,1,5    -  1  -  1  -  2,HOT ROOM,DROG. / PERF.,AMAPOLA,"0,88 €",DROGUERÍA  /  CAJA,5-085,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-2
+5 - 0  9  4,FREGONA ALGODÓN CISNE CRUDO Nº15,5,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,CISNE,"0,89 €",DROGUERÍA  /  CAJA,5-094,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 1  8  1,BAYETA PUNTO GRIS 3 KG - TRAPOS,2,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,,"7,75 €",,5-181,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  2  9,BLOOM MOSQUITOS APARATO + 2 RECAMBIOS,2,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,BLOOM,"5,85 €",DROGUERÍA,5-129,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  8  0,BOLSAS DE BASURA 115 x 150 G130MD CJ-150 - GRANDES  ,4,PALET - SUELO izdo.,HOT ROOM,DROG. / PERF.,,"27,29 €",DROGUERÍA,5-080,5,Hot Room,HOT ROOM,DROG. / PERF.,PALET-SUELOizdo.
+5 - 0  8  2,BOLSAS DE BASURA AUTOCIEERE AZUL 56X60 CJ-1000 UD - PEQUEÑAS,5,PALET - SUELO izdo.,HOT ROOM,DROG. / PERF.,,"42,24 €",DROGUERÍA,5-082,5,Hot Room,HOT ROOM,DROG. / PERF.,PALET-SUELOizdo.
+5 - 0  8  4,CARRO X CROMADO CON SACO PVC ECO,1,5  -  FUERA,HOT ROOM,DROG. / PERF.,,"73,56 €",DROGUERÍA,5-084,5,Hot Room,HOT ROOM,DROG. / PERF.,5-FUERA
+5 - 1  1  7,,,,,,,,,5-117,5,Hot Room,Hot Room,Hot Room,
+5 - 1  3  0,CEPILLO 10X4 MEXIL PLASTIK,6,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,MEXIL,"0,87 €",DROGUERÍA,5-130,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  2  5,CEPILLO FIBRA CORTA DURA BUQUE,5,4,HOT ROOM,DROG. / PERF.,BUQUE,"1,45 €",DROGUERÍA,5-125,5,Hot Room,HOT ROOM,DROG. / PERF.,4
+5 - 1  3  1,CEPILLO HAYA ROJO,--,5  -  SUELO,HOT ROOM,DROG. / PERF.,HAY,,DROGUERÍA,5-131,5,Hot Room,HOT ROOM,DROG. / PERF.,5-SUELO
+5 - 0  8  8,CUBO DE FREGONA CON ESCURRIDOR LUXE 14L,5,5    -  1  -  2  -  1,HOT ROOM,DROG. / PERF.,LUXE,"3,60 €",DROGUERÍA,5-088,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-1
+5 - 0  9  2,ESTERILIZADOR LUZ ULTRAVIOLETA,2,5  -  ANULAR,HOT ROOM,DROG. / PERF.,,"59,50 €",DROGUERÍA,5-092,5,Hot Room,HOT ROOM,DROG. / PERF.,5-ANULAR
+5 - 1  3  2,ESTROPAJO CON ESPONJA SCOTCH-BRITE 158X95 mm,24,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,SCOTCH BRITE,"1,07 €",DROGUERÍA,5-132,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  9  3,"ESTROPAJO ROLLO PRECORTADO SCOTCH BRITE Nº96 6 m x 1,34 m",3,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,SCOTCH BRITE,"16,90 €",DROGUERÍA,5-093,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  9  5,FREGONA INDUSTRIAL ALGODÓN BLANCO 350 grs,4,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,350 grs,"1,68 €",DROGUERÍA,5-095,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 0  8  6,GUANTE GOMA SATINADO SCOTCH BRITE TALLA L,27,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,SCOTCH BRITE,"0,90 €",DROGUERÍA,5-086,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  9  8,GUANTE GOMA SATINADO SCOTCH BRITE TALLA M,0,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,SCOTCH BRITE,"0,90 €",DROGUERÍA,5-098,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 0  9  9,GUANTE GOMA SATINADO SCOTCH BRITE TALLA S,18,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,SCOTCH BRITE,"0,90 €",DROGUERÍA,5-099,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  0  0,KH-7 ANTICAL 750 ml PISTOLA,3,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,KH-7,"2,54 €",DROGUERÍA,5-100,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  2  6,LIMPIACRISTALES ERGO COMPLETO 45 cm INOX,3,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,,"6,30 €",DROGUERÍA,5-126,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  0  4,LIMPIADOR AJAX SHOWER POWER 2 EN 1 500 ml,6,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,AJAX,"1,99 €",DROGUERÍA,5-104,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  1  0,PAÑUELOS FACIALES COLHOGAR CAJA NARANJA (33 UD. POR CAJA),70,5    -  1  -  1  -  3,HOT ROOM,DROG. / PERF.,COLHOGAR,"0,87 €",DROGUERÍA,5-110,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-3
+5 - 1  3  4,PEINE EURO STIL COLORES,12,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,375 ml,,DROGUERÍA,5-134,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  1  2,PINZA PLÁSTICO AZUL SUJETA MOPAS,2,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,,"4,98 €",DROGUERÍA,5-112,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  1  3,PLUMERO AVESTRUZ Nº3,,5   - 1  -        -  ,HOT ROOM,DROG. / PERF.,,"4,74 €",DROGUERÍA,5-113,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1--
+5 - 1  3  7,ROLLO BAYETA AZUL CISNE,2,5    -  1  -  2  -  3,HOT ROOM,DROG. / PERF.,CISNE,,DROGUERÍA,5-137,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-3
+5 - 1  5  6,"SACO LONA PLASTIFICADA, CARRO X GRANDE",4,5    -       -        -  ,HOT ROOM,DROG. / PERF.,,"19,76 €",DROGUERÍA,5-156,5,Hot Room,HOT ROOM,DROG. / PERF.,5
+5 - 1  3  8,PILAS DE BOTÓN - CR2025,2,ARMARIO,OFICINA,,,,,5-138,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  3  9,PILA ALCALINA 12V - A23,2,ARMARIO,OFICINA,,,,,5-139,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  0,CINTA UNIVERSAL DOBLE CARA 25m x 50 mm,0,ARMARIO,OFICINA,,TESA,,,5-140,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  1,CINTA ADHESIVA DE DOBLE CARA 5m x 19mm,8,ARMARIO,OFICINA,,TESA,,,5-141,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  2,T.8 - GUANTE GOMA  DE COLOR NEGRO - CANT. 18,24,ARMARIO,OFICINA,,,,,5-142,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  3,T.9 - GUANTE GOMA  DE COLOR NEGRO - CANT. 19,46,ARMARIO,OFICINA,,,,,5-143,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  4,T.10 - GUANTE GOMA  DE COLOR NEGRO - CANT. 19,65,ARMARIO,OFICINA,,,,,5-144,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  5,GAFAS LENTE NEGRAS ISSA WORK&SPORT,11,ARMARIO,HOT ROOM,SAFETY eyewear,,,EQUIPO DE PROTECCIÓN INDIVIDUAL,5-145,5,Hot Room,HOT ROOM,SAFETY eyewear,ARMARIO
+5 - 1  4  6,GRANDE - CABEZAL CABRA AutoCut  40-2,3,ARMARIO,OFICINA,,STIHL,,,5-146,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  7,PEQUEÑO - CABEZAL CABRA AutoCut  25-2,3,ARMARIO,OFICINA,,STIHL,,,5-147,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  8,TETÓN GR. - CABEZAL CABRA AutoCut  40-2,2,ARMARIO,OFICINA,,STIHL,,,5-148,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  4  9,TETÓN PQ. - CABEZAL CABRA AutoCut  25-2,10,ARMARIO,OFICINA,,STIHL,,,5-149,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  5  0,SUPERLUB FS - Grasa para desbrozadoras cabra,2,ARMARIO,OFICINA,,STIHL,,,5-150,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  5  1,INSECTICIDA 1001 Aerosol 500 ml - AVISPAS,8,ARMARIO,OFICINA,,Pba,,,5-151,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  1  9,SECADOR PARED OPERA BLANCO 1500 W BASE,2,5    -  1  -  6  -  5,HOT ROOM,DROG. / PERF.,OPERA,"40,80 €",DROGUERÍA,5-119,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-6-5
+5 - 1  2  0,SPRAY ANTIPOLVO CISNE,8,5    -  1  -  2  -  4,HOT ROOM,DROG. / PERF.,CISNE,,DROGUERÍA,5-120,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-4
+5 - 1  2  1,SPRAY MOPAS 1000 CC CISNE,,5  -  ANULAR,HOT ROOM,DROG. / PERF.,CISNE,"3,43 €",DROGUERÍA,5-121,5,Hot Room,HOT ROOM,DROG. / PERF.,5-ANULAR
+5 - 1  5  5,VARIOCLEAN 500 ml - Pulverizador,1,ARMARIO,OFICINA,,STIHL,,Limpiar recortasetos,5-155,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 0  7  0,TALCO AUSONIA 200 gr.,12,5    -  1  -  1  -  4,HOT ROOM,DROG. / PERF.,AUSONIA,,DROGUERÍA,5-070,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-4
+5 - 1  5  7,BROCAS 01 mm. PARA HIERRO COBALTO,10,ARMARIO,OFICINA,,,,,5-157,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  5  8,"BROCAS 01,5 mm. PARA HIERRO COBALTO",2,ARMARIO,OFICINA,,,,,5-158,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  5  9,BROCAS 02 mm. PARA HIERRO COBALTO,8,ARMARIO,OFICINA,,,,,5-159,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  0,"BROCAS 02,5 mm. PARA HIERRO COBALTO",4,ARMARIO,OFICINA,,,,,5-160,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  1,BROCAS 03 mm. PARA HIERRO COBALTO,4,ARMARIO,OFICINA,,,,,5-161,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  2,"BROCAS 03,5 mm. PARA HIERRO COBALTO",8,ARMARIO,OFICINA,,,,,5-162,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  3,BROCAS 04 mm. PARA HIERRO COBALTO,2,ARMARIO,OFICINA,,,,,5-163,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  4,"BROCAS 04,5 mm. PARA HIERRO COBALTO",8,ARMARIO,OFICINA,,,,,5-164,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  5,BROCAS 05 mm. PARA HIERRO COBALTO,0,ARMARIO,OFICINA,,,,,5-165,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  6,"BROCAS 05,5 mm. PARA HIERRO COBALTO",11,ARMARIO,OFICINA,,,,,5-166,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  7,BROCAS 06 mm. PARA HIERRO COBALTO,3,ARMARIO,OFICINA,,,,,5-167,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  8,"BROCAS 06,5 mm. PARA HIERRO COBALTO",7,ARMARIO,OFICINA,,,,,5-168,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  6  9,BROCAS 07 mm. PARA HIERRO COBALTO,13,ARMARIO,OFICINA,,,,,5-169,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  0,"BROCAS 07,5 mm. PARA HIERRO COBALTO",9,ARMARIO,OFICINA,,,,,5-170,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  1,BROCAS 08 mm. PARA HIERRO COBALTO,13,ARMARIO,OFICINA,,,,,5-171,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  2,"BROCAS 08,5 mm. PARA HIERRO COBALTO",8,ARMARIO,OFICINA,,,,,5-172,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  3,BROCAS 09 mm. PARA HIERRO COBALTO,9,ARMARIO,OFICINA,,,,,5-173,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  4,"BROCAS 09,5 mm. PARA HIERRO COBALTO",7,ARMARIO,OFICINA,,,,,5-174,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  5,BROCAS 10 mm. PARA HIERRO COBALTO,7,ARMARIO,OFICINA,,,,,5-175,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  6,BROCAS 06 mm. PARA CEMENTO,0,ARMARIO,OFICINA,,,,,5-176,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  7,BROCAS 08 mm. PARA CEMENTO,0,ARMARIO,OFICINA,,,,,5-177,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  8,BROCAS 10 mm. PARA CEMENTO,2,ARMARIO,OFICINA,,,,,5-178,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  7  9,BROCAS 12 mm. PARA CEMENTO,2,ARMARIO,OFICINA,,,,,5-179,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  8  0,"BROCAS 08 mm. PARA HILTI  - ""SDS+"" -",1,ARMARIO,OFICINA,,,,,5-180,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  2  2,TARNI SHIELD PLATA 250ML,3,5    -  1  -  2  -  4,HOT ROOM,DROG. / PERF.,,"2,88 €",DROGUERÍA,5-122,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-2-4
+5 - 1  8  2,CHALECO TRÁFICO AMARILLO L,5,5    -       -        -  ,HOT ROOM,PRESENCIA,,,EQUIPO DE PROTECCIÓN INDIVIDUAL,5-182,5,Hot Room,HOT ROOM,PRESENCIA,5
+5 - 1  8  3,CHALECO TRÁFICO AMARILLO XL,0,5    -       -        -  ,HOT ROOM,PRESENCIA,,,EQUIPO DE PROTECCIÓN INDIVIDUAL,5-183,5,Hot Room,HOT ROOM,PRESENCIA,5
+5 - 1  8  4,CHALECO TRÁFICO AMARILLO XXL,1,5    -       -        -  ,HOT ROOM,PRESENCIA,,,EQUIPO DE PROTECCIÓN INDIVIDUAL,5-184,5,Hot Room,HOT ROOM,PRESENCIA,5
+5 - 1  5  4,GARRAFA DE JABON de 5Lts. - vestuarios,,5    -    FUERA,HOT ROOM,DROG. / PERF.,,,CAJAS DE 3 Garrafas de 5 Lts.,5-154,5,Hot Room,HOT ROOM,DROG. / PERF.,5-FUERA
+5 - 1  8  6,CABEZAL MOTOGÜADAÑA STIHL autocut 40-2,13,ARMARIO,OFICINA,,STIHL,,,5-186,5,Hot Room,OFICINA,OFICINA,ARMARIO
+5 - 1  8  7,GUANTES PLÁSTICO Y LANA AZUL/BLANCO T-8,3,ARMARIO,OFICINA,PROT. MANOS,,,EQUIPO DE PROTECCIÓN INDIVIDUAL,5-187,5,Hot Room,OFICINA,PROT. MANOS,ARMARIO
+5 - 1  3  3,REGALAR - JABÓN GEL DERMO COMPATIBLE SUAVEX B Ph 5.5,4,5    -  1  -  1  -  2,HOT ROOM,DROG. / PERF.,5 Lts.,,PARA REGALAR,5-133,5,Hot Room,HOT ROOM,DROG. / PERF.,5-1-1-2
+6 - 0  0  1,KIT TURBINA TORO DT 35  SECTORIAL,,6    -       -        -  ,,RIEGO - CLUB,,,,6-001,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  2,KIT TURBINA TORO DT 34  CIRCUITO COMPLETO,,6    -       -        -  ,,RIEGO - CLUB,,,,6-002,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  3,KIT TURBINA TORO  860 - 855,,6    -       -        -  ,,RIEGO - CLUB,,,,6-003,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  4,KIT TURBINA HUNTER  G 80,,6    -       -        -  ,,RIEGO - CLUB,,,,6-004,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  5,KIT TURBINA HUNTER  G 75,,6    -       -        -  ,,RIEGO - CLUB,,,,6-005,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  6,ASPERSOR DT 35  SECTORIAL,,6    -       -        -  ,,RIEGO - CLUB,,,,6-006,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  7,ASPERSOR DT 34  CIRCUITO COMPLETO,,6    -       -        -  ,,RIEGO - CLUB,,,,6-007,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  8,ASPERSOR DT 30  HIDRÁULICO,,6    -       -        -  ,,RIEGO - CLUB,,,,6-008,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  0  9,TORNILLO 14 mm,,6    -       -        -  ,,RIEGO - CLUB,,,,6-009,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  0,TORNILLO 16 mm,,6    -       -        -  ,,RIEGO - CLUB,,,,6-010,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  1,TORNILLO 18 mm,,6    -       -        -  ,,RIEGO - CLUB,,,,6-011,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  2,TORNILLO 20 mm,,6    -       -        -  ,,RIEGO - CLUB,,,,6-012,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  3,TORNILLO 22 mm,,6    -       -        -  ,,RIEGO - CLUB,,,,6-013,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  4,TORNILLO 24 mm,,6    -       -        -  ,,RIEGO - CLUB,,,,6-014,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  5,ASPERSOR HUNTER G 70  HIDRÁULICO,,6    -       -        -  ,,RIEGO - CLUB,,,,6-015,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  6,ASPERSOR TORO  855,,6    -       -        -  ,,RIEGO - CLUB,,,,6-016,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  7,ASPERSOR TORO DT 30 HIDRÁULICO CLASE B,,6    -       -        -  ,,RIEGO - CLUB,,,,6-017,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  8,ASPERSOR TORO INFINITY SERIES,,6    -       -        -  ,,RIEGO - CLUB,,,,6-018,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  1  9,ASPERSOR RAIN BIRD  3500,,6    -       -        -  ,,RIEGO - CLUB,,,,6-019,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  0,ASPERSOR RAIN BIRD  5004,,6    -       -        -  ,,RIEGO - CLUB,,,,6-020,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  1,ASPERSOR RAIN BIRD  5500,,6    -       -        -  ,,RIEGO - CLUB,,,,6-021,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  2,ASPERSOR RAIN BIRD  8005,,6    -       -        -  ,,RIEGO - CLUB,,,,6-022,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  3,ASPERSOR TORO TR 50,,6    -       -        -  ,,RIEGO - CLUB,,,,6-023,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  4,DIFUSOR RAIN BIRD  MINI,,6    -       -        -  ,,RIEGO - CLUB,,,,6-024,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  5,DIFUSOR TORO SERIE 675 I,,6    -       -        -  ,,RIEGO - CLUB,,,,6-025,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  6,DIFUSOR TORO  2 P,,6    -       -        -  ,,RIEGO - CLUB,,,,6-026,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  7,DIFUSOR TORO  3 P,,6    -       -        -  ,,RIEGO - CLUB,,,,6-027,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  8,DIFUSOR TORO  4 P,,6    -       -        -  ,,RIEGO - CLUB,,,,6-028,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  2  9,ANILLA ASPERSOR TORO DT 30,,6    -       -        -  ,,RIEGO - CLUB,,,,6-029,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  0,ANILLA PARTE INFERIOR TORO DT 30,,6    -       -        -  ,,RIEGO - CLUB,,,,6-030,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  1,"FILTRO ASPERSOR TORO  1""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-031,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  2,"FILTRO ASPERSOR TORO  2""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-032,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  3,FILTRO RAIN BIRD  8005,,6    -       -        -  ,,RIEGO - CLUB,,,,6-033,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  4,FILTRO RAIN BIRD,,6    -       -        -  ,,RIEGO - CLUB,,,,6-034,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  5,BOQUILLA RAIN BIRD  GRANDE,,6    -       -        -  ,,RIEGO - CLUB,,,,6-035,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  6,BOQUILLA RAIN BIRD  PEQUEÑO,,6    -       -        -  ,,RIEGO - CLUB,,,,6-036,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  7,"ASPERSOR LATÓN  1""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-037,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  8,"ADAPTADOR ROSCA BSP - ACME  1"" 1/2",,6    -       -        -  ,,RIEGO - CLUB,,,,6-038,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  3  9,"ADAPTADOR ROSCA BSP - ACME  1""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-039,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  0,"CODO ADAPTADOR ROSCA BSP - ACME  1""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-040,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  1,"CODO LASCO BSP  1""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-041,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  2,"CODO LASCO ACME  1""",,6    -       -        -  ,,RIEGO - CLUB,,,,6-042,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  3,"CODO LASCO ACME  1"" 1/2",,6    -       -        -  ,,RIEGO - CLUB,,,,6-043,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  4,BOBINA  1/2,,6    -       -        -  ,,RIEGO - CLUB,,,,6-044,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  5,BOBINA  3/4,,6    -       -        -  ,,RIEGO - CLUB,,,,6-045,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  6,BOBINA  1/2 - 3/4,,6    -       -        -  ,,RIEGO - CLUB,,,,6-046,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  7,CABEZA ASPERSOR  730,,6    -       -        -  ,,RIEGO - CLUB,,,,6-047,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  8,ROTOR ASPERSOR  730,,6    -       -        -  ,,RIEGO - CLUB,,,,6-048,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  4  9,SOLENOIDES TORO,,6    -       -        -  ,,RIEGO - CLUB,,,,6-049,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  0,SOLENOIDES RAIN BIRD,,6    -       -        -  ,,RIEGO - CLUB,,,,6-050,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  1,TAPÓN TERMINAL POLIETILENO  20,,6    -       -        -  ,,RIEGO - CLUB,,,,6-051,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  2,TAPÓN TERMINAL POLIETILENO  25,,6    -       -        -  ,,RIEGO - CLUB,,,,6-052,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  3,TAPÓN TERMINAL POLIETILENO  32,,6    -       -        -  ,,RIEGO - CLUB,,,,6-053,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  4,TAPÓN TERMINAL POLIETILENO  40,,6    -       -        -  ,,RIEGO - CLUB,,,,6-054,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  5,TAPÓN TERMINAL POLIETILENO  50,,6    -       -        -  ,,RIEGO - CLUB,,,,6-055,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  6,TAPÓN TERMINAL POLIETILENO  63,,6    -       -        -  ,,RIEGO - CLUB,,,,6-056,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  7,TAPÓN TERMINAL POLIETILENO  75,,6    -       -        -  ,,RIEGO - CLUB,,,,6-057,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  8,TAPÓN TERMINAL para POLIETILENO  20,,6    -       -        -  ,,RIEGO - CLUB,,,,6-058,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  5  9,TAPÓN TERMINAL para POLIETILENO  25,,6    -       -        -  ,,RIEGO - CLUB,,,,6-059,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  0,TAPÓN TERMINAL para POLIETILENO  32,,6    -       -        -  ,,RIEGO - CLUB,,,,6-060,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  1,TAPÓN TERMINAL para POLIETILENO  40,,6    -       -        -  ,,RIEGO - CLUB,,,,6-061,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  2,TAPÓN TERMINAL para POLIETILENO  50,,6    -       -        -  ,,RIEGO - CLUB,,,,6-062,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  3,TAPÓN TERMINAL para POLIETILENO  63,,6    -       -        -  ,,RIEGO - CLUB,,,,6-063,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  4,TAPÓN TERMINAL para POLIETILENO  75,,6    -       -        -  ,,RIEGO - CLUB,,,,6-064,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  5,CODO para POLIETILENO  20,,6    -       -        -  ,,RIEGO - CLUB,,,,6-065,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  6,CODO para POLIETILENO  25,,6    -       -        -  ,,RIEGO - CLUB,,,,6-066,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  7,CODO para POLIETILENO  32,,6    -       -        -  ,,RIEGO - CLUB,,,,6-067,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  8,CODO para POLIETILENO  40,,6    -       -        -  ,,RIEGO - CLUB,,,,6-068,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  6  9,CODO para POLIETILENO  50,,6    -       -        -  ,,RIEGO - CLUB,,,,6-069,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  0,CODO para POLIETILENO  63,,6    -       -        -  ,,RIEGO - CLUB,,,,6-070,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  1,CODO en LATÓN para POLIETILENO  20,,6    -       -        -  ,,RIEGO - CLUB,,,,6-071,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  2,CODO en LATÓN para POLIETILENO  25,,6    -       -        -  ,,RIEGO - CLUB,,,,6-072,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  3,CODO en LATÓN para POLIETILENO  32,,6    -       -        -  ,,RIEGO - CLUB,,,,6-073,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  4,CODO en LATÓN para POLIETILENO  40,,6    -       -        -  ,,RIEGO - CLUB,,,,6-074,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  5,CODO en LATÓN para POLIETILENO  50,,6    -       -        -  ,,RIEGO - CLUB,,,,6-075,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  6,CODO EN LATÓN para POLIETILENO  63,,6    -       -        -  ,,RIEGO - CLUB,,,,6-076,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  7,ENLACE MIXTO para POLIETILENO  20 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-077,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  8,ENLACE MIXTO para POLIETILENO  25 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-078,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  7  9,ENLACE MIXTO para POLIETILENO  32 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-079,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  0,ENLACE MIXTO para POLIETILENO  40 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-080,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  1,ENLACE MIXTO para POLIETILENO  50 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-081,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  2,ENLACE MIXTO para POLIETILENO  63 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-082,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  3,ENLACE MIXTO para POLIETILENO  75 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-083,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  4,ENLACE MIXTO para POLIETILENO  20 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-084,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  5,ENLACE MIXTO para POLIETILENO  20 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-085,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  6,ENLACE MIXTO para POLIETILENO  25 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-086,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  7,ENLACE MIXTO para POLIETILENO  32 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-087,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  8,ENLACE MIXTO para POLIETILENO  40 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-088,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  8  9,ENLACE MIXTO para POLIETILENO  50 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-089,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  0,ENLACE MIXTO para POLIETILENO  63 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-090,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  1,ENLACE MIXTO para POLIETILENO  75 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-091,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  2,ENLACE MIXTO para POLIETILENO  20 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-092,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  3,ENLACE MIXTO en LATÓN para POLIETILENO  20 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-093,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  4,ENLACE MIXTO en LATÓN para POLIETILENO  25 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-094,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  5,ENLACE MIXTO en LATÓN para POLIETILENO  32 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-095,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  6,ENLACE MIXTO en LATÓN para POLIETILENO  40 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-096,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  7,ENLACE MIXTO en LATÓN para POLIETILENO  50 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-097,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  8,ENLACE MIXTO en LATÓN para POLIETILENO  63 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-098,6,Riego,Riego,RIEGO - CLUB,6
+6 - 0  9  9,ENLACE MIXTO en LATÓN para POLIETILENO  75 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-099,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  0,ENLACE MIXTO en LATÓN para POLIETILENO  20 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-100,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  1,ENLACE MIXTO en LATÓN para POLIETILENO  25 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-101,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  2,ENLACE MIXTO en LATÓN para POLIETILENO  32 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-102,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  3,ENLACE MIXTO en LATÓN para POLIETILENO  40 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-103,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  4,ENLACE MIXTO en LATÓN para POLIETILENO  50 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-104,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  5,ENLACE MIXTO en LATÓN para POLIETILENO  63 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-105,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  6,ENLACE MIXTO en LATÓN para POLIETILENO  75 M,,6    -       -        -  ,,RIEGO - CLUB,,,,6-106,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  7,T - MIXTA para POLIETILENO  20 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-107,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  8,T - MIXTA para POLIETILENO  25 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-108,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  0  9,T - MIXTA para POLIETILENO  32 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-109,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  0,T - MIXTA para POLIETILENO  40 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-110,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  1,T - MIXTA para POLIETILENO  50 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-111,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  2,T - MIXTA para POLIETILENO  63 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-112,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  3,T - MIXTA en LATÓN para POLIETILENO  20 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-113,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  4,T - MIXTA en LATÓN para POLIETILENO  25 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-114,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  5,T - MIXTA en LATÓN para POLIETILENO  32 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-115,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  6,T - MIXTA en LATÓN para POLIETILENO  40 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-116,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  7,T - MIXTA en LATÓN para POLIETILENO  50 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-117,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  8,T - MIXTA en LATÓN para POLIETILENO  63 H,,6    -       -        -  ,,RIEGO - CLUB,,,,6-118,6,Riego,Riego,RIEGO - CLUB,6
+6 - 1  1  9,ENLACE POLIETILENO 20,,6    -       -        -  ,,,,,,6-119,6,Riego,Riego,Riego,6
+6 - 1  2  0,ENLACE POLIETILENO 25,,6    -       -        -  ,,,,,,6-120,6,Riego,Riego,Riego,6
+6 - 1  2  1,ENLACE POLIETILENO 32,,6    -       -        -  ,,,,,,6-121,6,Riego,Riego,Riego,6
+6 - 1  2  2,ENLACE POLIETILENO 40,,6    -       -        -  ,,,,,,6-122,6,Riego,Riego,Riego,6
+6 - 1  2  3,ENLACE POLIETILENO 50,,6    -       -        -  ,,,,,,6-123,6,Riego,Riego,Riego,6
+6 - 1  2  4,ENLACE POLIETILENO 63,,6    -       -        -  ,,,,,,6-124,6,Riego,Riego,Riego,6
+6 - 1  2  5,ENLACE LATÓN 20,,6    -       -        -  ,,,,,,6-125,6,Riego,Riego,Riego,6
+6 - 1  2  6,ENLACE LATÓN 25,,6    -       -        -  ,,,,,,6-126,6,Riego,Riego,Riego,6
+6 - 1  2  7,ENLACE LATÓN 32,,6    -       -        -  ,,,,,,6-127,6,Riego,Riego,Riego,6
+6 - 1  2  8,ENLACE LATÓN 40,,6    -       -        -  ,,,,,,6-128,6,Riego,Riego,Riego,6
+6 - 1  2  9,ENLACE LATÓN 50,,6    -       -        -  ,,,,,,6-129,6,Riego,Riego,Riego,6
+6 - 1  3  0,ENLACE LATÓN 63,,6    -       -        -  ,,,,,,6-130,6,Riego,Riego,Riego,6
+6 - 1  3  1,T POLIETILENO 20,,6    -       -        -  ,,,,,,6-131,6,Riego,Riego,Riego,6
+6 - 1  3  2,T POLIETILENO 25,,6    -       -        -  ,,,,,,6-132,6,Riego,Riego,Riego,6
+6 - 1  3  3,T POLIETILENO 32,,6    -       -        -  ,,,,,,6-133,6,Riego,Riego,Riego,6
+6 - 1  3  4,T POLIETILENO 40,,6    -       -        -  ,,,,,,6-134,6,Riego,Riego,Riego,6
+6 - 1  3  5,T POLIETILENO 50,,6    -       -        -  ,,,,,,6-135,6,Riego,Riego,Riego,6
+6 - 1  3  6,T POLIETILENO 63,,6    -       -        -  ,,,,,,6-136,6,Riego,Riego,Riego,6
+6 - 1  3  7,T LATÓN 20,,6    -       -        -  ,,,,,,6-137,6,Riego,Riego,Riego,6
+6 - 1  3  8,T LATÓN 25,,6    -       -        -  ,,,,,,6-138,6,Riego,Riego,Riego,6
+6 - 1  3  9,T LATÓN 32,,6    -       -        -  ,,,,,,6-139,6,Riego,Riego,Riego,6
+6 - 1  4  0,T LATÓN 40,,6    -       -        -  ,,,,,,6-140,6,Riego,Riego,Riego,6
+6 - 1  4  1,T LATÓN 50,,6    -       -        -  ,,,,,,6-141,6,Riego,Riego,Riego,6
+6 - 1  4  2,T LATÓN 63,,6    -       -        -  ,,,,,,6-142,6,Riego,Riego,Riego,6
+6 - 1  4  3,BOCA DE RIEGO SAFE RAIN,,6    -       -        -  ,,,,,,6-143,6,Riego,Riego,Riego,6
+6 - 1  4  4,CODO GIRATORIO MANGUERA,,6    -       -        -  ,,,,,,6-144,6,Riego,Riego,Riego,6
+6 - 1  4  5,ENCHUFE RÁPIDO BOCA DE RIEGO,,6    -       -        -  ,,,,,,6-145,6,Riego,Riego,Riego,6
+6 - 1  4  6,"RACOR 2 UÑAS LATÓN CON ROSCA 1""",,6    -       -        -  ,,,,,,6-146,6,Riego,Riego,Riego,6
+6 - 1  4  7,"RACOR 2 UÑAS LATÓN A PRESIÓN 1""",,6    -       -        -  ,,,,,,6-147,6,Riego,Riego,Riego,6
+6 - 1  4  8,"RACOR 3 UÑAS 1""",,6    -       -        -  ,,,,,,6-148,6,Riego,Riego,Riego,6
+6 - 1  4  9,"RACOR 3 UÑAS 2""",,6    -       -        -  ,,,,,,6-149,6,Riego,Riego,Riego,6
+6 - 1  5  0,ARTICULACIONES 1/2 - 1/2,,6    -       -        -  ,,,,,,6-150,6,Riego,Riego,Riego,6
+6 - 1  5  1,ARTICULACIONES 1/2 - 3/4,,6    -       -        -  ,,,,,,6-151,6,Riego,Riego,Riego,6
+6 - 1  5  2,JUNTAS RACOR MANGUERA,,6    -       -        -  ,,,,,,6-152,6,Riego,Riego,Riego,6
+6 - 1  5  3,PROGRAMADOR TORO TBC SERIES 6 ESTACIONES,,6    -       -        -  ,,,,,,6-153,6,Riego,Riego,Riego,6
+6 - 1  5  4,RECAMBIO VÁLVULA Y SOLENOIDE TORO DT30,,6    -       -        -  ,,,,,,6-154,6,Riego,Riego,Riego,6
+6 - 1  5  5,MANGUITO REPARACIÓN PVC 50,,6    -       -        -  ,,,,,,6-155,6,Riego,Riego,Riego,6
+6 - 1  5  6,MANGUITO REPARACIÓN PVC 63,,6    -       -        -  ,,,,,,6-156,6,Riego,Riego,Riego,6
+6 - 1  5  7,MANGUITO REPARACIÓN PVC 75,,6    -       -        -  ,,,,,,6-157,6,Riego,Riego,Riego,6
+6 - 1  5  8,MANGUITO REPARACIÓN PVC 90,,6    -       -        -  ,,,,,,6-158,6,Riego,Riego,Riego,6
+6 - 1  5  9,MANGUITO REPARACIÓN PVC 125,,6    -       -        -  ,,,,,,6-159,6,Riego,Riego,Riego,6
+6 - 1  6  0,RECAMBIOS ELECTROVÁLVULAS,,6    -       -        -  ,,,,,,6-160,6,Riego,Riego,Riego,6
+6 - 1  6  1,"ARTICULACIONES LASCO 1"" ROSCA BSP",,6    -       -        -  ,,,,,,6-161,6,Riego,Riego,Riego,6
+6 - 1  6  2,"ARTICULACIONES LASCO 1"" ROSCA ACME",,6    -       -        -  ,,,,,,6-162,6,Riego,Riego,Riego,6
+6 - 1  6  3,"ARTICULACIONES LASCO 2"" ROSCA ACME",,6    -       -        -  ,,,,,,6-163,6,Riego,Riego,Riego,6
+6 - 1  6  4,"ARTICULACIONES LASCO "" ROSCA BSP",,6    -       -        -  ,,,,,,6-164,6,Riego,Riego,Riego,6
+6 - 1  6  5,"MANGUERA RIEGO 1"" RACORADA 2 UÑAS",,6    -       -        -  ,,,,,,6-165,6,Riego,Riego,Riego,6
+6 - 1  6  6,T POLIETILENO GAS 63 Ø ,,6    -       -        -  ,,,,,,6-166,6,Riego,Riego,Riego,6
+6 - 1  6  7,"T POLIETILENO GAS 63 Ø - 1""",,6    -       -        -  ,,,,,,6-167,6,Riego,Riego,Riego,6
+6 - 1  6  8,T POLIETILENO GAS 90,,6    -       -        -  ,,,,,,6-168,6,Riego,Riego,Riego,6
+6 - 1  6  9,REDUCCIÓN GAS 160 - 125,,6    -       -        -  ,,,,,,6-169,6,Riego,Riego,Riego,6
+6 - 1  7  0,PR  110 POLIETILENO,,6    -       -        -  ,,,,,,6-170,6,Riego,Riego,Riego,6
+6 - 1  7  1,PR  125 POLIETILENO,,6    -       -        -  ,,,,,,6-171,6,Riego,Riego,Riego,6
+6 - 1  7  2,CODO POLIETILENO GAS 63 Ø ,,6    -       -        -  ,,,,,,6-172,6,Riego,Riego,Riego,6
+6 - 1  7  3,CODO POLIETILENO GAS 90,,6    -       -        -  ,,,,,,6-173,6,Riego,Riego,Riego,6
+6 - 1  7  4,CODO POLIETILENO GAS 110,,6    -       -        -  ,,,,,,6-174,6,Riego,Riego,Riego,6
+6 - 1  7  5,REDUCCIÓN POLIETILENO GAS  90 - 75,,6    -       -        -  ,,,,,,6-175,6,Riego,Riego,Riego,6
+6 - 1  7  6,REDUCCIÓN POLIETILENO GAS  110 - 63,,6    -       -        -  ,,,,,,6-176,6,Riego,Riego,Riego,6
+6 - 1  7  7,REDUCCIÓN POLIETILENO GAS  90 - 63,,6    -       -        -  ,,,,,,6-177,6,Riego,Riego,Riego,6
+6 - 1  7  8,REDUCCIÓN POLIETILENO GAS  63 - 50,,6    -       -        -  ,,,,,,6-178,6,Riego,Riego,Riego,6
+6 - 1  7  9,REDUCCIÓN POLIETILENO ELECTROSOLAR  90 - 63,,6    -       -        -  ,,,,,,6-179,6,Riego,Riego,Riego,6
+6 - 1  8  0,REDUCCIÓN POLIETILENO ELECTROSOLAR  63 - 50,,6    -       -        -  ,,,,,,6-180,6,Riego,Riego,Riego,6
+6 - 1  8  1,REDUCCIÓN POLIETILENO ELECTROSOLAR  75 - 63,,6    -       -        -  ,,,,,,6-181,6,Riego,Riego,Riego,6
+6 - 1  8  2,ENTRONQUE POLI   63 Ø ,,6    -       -        -  ,,,,,,6-182,6,Riego,Riego,Riego,6
+6 - 1  8  3,TAPÓN ELECTROFUSIÓN   63 Ø ,,6    -       -        -  ,,,,,,6-183,6,Riego,Riego,Riego,6
+6 - 1  8  4,MANGUITO TRANSICIÓN    H  63 Ø ,,6    -       -        -  ,,,,,,6-184,6,Riego,Riego,Riego,6
+6 - 1  8  5,T  POLIETILENO GAS  125 - 90,,6    -       -        -  ,,,,,,6-185,6,Riego,Riego,Riego,6
+6 - 1  8  6,T  POLIETILENO GAS  125 Ø ,,6    -       -        -  ,,,,,,6-186,6,Riego,Riego,Riego,6
+6 - 1  8  7,MANGUITO 90 POLIETILENO EXTENDIDO,,6    -       -        -  ,,,,,,6-187,6,Riego,Riego,Riego,6
+6 - 1  8  8,T  POLIETILENO ELECTROFUSIÓN  125,,6    -       -        -  ,,,,,,6-188,6,Riego,Riego,Riego,6
+6 - 1  8  9,CODO POLIETILENO GAS   90º  200 Ø ,,6    -       -        -  ,,,,,,6-189,6,Riego,Riego,Riego,6
+6 - 1  9  0,CODO POLIETILENO GAS   45º  200 Ø ,,6    -       -        -  ,,,,,,6-190,6,Riego,Riego,Riego,6
+6 - 1  9  1,CODO ELECTROFUSIÓN   45º  110 ,,6    -       -        -  ,,,,,,6-191,6,Riego,Riego,Riego,6
+6 - 1  9  2,CODO ELECTROFUSIÓN   90º  110 ,,6    -       -        -  ,,,,,,6-192,6,Riego,Riego,Riego,6
+6 - 1  9  3,CODO ELECTROFUSIÓN   45º  125,,6    -       -        -  ,,,,,,6-193,6,Riego,Riego,Riego,6
+6 - 1  9  4,CODO ELECTROFUSIÓN   90º  125,,6    -       -        -  ,,,,,,6-194,6,Riego,Riego,Riego,6
+6 - 1  9  5,T  POLIETILENO ELECTROFUSIÓN  90,,6    -       -        -  ,,,,,,6-195,6,Riego,Riego,Riego,6
+6 - 1  9  6,T  POLIETILENO ELECTROFUSIÓN  110,,6    -       -        -  ,,,,,,6-196,6,Riego,Riego,Riego,6
+6 - 1  9  7,CODO  45º  ELECTROFUSIÓN  75 Ø ,,6    -       -        -  ,,,,,,6-197,6,Riego,Riego,Riego,6
+6 - 1  9  8,CODO  45º  ELECTROFUSIÓN  90 Ø ,,6    -       -        -  ,,,,,,6-198,6,Riego,Riego,Riego,6
+6 - 1  9  9,CODO  90º  ELECTROFUSIÓN  90 Ø ,,6    -       -        -  ,,,,,,6-199,6,Riego,Riego,Riego,6
+6 - 2  0  0,MANGUITO ELECTROFUSIÓN 125,,6    -       -        -  ,,,,,,6-200,6,Riego,Riego,Riego,6
+6 - 2  0  1,MANGUITO ELECTROFUSIÓN 110,,6    -       -        -  ,,,,,,6-201,6,Riego,Riego,Riego,6
+6 - 2  0  2,MANGUITO ELECTROFUSIÓN 90,,6    -       -        -  ,,,,,,6-202,6,Riego,Riego,Riego,6
+6 - 2  0  3,MANGUITO ELECTROFUSIÓN 75,,6    -       -        -  ,,,,,,6-203,6,Riego,Riego,Riego,6
+6 - 2  0  4,MANGUITO ELECTROFUSIÓN 63,,6    -       -        -  ,,,,,,6-204,6,Riego,Riego,Riego,6
+6 - 2  0  5,MANGUITO ELECTROFUSIÓN 50,,6    -       -        -  ,,,,,,6-205,6,Riego,Riego,Riego,6
+6 - 2  0  6,T  ELECTROFUSIÓN  50,,6    -       -        -  ,,,,,,6-206,6,Riego,Riego,Riego,6
+6 - 2  0  7,COLLARÍN ELECTROFUSIÓN  63 - 32,,6    -       -        -  ,,,,,,6-207,6,Riego,Riego,Riego,6
+6 - 2  0  8,COLLARÍN ELECTROFUSIÓN  75 - 50,,6    -       -        -  ,,,,,,6-208,6,Riego,Riego,Riego,6
+6 - 2  0  9,COLLARÍN ELECTROFUSIÓN  90 - 63,,6    -       -        -  ,,,,,,6-209,6,Riego,Riego,Riego,6
+6 - 2  1  0,MANGUITO ELECTROFUSIÓN  40,,6    -       -        -  ,,,,,,6-210,6,Riego,Riego,Riego,6
+6 - 2  1  1,T  ELECTROFUSIÓN  32,,6    -       -        -  ,,,,,,6-211,6,Riego,Riego,Riego,6
+6 - 2  1  2,TAPÓN ELECTROFUSIÓN  63 Ø ,,6    -       -        -  ,,,,,,6-212,6,Riego,Riego,Riego,6
+6 - 2  1  3,ENTRONQUE  63 Ø ,,6    -       -        -  ,,,,,,6-213,6,Riego,Riego,Riego,6
+6 - 2  1  4,ENTRONQUE REDUCIDO  50 - 40 Ø ,,6    -       -        -  ,,,,,,6-214,6,Riego,Riego,Riego,6
+6 - 2  1  5,T  ELECTROFUSIÓN  63 Ø ,,6    -       -        -  ,,,,,,6-215,6,Riego,Riego,Riego,6
+6 - 2  1  6,T  ELECTROFUSIÓN  75 Ø ,,6    -       -        -  ,,,,,,6-216,6,Riego,Riego,Riego,6
+6 - 2  1  7,T  ELECTROFUSIÓN  90 Ø ,,6    -       -        -  ,,,,,,6-217,6,Riego,Riego,Riego,6
+6 - 2  1  8,CODO ELECTROFUSIÓN   90º 75 Ø ,,6    -       -        -  ,,,,,,6-218,6,Riego,Riego,Riego,6
+6 - 2  1  9,CODO ELECTROFUSIÓN   90º 63 Ø ,,6    -       -        -  ,,,,,,6-219,6,Riego,Riego,Riego,6
+6 - 2  2  0,CODO ELECTROFUSIÓN   90º 50 Ø ,,6    -       -        -  ,,,,,,6-220,6,Riego,Riego,Riego,6
+6 - 2  2  1,COLLARÍN  90 Ø  ELECTROFUSIÓN,,6    -       -        -  ,,,,,,6-221,6,Riego,Riego,Riego,6
+6 - 2  2  2,PR POLIETILENO  75 Ø ,,6    -       -        -  ,,,,,,6-222,6,Riego,Riego,Riego,6
+6 - 2  2  3,PR POLIETILENO  90 Ø ,,6    -       -        -  ,,,,,,6-223,6,Riego,Riego,Riego,6
+6 - 2  2  4,MANGUITO ELECTROFUSIÓN  200 Ø ,,6    -       -        -  ,,,,,,6-224,6,Riego,Riego,Riego,6
+6 - 2  2  5,MANGUITO ELECTROFUSIÓN  75 Ø ,,6    -       -        -  ,,,,,,6-225,6,Riego,Riego,Riego,6
+6 - 2  2  6,MANGUITO ELECTROFUSIÓN  63 Ø ,,6    -       -        -  ,,,,,,6-226,6,Riego,Riego,Riego,6
+6 - 2  2  7,MANGUITO ELECTROFUSIÓN  50 Ø ,,6    -       -        -  ,,,,,,6-227,6,Riego,Riego,Riego,6
+6 - 2  2  8,MANGUITO ELECTROFUSIÓN  40 Ø ,,6    -       -        -  ,,,,,,6-228,6,Riego,Riego,Riego,6
+6 - 2  2  9,TAPÓN POLIETILENO GAS  200 Ø ,,6    -       -        -  ,,,,,,6-229,6,Riego,Riego,Riego,6
+6 - 2  3  0,TAPÓN POLIETILENO GAS  125 Ø ,,6    -       -        -  ,,,,,,6-230,6,Riego,Riego,Riego,6
+6 - 2  3  1,TAPÓN POLIETILENO GAS  90 Ø ,,6    -       -        -  ,,,,,,6-231,6,Riego,Riego,Riego,6
+6 - 2  3  2,TAPÓN POLIETILENO GAS  75 Ø ,,6    -       -        -  ,,,,,,6-232,6,Riego,Riego,Riego,6
+2  -  0  8  5,ESMALTE BRILLO AZUL COBALTO - 4 Lts ,3 ,2  -  2  -  2  -  4,,,,,,2-085,2,Pintura,Pintura,Pintura,2-2-2-4
+2  -  0  8  6,ESMALTE BRILLO AZUL LUMINOSO - 4 Lts ,4 ,2  -  2  -  2  -  4,,,,,,2-086,2,Pintura,Pintura,Pintura,2-2-2-4
+2  -  0  8  7,ESMALTE BRILLO AMARILLO MEDIO - 4 Lts ,4 ,2  -  2  -  2  -  4,,,,,,2-087,2,Pintura,Pintura,Pintura,2-2-2-4
+2  -  0  8  8,ESMALTE BRILLO AMARILLO REAL - 4 Lts ,4 ,2  -  2  -  2  -  4,,,,,,2-088,2,Pintura,Pintura,Pintura,2-2-2-4
+2  -  0  8  9,PAPEL PARA FORRAR de 1 Metro ,5 ,2  -  2  -  2  -  5,,,,,,2-089,2,Pintura,Pintura,Pintura,2-2-2-5
+2  -  0  9  0,FIJATIVO PENETRANTE ACRÍLICO CONCENTRADO - 25 Lts ,1 ,2  -  1  -  1  -  1,,,,,,2-090,2,Pintura,Pintura,Pintura,2-1-1-1
+2  -  0  9  1,CINTA de CARROCERO - 48 mm,32 ,2  -  1  -  1  -  1,,,,,,2-091,2,Pintura,Pintura,Pintura,2-1-1-1
+2  -  0  9  2,BROCHA del Nº 10,4 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-092,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  3,PALETINA CANARIA M/BARNIZ del Nº 6,1 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-093,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  4,PALETINA CANARIA M/BARNIZ del Nº 5,2 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-094,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  5,ESPÁTULA ACERO INOXIDABLE - 40 mm,5 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-095,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  6,PALETINA TRIPLE PROFESIONAL - 50 mm,2 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-096,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  7,PINCEL del Nº 22,5 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-097,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  8,PINCEL del Nº 26,4 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-098,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  0  9  9,PINCEL del Nº 28,3 ,2  -  2  -  1  -  3,,,,,CAJETINES AZULES apilables,2-099,2,Pintura,Pintura,Pintura,2-2-1-3
+2  -  1  0  0,PINTURA PLÁSTICA BLANCA MATE - 15 Lts ,6 ,2  -  0  -  0  -  0,,,,,,2-100,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  1,PINTURA PLÁSTICA VERDE PADDEL - 12 Lts ,12 ,2  -  0  -  0  -  0,,,,,,2-101,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  2,PINTURA PLÁSTICA ROJO TENIS - 12 Lts ,3 ,2  -  0  -  0  -  0,,,,,,2-102,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  3,PINTURA PLÁSTICA SUPERCARRARA VERDE ZONA NUEVA MATE - 15 Lts ,2 ,2  -  0  -  0  -  0,,,,,,2-103,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  4,PINTURA PLÁSTICA MATE PANTÓN E 25-73 - 12 Lts ,1 ,2  -  0  -  0  -  0,,,,,,2-104,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  5,PINTURA PLÁSTICA MATE PANTÓN E 15-56 - 12 Lts ,1 ,2  -  0  -  0  -  0,,,,,,2-105,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  6,PINTURA PLÁSTICA MATE GRIS OFICINA - 12 Lts ,1 ,2  -  0  -  0  -  0,,,,,,2-106,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  7,PINTURA PLÁSTICA MATE PANTÓN 415 C - 12 Lts ,2 ,2  -  0  -  0  -  0,,,,,,2-107,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  8,PINTURA PLÁSTICA MATE PANTÓN 280 C - 12 Lts ,1 ,2  -  0  -  0  -  0,,,,,,2-108,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  0  9,PINTURA PLÁSTICA SUPERCARRARA VERDE GALICIA - 15 Lts ,1 ,2  -  0  -  0  -  0,,,,,,2-109,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  1  0,SACOS DE TEMPLE LISO - 25 Kgms. ,3 ,2  -  0  -  0  -  0,,,,,,2-110,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  1  1  1,SACOS DE TEMPLE GOTA - 25 Kgms. ,4 ,2  -  0  -  0  -  0,,,,,,2-111,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  H  0  1,CARRITO PARA LÍNEAS - (Pistas de Tenis),1 ,2  -  1  -  1  -  4,,,,,,2-H01,2,Pintura,Pintura,Pintura,2-1-1-4
+2  -  M  0  1,MÁQUINA PARA RAYAS DE CARRETERA,1 ,2  -  0  -  0  -  0,,,,,,2-M01,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  M  0  2,MÁQUINA AIR GLES - (Tirar pintura lisa),1 ,2  -  0  -  0  -  0,,,,,,2-M02,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  M  0  3,MÁQUINA COMPRESOR de AIRE,2 ,2  -  0  -  0  -  0,,,,,1 en Hot Room y otro en 4º de Pintura,2-M03,2,Pintura,Pintura,Pintura,2-0-0-0
+2  -  M  0  4,MÁQUINA CALDERÍN DE GOTA,1 ,2  -  4º PINTURA,,,,,,2-M04,2,Pintura,Pintura,Pintura,2-4ºPINTURA
+2  -  M  0  5,PISTOLA DE AIRE CALIENTE - (Para decapar),1 ,2  -  4º PINTURA,,,,,,2-M05,2,Pintura,Pintura,Pintura,2-4ºPINTURA
+2  -  M  0  6,MÁQUINA BATIDORA - (Para mezclas),1 ,2  -  4º PINTURA,,,,,,2-M06,2,Pintura,Pintura,Pintura,2-4ºPINTURA
+2  -  M  0  7,PISTOLA - (Para esmaltar),1 ,2  -  4º PINTURA,,,,,,2-M07,2,Pintura,Pintura,Pintura,2-4ºPINTURA

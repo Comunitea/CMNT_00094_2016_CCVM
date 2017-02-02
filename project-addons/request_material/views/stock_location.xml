@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_stock_location_with_outgoing" model="ir.ui.view">
+            <field name="name">view.stock.location.with.outgoing</field>
+            <field name="model">stock.location</field>
+            <field name="inherit_id" ref="stock.view_location_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='return_location']" position="after">
+                    <field name="outbuilding_location"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_product_template_with_request_type" model="ir.ui.view">
+            <field name="name">product.template.with_request_type</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="stock.view_template_property_form"/>
+            <field name="arch" type="xml">
+                <field name="categ_id" position="after">
+                    <field name="request_type"/>
+                </field>
+            </field>
+        </record>
+        <record id="view_warehouse_request_material" model="ir.ui.view">
+            <field name="name">view.warehouse.request.material</field>
+            <field name="model">stock.warehouse</field>
+            <field name="inherit_id" ref="stock.view_warehouse"/>
+            <field name="arch" type="xml">
+                <field name="out_type_id" position="after">
+                    <field name="request_type_id"/>
+                    <field name="expend_type_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_picking_form_request" model="ir.ui.view">
+            <field name="name">view.picking_formt.material</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <field name="origin" position="before">
+                    <field name="request_material_id" readonly="1"
+                           attrs="{'invisible': [('request_material_id', '=', False)]}"/>
+
+                </field>
+            </field>
+        </record>
+
+        <record id="view_picking_form_request" model="ir.ui.view">
+            <field name="name">view.picking_formt.material</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <field name="origin" position="before">
+                    <field name="request_material_id" readonly="1"
+                           attrs="{'invisible': [('request_material_id', '=', False)]}"/>
+
+                </field>
+            </field>
+        </record>
+
+        <record id="view_users_form_outbuildindg" model="ir.ui.view">
+            <field name="name">view.users.form.outbuildindg</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='messaging']" position="before">
+                    <group string="Request" name="requesting">
+                        <field name="default_outbuilding_location_id"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
+
