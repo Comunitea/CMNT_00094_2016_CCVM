@@ -297,7 +297,7 @@ msgstr "Mensaje para el pedido de venta"
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_move_line_id
 msgid "Move line id"
-msgstr "Id del movimiento"
+msgstr "Moviemintos asociados"
 
 #. module: request_material
 #: code:addons/request_material/models/request_material.py:319
@@ -373,7 +373,7 @@ msgstr "Dependencia"
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_pack_operation_product_id
 msgid "Pack operation product id"
-msgstr "Operacion asociada al producto"
+msgstr "Operaciones asociadas"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_partner_id
@@ -390,7 +390,7 @@ msgstr "Error en el albaran"
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_pick_id
 msgid "Pick id"
-msgstr "ID Albarán"
+msgstr "Albaranes asociados"
 
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.material_line_search_view
@@ -508,7 +508,7 @@ msgstr "Creacion de solicitud"
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_request_material_id
 msgid "Request material id"
-msgstr "Id de la solicitud"
+msgstr "Solicitud asociada"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_material_line_id
@@ -687,7 +687,7 @@ msgstr "Para devolver"
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_request_type
 #: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_type
 msgid "To scrap"
-msgstr "Para dar de baja"
+msgstr "Tipo de devolucion"
 
 #. module: request_material
 #: selection:product.template,request_type:0

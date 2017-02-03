@@ -18,7 +18,7 @@ class RequestMaterial(models.Model):
     display_name = fields.Char(compute='_compute_display_name')
     location_dest_id = fields.Many2one('stock.location', string="Outbuilding",
                                        domain=[('outbuilding_location', '=', True)])
-    picking_id = fields.Many2one('stock.picking')
+    picking_ids = fields.One2many('stock.picking', 'request_material_id')
 
     @api.one
     @api.depends('line_ids')
@@ -45,10 +45,10 @@ class RequestMaterial(models.Model):
             picking_type = request_picking_type
         elif type == 'return':
             picking_type = return_picking_type
-            origin = self.picking_id
+            origin = self.picking_ids and self.picking_ids[0].name or ''
         else:
             picking_type = expend_picking_type
-            origin = self.picking_id
+            origin = self.picking_ids and self.picking_ids[0].name or ''
 
         if not request_picking_type:
             raise ValidationError(_('Request picking type not found'))
@@ -59,7 +59,9 @@ class RequestMaterial(models.Model):
         if not expend_picking_type:
             raise ValidationError(_('Expend picking type not found'))
         line = []
+
         for product_line in self.line_ids:
+            product_line.location_id = request_picking_type.default_location_src_id.id
             if product_line.state != 'new' and type == 'request':
                 raise ValidationError(_('Incorrect request state to ceate a request pick'))
             if product_line.selected:
@@ -85,6 +87,7 @@ class RequestMaterial(models.Model):
                     line_vals['product_uom_qty'] = product_line.expended_qty
 
             line += [[0, False, line_vals]]
+
         if not line:
             return False
 
@@ -110,6 +113,7 @@ class RequestMaterial(models.Model):
         request_picking = pick.search(domain, limit=1)
         if not request_picking:
             request_picking = pick.create(vals)
+            self.picking_ids = [(4, request_picking.id)]
 
         return request_picking
 
@@ -133,18 +137,24 @@ class RequestMaterial(models.Model):
         # creamos operaciones
         if not pick.action_assign():
             raise ValidationError(_('Error en action assign. No stock'))
-        self.picking_id = pick.id
+
+
         for line in self.line_ids:
-            product_id = line.product_id.id
+            product_id = line.product_id
+
             for op in pick.pack_operation_product_ids:
-                if op.product_id.id == product_id:
+
+                if op.product_id == product_id:
+                    line.pack_operation_product_ids = [(4, op.id)]
                     # line.picking_id = pick.id
                     line.location_id = op.location_id
-                    line.pack_operation_product_id = op.id
+
+                    #line.pack_operation_product_id = op.id
                     # line.state='new'
             for move in pick.move_lines:
-                if move.product_id.id == product_id:
-                    line.move_line_id = move.id
+                if move.product_id == product_id:
+
+                    line.move_line_ids = [(4, move.id)]
                     move.location_id = line.location_id
         for op in pick.pack_operation_product_ids:
             op.qty_done = op.product_qty
@@ -193,8 +203,10 @@ class RequestMaterial(models.Model):
         expend_picking_type = wh.expend_type_id
         if type == 'return':
             picking_type_id = return_picking_type
+            location_dest_id = False
         elif type == 'scrap':
             picking_type_id = expend_picking_type
+            location_dest_id = expend_picking_type.default_location_dest_id.id
 
         domain = [('request_material_id', '=', self.id), ('picking_type_id', '=', picking_type_id.id)]
         pick = self.env['stock.picking'].search(domain, limit=1)
@@ -205,16 +217,22 @@ class RequestMaterial(models.Model):
         for line in self.line_ids:
             for op in pick.pack_operation_product_ids:
                 if op.product_id == line.product_id:
+                    line.pack_operation_product_ids = [(4, op.id)]
                     qty_done = line.returned_qty if type == 'return' else line.expended_qty
                     op.qty_done = qty_done
-                    op.location_dest_id = line.location_id
+                    op.location_dest_id = location_dest_id or line.location_id
+            for move in pick.move_lines:
+                if move.product_id == line.product_id:
+                    line.move_line_ids = [(4, move.id)]
+
+
 
         res = pick.do_transfer()
 
         return {
             'name': _('Request Material'),
             'view_type': 'form',
-            'view_mode': 'tree,kanban,form',
+            'view_mode': 'kanban,tree,form',
             'res_model': 'request.material.line',
             'type': 'ir.actions.act_window',
             'res_id': self.id,
@@ -291,9 +309,9 @@ class RequestMaterialLine(models.Model):
     expended_qty = fields.Float('Expended quantity', compute=_get_expended_qty)
     returned_qty = fields.Float('Returned quantity', default=_get_returned_qty)
 
-    picking_id = fields.Many2one(related='request_material_id.picking_id')
-    move_line_id = fields.Many2one('stock.move')
-    pack_operation_product_id = fields.Many2one('stock.pack.operation')
+    picking_ids = fields.One2many(related='request_material_id.picking_ids')
+    move_line_ids = fields.One2many('stock.move', 'request_material_line_id')
+    pack_operation_product_ids = fields.One2many('stock.pack.operation','request_material_line_id')
     active = fields.Boolean('Active', default=True)
 
     # @api.onchange('requested_qty', 'returned_qty')
@@ -311,12 +329,6 @@ class RequestMaterialLine(models.Model):
 
     def return_line(self):
         return
-
-    def open_done(self):
-
-        for request in self:
-            if request.move_line_id.state != 'assigned':
-                raise ValidationError(_('Move not in "assigned" state'))
 
     @api.multi
     def _get_action(self, action_xmlid):
@@ -350,7 +362,7 @@ class RequestMaterialLine(models.Model):
         return {
             'name': _('Request Material'),
             'view_type': 'form',
-            'view_mode': 'kanban,form, tree',
+            'view_mode': 'kanban,tree,form',
             'res_model': 'request.material.line',
             'type': 'ir.actions.act_window',
             'res_id': self.id,
@@ -361,6 +373,7 @@ class RequestMaterialLine(models.Model):
         print "returned qty : %s. Expended_qty: %s" % (self.returned_qty, self.expended_qty)
         if self.returned_qty > 0.00:
             return_pick = self.request_material_id.create_pick(type='return')
+            self.picking_ids = [(4,return_pick.id)]
             if not return_pick.action_confirm():
                 raise ValidationError(_('Error en action confirm'))
             if not return_pick.action_assign():
@@ -369,6 +382,7 @@ class RequestMaterialLine(models.Model):
 
         if self.expended_qty > 0.00:
             return_pick = self.request_material_id.create_pick(type='scrap')
+            self.picking_ids = [(4, return_pick.id)]
             if not return_pick.action_confirm():
                 raise ValidationError(_('Error en action confirm'))
             if not return_pick.action_assign():

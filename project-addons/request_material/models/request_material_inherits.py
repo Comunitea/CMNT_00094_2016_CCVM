@@ -50,3 +50,7 @@ class ResUser(models.Model):
     _inherit = "res.users"
     default_outbuilding_location_id = fields.Many2one('stock.location', string="Default Outbuilding Location",
                                                       domain=[('outbuilding_location', '=', True)])
+
+class StockPackOperationProduct(models.Model):
+    _inherit = "stock.pack.operation"
+    request_material_line_id = fields.Many2one("request.material.line", string="Request Material Line")

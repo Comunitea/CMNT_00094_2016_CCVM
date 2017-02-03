@@ -12,13 +12,13 @@ from odoo.exceptions import ValidationError
 class WzRequestMaterial(models.TransientModel):
     _name = 'request.material.wz'
 
-    user_id = fields.Many2one('res.users', default=lambda self: self._uid)
+    user_id = fields.Many2one('res.users', default=lambda self: self._uid, required = True)
     line_ids = fields.One2many('request.material.wz.line', 'request_material_wz_id')
     request_date = fields.Datetime(string="Request date", default=fields.Datetime.now)
     wz_type = fields.Selection([('request', 'Request'),
                                 ('return', 'Return')],
-                               default='request')
-    location_dest_id = fields.Many2one('stock.location', string="Outbuilding",
+                               default='request', required = True)
+    location_dest_id = fields.Many2one('stock.location', string="Outbuilding", required = True,
                                        domain=[('outbuilding_location', '=', True)],
                                        default=lambda self: self.env.user.default_outbuilding_location_id.id)
 
@@ -28,11 +28,8 @@ class WzRequestMaterial(models.TransientModel):
         res = super(WzRequestMaterial, self).default_get(fields)
         line_ids = []
         vals = []
-        if self.wz_type == 'request':
-            domain = [('user_id', '=', self._uid), ('selected', '=', False)]
-        else:
-            domain = [('state', '=', 'new'), ('picking_id', '=', self._context.get('default_picking_id', False))]
 
+        domain = [('user_id', '=', self._uid), ('state', '=', 'new')]
         lines = self.env['request.material.line'].search(domain)
 
         for line in lines:
@@ -85,7 +82,7 @@ class WzRequestMaterial(models.TransientModel):
         return {
             'name': _('Request Material'),
             'view_type': 'form',
-            'view_mode': 'tree,kanban,form',
+            'view_mode': 'kanban,tree,form',
             'res_model': 'request.material.line',
             'type': 'ir.actions.act_window',
             'res_id': return_line_vals,
@@ -101,6 +98,8 @@ class WzRequestMaterial(models.TransientModel):
         request_vals = {'location_dest_id': self.location_dest_id.id}
         new_request_ids = []
         for line in self.line_ids:
+            if line.requested_qty == 0.00 or line.product_id.qty_available == 0.00:
+                raise ValidationError (_('Request with qty = 0 or stock = 0'))
 
             new_request_ids = []
             new_request = request.create(request_vals)
@@ -131,17 +130,19 @@ class WzRequestMaterial(models.TransientModel):
 
             if not new_request_ids:
                 raise ValidationError(_('No lines'))
+
             new_request.write({'line_ids': new_request_ids})
 
             if create_pick:
-                new_request.create_pick()
+                new_pick = new_request.create_pick()
+
                 #new_request.do_requested_pick()
 
         context = dict(self.env.context or {})
         return {
             'name': _('Request Material'),
             'view_type': 'form',
-            'view_mode': 'tree,kanban,form',
+            'view_mode': 'kanban,tree,form',
             'res_model': 'request.material.line',
             'type': 'ir.actions.act_window',
             'res_id': new_request_ids,
@@ -160,9 +161,9 @@ class RequestMaterialWzLine(models.TransientModel):
     request_material_wz_id = fields.Many2one('request.material.wz')
     selected = fields.Boolean("Selected", default=True)
     user_id = fields.Many2one('res.users', default=lambda self: self._uid)
-    product_id = fields.Many2one('product.product')  # , domain = [('qty_available', '>', 0)])
+    product_id = fields.Many2one('product.product', required = True)#, domain = [('qty_available', '>', 0)])
     uom_id = fields.Many2one(related='product_id.uom_id')
-    requested_qty = fields.Float("Request quantity", default=1.00)
+    requested_qty = fields.Float("Request quantity", default=1.00, required = True)
     returned_qty = fields.Float("Return quantity", default=0.00)
     request_type = fields.Selection([('to_scrap', 'Scrap'),
                                      ('to_return', 'To return'),
@@ -190,6 +191,9 @@ class RequestMaterialWzLine(models.TransientModel):
     @api.onchange('product_id')
     def onchange_product_id(self):
         if self.product_id:
+            if self.product_id.qty_available == 0.00:
+                raise ValidationError (_('No qty available. Stock = 0'))
+
             self.request_type = self.product_id.product_tmpl_id.request_type
 
     @api.multi
