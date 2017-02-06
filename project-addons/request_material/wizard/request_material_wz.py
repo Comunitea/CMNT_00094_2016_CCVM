@@ -133,7 +133,7 @@ class WzRequestMaterial(models.TransientModel):
 
             new_request.write({'line_ids': new_request_ids})
 
-            if create_pick:
+            if create_pick and False:
                 new_pick = new_request.create_pick()
 
                 #new_request.do_requested_pick()

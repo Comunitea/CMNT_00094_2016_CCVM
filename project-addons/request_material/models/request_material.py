@@ -228,7 +228,7 @@ class RequestMaterial(models.Model):
 
 
         res = pick.do_transfer()
-
+        return
         return {
             'name': _('Request Material'),
             'view_type': 'form',
@@ -350,7 +350,7 @@ class RequestMaterialLine(models.Model):
         if self.state == 'new':
 
             self.selected = True
-            # pick = self.request_material_id.create_pick(type='request')
+            pick = self.request_material_id.create_pick(type='request')
             self.request_material_id.do_requested_pick()
 
         elif self.state == 'open':
@@ -358,7 +358,7 @@ class RequestMaterialLine(models.Model):
 
         elif self.state == 'done':
             self.active = False
-
+        return
         return {
             'name': _('Request Material'),
             'view_type': 'form',
@@ -431,6 +431,7 @@ class RequestChangeQtWz(models.TransientModel):
 
     @api.multi
     def apply_changes(self):
+        return
         return {
             'name': _('Request Material'),
             'view_type': 'form',

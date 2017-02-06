@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-
+        <menuitem name="Request" id="menu_request_material_root" sequence="30"
+        groups="group_request_material_user"
+        web_icon="stock,static/description/icon.png"/>
 
         <record id="view_request_change_qties" model="ir.ui.view">
             <field name="name">request.change.qties.view.form</field>
@@ -143,7 +145,7 @@
                             icon="fa-exchange" class="oe_highlight" />
                         <button name="change_qty" states="open"
                             string="Change qty to return" type="object"
-                            icon="fa-exchange" class="oe_highlight" attrs="{'invisible': [('state','=','new')]}"/>
+                            icon="fa-exchange" class="oe_highlight"/>
 
                         <field name="state" widget="statusbar" nolabel="1" readonly="1" />
                     </header>
@@ -220,7 +222,7 @@
             <field name="name">request.material.kanban</field>
             <field name="model">request.material.line</field>
             <field name="arch" type="xml">
-                <kanban class="oe_background_grey o_kanban_dashboard o_stock_kanban" create="0">
+                <kanban class="oe_background_grey o_kanban_dashboard o_stock_kanban" default_group_by="state" create="0">
                     <field name="default_code"/>
                     <field name="color"/>
                     <field name="state"/>
@@ -349,6 +351,13 @@
 
         <menuitem action="action_request_material_kanban" name="Requests" id="menu_request_material"
                   parent="request_material.menu_stock_request_material_control" sequence="5"/>
+
+        <menuitem id="menu_stock_request_material_control_2" groups="group_request_material_user"
+                  name="Requests Material" parent="menu_request_material_root" sequence="3"/>
+
+        <menuitem action="action_request_material_kanban" name="Requests" id="menu_request_material" groups="group_request_material_user"
+                  parent="request_material.menu_stock_request_material_control_2" sequence="5"/>
+
 
 
     </data>
