@@ -17,11 +17,11 @@
         "Comunitea",
         "Kiko Sanchez<kiko@comunitea.com>", ],
     "data": [
+        'security/request_material_security.xml',
+        'security/ir.model.access.csv',
         'views/request_material.xml',
         'views/stock_location.xml',
-        'wizard/request_material_wz.xml',
-        'security/request_material_security.xml',
-        'security/ir.model.access.csv'
+        'wizard/request_material_wz.xml'
     ],
     "demo": [
 

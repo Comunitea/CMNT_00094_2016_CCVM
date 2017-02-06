@@ -26,70 +26,78 @@ class WzRequestMaterial(models.TransientModel):
     def default_get(self, fields):
 
         res = super(WzRequestMaterial, self).default_get(fields)
-        line_ids = []
-        vals = []
-
-        domain = [('user_id', '=', self._uid), ('state', '=', 'new')]
-        lines = self.env['request.material.line'].search(domain)
-
-        for line in lines:
-            vals.append((0, 0, {'selected': line.selected,
-                                'user_id': line.user_id.id,
-                                'product_id': line.product_id.id,
-                                'uom_id': line.product_id.uom_id.id,
-                                'requested_qty': line.requested_qty,
-                                'returned_qty': line.returned_qty,
-                                'request_type': line.request_type,
-                                'location_dest_id': line.location_dest_id.id,
-                                'request_date': line.request_date,
-                                'request_material_line_id': line.id,
-                                'state': line.state,
-                                'notes': line.notes}))
-
-        res.update({'line_ids': vals})
         return res
+        #TODO COmprobar si es necesario recuperar solicitudes anteriores.
+        #
+        #
+        # line_ids = []
+        # vals = []
+        #
+        # domain = [('user_id', '=', self._uid), ('state', '=', 'new')]
+        # lines = self.env['request.material.line'].search(domain)
+        #
+        # for line in lines:
+        #     vals.append((0, 0, {'selected': line.selected,
+        #                         'user_id': line.user_id.id,
+        #                         'product_id': line.product_id.id,
+        #                         'uom_id': line.product_id.uom_id.id,
+        #                         'requested_qty': line.requested_qty,
+        #                         'returned_qty': line.returned_qty,
+        #                         'request_type': line.request_type,
+        #                         'location_dest_id': line.location_dest_id.id,
+        #                         'request_date': line.request_date,
+        #                         'request_material_line_id': line.id,
+        #                         'state': line.state,
+        #                         'notes': line.notes}))
+        #
+        # res.update({'line_ids': vals})
+        # return res
+        #
 
-    @api.multi
-    def create_return(self):
-        if not self.line_ids:
-            raise ValidationError(_('No lines to create returns'))
-        return self.create_returns()
-
-    @api.multi
-    def create_returns(self):
-
-        return_line_vals = []
-        context = dict(self.env.context or {})
-        expended_qty = 0.0
-        create_scrap = False
-        for line in self.line_ids:
-            if line.selected:
-                if line.state != 'done':
-                    raise ValidationError(_('You can only return delivered material'))
-                line.request_material_line_id.returned_qty = line.returned_qty
-
-                if line.expended_qty:
-                    create_scrap = True
-
-                line.state = 'done'
-                return_line_vals += line.id
-
-        request_id = self.line_ids[0].request_material_id
-        request_id.create_pick(type='return')
-        if create_scrap:
-            request_id.create_pick(type='scrap')
-
-        return {
-            'name': _('Request Material'),
-            'view_type': 'form',
-            'view_mode': 'kanban,tree,form',
-            'res_model': 'request.material.line',
-            'type': 'ir.actions.act_window',
-            'res_id': return_line_vals,
-            'context': context,
-        }
-
-        return
+    # @api.multi
+    # def create_return_(self):
+    #     if not self.line_ids:
+    #         raise ValidationError(_('No lines to create returns'))
+    #     return self.create_returns()
+    #
+    #
+    # @api.multi
+    # def create_return(self):
+    #     if not self.line_ids:
+    #         raise ValidationError(_('No lines to create returns'))
+    #
+    #     return_line_vals = []
+    #     context = dict(self.env.context or {})
+    #     expended_qty = 0.0
+    #     create_scrap = False
+    #     for line in self.line_ids:
+    #         if line.selected:
+    #             if line.state != 'done':
+    #                 raise ValidationError(_('You can only return delivered material'))
+    #             line.request_material_line_id.returned_qty = line.returned_qty
+    #
+    #             if line.expended_qty:
+    #                 create_scrap = True
+    #
+    #             line.state = 'done'
+    #             return_line_vals += line.id
+    #
+    #     request_id = self.line_ids[0].request_material_id
+    #     request_id.create_pick(type='return')
+    #     if create_scrap:
+    #         request_id.create_pick(type='scrap')
+    #
+    #     return {
+    #         'name': _('Request Material'),
+    #         'view_type': 'form',
+    #         'view_mode': 'kanban,tree,form',
+    #         'res_model': 'request.material.line',
+    #         'type': 'ir.actions.act_window',
+    #         'res_id': return_line_vals,
+    #         'context': context,
+    #     }
+    #
+    #     return
 
     @api.multi
     def create_requests(self):
