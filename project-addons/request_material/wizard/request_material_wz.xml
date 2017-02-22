@@ -42,7 +42,7 @@
                     <field name="user_id" readonly="1"/>
                     <field name="request_date" readonly="1"/>
                     <field name="wz_type" invisible="1"/>
-                    <field name="location_dest_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'readonly':[('line_ids','!=',False)]}"/>
+                    <field name="location_dest_id" options="{'no_create': True, 'no_create_edit':True}" />
                 </group>
                 <group>
                     <field name="line_ids" nolabel="1" attrs="{'invisible':[('location_dest_id','==',False)]}">
