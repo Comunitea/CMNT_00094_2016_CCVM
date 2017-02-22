@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-02 18:42+0000\n"
-"PO-Revision-Date: 2017-02-02 18:42+0000\n"
+"POT-Creation-Date: 2017-02-22 17:08+0000\n"
+"PO-Revision-Date: 2017-02-22 17:08+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,6 +26,11 @@ msgid "/ Requested:"
 msgstr "/ Solicitado:"
 
 #. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "/ Returned:"
+msgstr "/ A devolver:"
+
+#. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_active
 msgid "Active"
 msgstr "Activo"
@@ -37,14 +42,16 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 #: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
 msgid "Change qty to deliver"
 msgstr "Cant. a entregar"
 
 #. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 #: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
 msgid "Change qty to return"
-msgstr "Cant. a retornar"
+msgstr "Cant. a devolver"
 
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.view_request_change_qties
@@ -76,14 +83,10 @@ msgstr "Create Day"
 
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.request_material_wz_form
-msgid "Create Return"
-msgstr "Crear devolucion"
-
-#. module: request_material
-#: model:ir.ui.view,arch_db:request_material.request_material_wz_form
 msgid "Create new request material. If selected is checked, this will create new requests picks from\n"
 "                        this request material"
-msgstr "Crea una nueva solicitud de material para el almacen.\nSe crearan nuevos albaranes de salidad de almacen"
+msgstr "Crea una nueva solicitud de material para el almacen.\n"
+"Se crearan nuevos albaranes de salidad de almacen"
 
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.request_material_wz_form
@@ -149,26 +152,37 @@ msgid "Display Name"
 msgstr "Nombre a mostrar"
 
 #. module: request_material
-#: code:addons/request_material/models/request_material.py:135
-#: code:addons/request_material/models/request_material.py:367
-#: code:addons/request_material/models/request_material.py:375
+#: code:addons/request_material/models/request_material.py:139
+#: code:addons/request_material/models/request_material.py:380
+#: code:addons/request_material/models/request_material.py:389
 #, python-format
 msgid "Error en action assign. No stock"
 msgstr "Error en action assign. No stock"
 
 #. module: request_material
-#: code:addons/request_material/models/request_material.py:131
-#: code:addons/request_material/models/request_material.py:365
-#: code:addons/request_material/models/request_material.py:373
+#: code:addons/request_material/models/request_material.py:135
+#: code:addons/request_material/models/request_material.py:378
+#: code:addons/request_material/models/request_material.py:387
 #, python-format
 msgid "Error en action confirm"
 msgstr "Error en action confirm"
 
 #. module: request_material
+#: code:addons/request_material/models/request_material.py:435
+#, python-format
+msgid "Error. You can not return more quatity than delivered"
+msgstr "Error. YNo puedes devolver mas cantidad de la que pediste"
+
+#. module: request_material
 #: code:addons/request_material/models/request_material.py:60
 #, python-format
 msgid "Expend picking type not found"
-msgstr "Expend picking type not found"
+msgstr "No se encuentra el albaran asociado"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "Expended"
+msgstr "Utilizado"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_expended_qty
@@ -191,6 +205,12 @@ msgid "Group By"
 msgstr "Agrupar por"
 
 #. module: request_material
+#: model:ir.module.category,description:request_material.module_category_request_material
+msgid "Helps you manage your request from and to outbuilding locations, create picks for request, returns and scrapped material"
+msgstr "Ayuda a gestionar las solicitudes desde las distintas dependencias, creando albaranes para solicitudes, devoluciones y material utilizado y no devuelto(consumido)"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 #: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
 msgid "Hide"
 msgstr "Ocultar"
@@ -211,7 +231,7 @@ msgid "In use by us"
 msgstr "Uso local"
 
 #. module: request_material
-#: code:addons/request_material/models/request_material.py:64
+#: code:addons/request_material/models/request_material.py:66
 #, python-format
 msgid "Incorrect request state to ceate a request pick"
 msgstr "Estado incorrecto de la solicitud para crear un albaran"
@@ -290,20 +310,19 @@ msgid "Locations"
 msgstr "Ubicaciones"
 
 #. module: request_material
+#: model:res.groups,name:request_material.group_request_material_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_res_users_sale_warn_msg
 msgid "Message for Sales Order"
 msgstr "Mensaje para el pedido de venta"
 
 #. module: request_material
-#: model:ir.model.fields,field_description:request_material.field_request_material_line_move_line_id
-msgid "Move line id"
-msgstr "Moviemintos asociados"
-
-#. module: request_material
-#: code:addons/request_material/models/request_material.py:319
-#, python-format
-msgid "Move not in \"assigned\" state"
-msgstr "El movimiento no esta en estado 'asignado'"
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_move_line_ids
+msgid "Move line ids"
+msgstr "Ids registro movimiento"
 
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.material_line_search_view
@@ -327,26 +346,27 @@ msgid "New request material"
 msgstr "Nueva solictud de material"
 
 #. module: request_material
-#: code:addons/request_material/wizard/request_material_wz.py:133
+#: code:addons/request_material/wizard/request_material_wz.py:140
 #, python-format
 msgid "No lines"
 msgstr "Sin lineas"
 
 #. module: request_material
-#: code:addons/request_material/wizard/request_material_wz.py:153
+#: code:addons/request_material/wizard/request_material_wz.py:162
 #, python-format
 msgid "No lines to create request"
 msgstr "Sin lineas para crear la solicitud"
 
 #. module: request_material
-#: code:addons/request_material/wizard/request_material_wz.py:58
+#: code:addons/request_material/wizard/request_material_wz.py:203
 #, python-format
-msgid "No lines to create returns"
-msgstr "Sin lineas para crear el albaran de devolucion"
+msgid "No qty available. Stock = 0"
+msgstr "No hay existencias"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_notes
 #: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_notes
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 msgid "Notes"
 msgstr "Notas"
 
@@ -371,9 +391,14 @@ msgid "Outbuilding Location"
 msgstr "Dependencia"
 
 #. module: request_material
-#: model:ir.model.fields,field_description:request_material.field_request_material_line_pack_operation_product_id
-msgid "Pack operation product id"
-msgstr "Operaciones asociadas"
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_pack_operation_product_ids
+msgid "Pack operation product ids"
+msgstr "Pack operation product ids"
+
+#. module: request_material
+#: model:ir.model,name:request_material.model_stock_pack_operation
+msgid "Packing Operation"
+msgstr "Operación de empaquetado"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_partner_id
@@ -381,8 +406,8 @@ msgid "Partner id"
 msgstr "Cliente"
 
 #. module: request_material
-#: code:addons/request_material/models/request_material.py:128
-#: code:addons/request_material/models/request_material.py:203
+#: code:addons/request_material/models/request_material.py:132
+#: code:addons/request_material/models/request_material.py:215
 #, python-format
 msgid "Pick Error"
 msgstr "Error en el albaran"
@@ -390,18 +415,18 @@ msgstr "Error en el albaran"
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_immediate_transfer_pick_id
 msgid "Pick id"
-msgstr "Albaranes asociados"
-
-#. module: request_material
-#: model:ir.ui.view,arch_db:request_material.material_line_search_view
-msgid "Picking"
-msgstr "Albarán"
-
-#. module: request_material
-#: model:ir.model.fields,field_description:request_material.field_request_material_line_picking_id
-#: model:ir.model.fields,field_description:request_material.field_request_material_picking_id
-msgid "Picking id"
 msgstr "ID Albarán"
+
+#. module: request_material
+#: model:ir.model.fields,field_description:request_material.field_request_material_line_picking_ids
+#: model:ir.model.fields,field_description:request_material.field_request_material_picking_ids
+msgid "Picking ids"
+msgstr "Lista de albaranes"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "Picking, moves and operations"
+msgstr "Albaranes, movimientos y operaciones"
 
 #. module: request_material
 #: model:ir.model,name:request_material.model_product_product
@@ -426,12 +451,20 @@ msgid "Products"
 msgstr "Productos"
 
 #. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "Quantities"
+msgstr "Cantidades"
+
+#. module: request_material
 #: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
 msgid "Quantity:"
 msgstr "Cantidad:"
 
 #. module: request_material
+#: model:ir.module.category,name:request_material.module_category_request_material
+#: model:ir.ui.menu,name:request_material.menu_request_material_root
 #: model:ir.ui.view,arch_db:request_material.material_line_search_view
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 #: model:ir.ui.view,arch_db:request_material.view_users_form_outbuildindg
 #: selection:request.material.wz,wz_type:0
 msgid "Request"
@@ -443,11 +476,10 @@ msgid "Request Immediate transfer?"
 msgstr "Request Immediate transfer?"
 
 #. module: request_material
-#: code:addons/request_material/models/request_material.py:215
-#: code:addons/request_material/models/request_material.py:351
-#: code:addons/request_material/models/request_material.py:421
-#: code:addons/request_material/wizard/request_material_wz.py:86
-#: code:addons/request_material/wizard/request_material_wz.py:142
+#: code:addons/request_material/models/request_material.py:233
+#: code:addons/request_material/models/request_material.py:363
+#: code:addons/request_material/models/request_material.py:438
+#: code:addons/request_material/wizard/request_material_wz.py:151
 #: model:ir.actions.act_window,name:request_material.action_request_material_kanban
 #: model:ir.model,name:request_material.model_request_material_line
 #: model:ir.model.fields,field_description:request_material.field_stock_picking_request_material_id
@@ -462,6 +494,7 @@ msgstr "Formulario de solicitud de material"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_stock_move_request_material_line_id
+#: model:ir.model.fields,field_description:request_material.field_stock_pack_operation_request_material_line_id
 msgid "Request Material Line"
 msgstr "Linea de solicitud de material"
 
@@ -482,7 +515,7 @@ msgid "Request change quantities"
 msgstr "Cambio de las cantidades solicitadas"
 
 #. module: request_material
-#: code:addons/request_material/models/request_material.py:385
+#: code:addons/request_material/models/request_material.py:399
 #, python-format
 msgid "Request change quantity?"
 msgstr "Cambiar la cantidad solicitada"
@@ -508,7 +541,7 @@ msgstr "Creacion de solicitud"
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_request_material_id
 msgid "Request material id"
-msgstr "Solicitud asociada"
+msgstr "Id de la solicitud"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_material_line_id
@@ -543,10 +576,21 @@ msgid "Request type"
 msgstr "Tipo de utilizacion"
 
 #. module: request_material
+#: code:addons/request_material/wizard/request_material_wz.py:110
+#, python-format
+msgid "Request with qty = 0 or stock = 0"
+msgstr "Solicitud son cantidad pedida 0 o sin existencias para ese producto"
+
+#. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_change_qties_requested_qty
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_requested_qty
 msgid "Requested quantity"
 msgstr "Cantidad solicitada"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "Requested:"
+msgstr "Solicitado:"
 
 #. module: request_material
 #: model:ir.ui.menu,name:request_material.menu_request_material
@@ -555,6 +599,7 @@ msgstr "Listado de Solicitudes"
 
 #. module: request_material
 #: model:ir.ui.menu,name:request_material.menu_stock_request_material_control
+#: model:ir.ui.menu,name:request_material.menu_stock_request_material_control_2
 msgid "Requests Material"
 msgstr "Solicitudes de material"
 
@@ -612,7 +657,7 @@ msgstr "Pedido de venta"
 #: selection:request.material.line,request_type:0
 #: selection:request.material.wz.line,request_type:0
 msgid "Scrap"
-msgstr "Consumible"
+msgstr "Consumido"
 
 #. module: request_material
 #: model:ir.model.fields,help:request_material.field_request_material_line_request_type
@@ -644,6 +689,11 @@ msgid "Selecting the \"Warning\" option will notify user with the message, Selec
 msgstr "Si selecciona la opción \"Aviso\" se notificará a los usuarios con el mensaje, si selecciona \"Mensaje de bloqueo\" se lanzará una excepción con el mensaje y se bloqueará el flujo. El mensaje debe escribirse en el siguiente campo."
 
 #. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "Solicitada por"
+msgstr "Solicitada por"
+
+#. module: request_material
 #: model:ir.ui.view,arch_db:request_material.material_line_search_view
 msgid "State"
 msgstr "Estado"
@@ -666,12 +716,14 @@ msgid "The picking type determines the picking view"
 msgstr "El tipo de albarán determina la vista de albarán"
 
 #. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 #: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
 msgid "To Deliver"
 msgstr "Para entregar"
 
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.material_line_search_view
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
 #: model:ir.ui.view,arch_db:request_material.request_material_kanban_view
 msgid "To Return"
 msgstr "Para devolver"
@@ -687,7 +739,7 @@ msgstr "Para devolver"
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_request_type
 #: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_request_type
 msgid "To scrap"
-msgstr "Tipo de devolucion"
+msgstr "Para dar de baja"
 
 #. module: request_material
 #: selection:product.template,request_type:0
@@ -712,6 +764,11 @@ msgstr "Transferir"
 #: model:ir.model.fields,field_description:request_material.field_request_material_wz_line_uom_id
 msgid "Unit of Measure"
 msgstr "Unidad de medida"
+
+#. module: request_material
+#: model:res.groups,name:request_material.group_request_material_user
+msgid "User"
+msgstr "Usuario"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_request_material_line_user_id
@@ -766,12 +823,6 @@ msgstr "Puedes cambiar las cantidades a retornar.\n"
 "Si ni no ha sido devuelto, puedes cambiar la ubicacion donde se guardara."
 
 #. module: request_material
-#: code:addons/request_material/wizard/request_material_wz.py:71
-#, python-format
-msgid "You can only return delivered material"
-msgstr "Solo puedes devolver material entregado"
-
-#. module: request_material
 #: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
 msgid "You have product that are no tools.\n"
 "                            Click <i>apply</i> and Odoo will return all quantities delivered.\n"
@@ -794,7 +845,12 @@ msgstr "_Cancelar"
 #. module: request_material
 #: model:ir.ui.view,arch_db:request_material.view_immediate_transfer_request
 msgid "_Scrap"
-msgstr "_Baja"
+msgstr "Consumido"
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "el dia"
+msgstr "el dia"
 
 #. module: request_material
 #: model:ir.model.fields,help:request_material.field_request_material_line_by_us

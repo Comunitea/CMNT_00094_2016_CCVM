@@ -60,7 +60,6 @@
                             <field name="notes" invisible="1"/>
                             <field name="request_material_line_id" invisible="1"/>
                             <field name="state" invisible="1"/>
-
                         </tree>
                     </field>
                 </group>

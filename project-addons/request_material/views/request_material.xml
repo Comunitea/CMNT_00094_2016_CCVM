@@ -160,7 +160,6 @@
                         <div>
                             Solicitada por <strong><field name="user_id" readonly="1"/></strong> el dia <strong><field name="request_date"/></strong>
                         </div>
-
                     </group>
                     <group string="Quantities">
                         <div>
