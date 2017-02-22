@@ -42,9 +42,8 @@
                     <field name="user_id" readonly="1"/>
                     <field name="request_date" readonly="1"/>
                     <field name="wz_type" invisible="1"/>
-                    <field name="location_dest_id" options="{'no_create': True, 'no_create_edit':True}"/>
+                    <field name="location_dest_id" options="{'no_create': True, 'no_create_edit':True}" attrs="{'readonly':[('line_ids','!=',False)]}"/>
                 </group>
-
                 <group>
                     <field name="line_ids" nolabel="1" attrs="{'invisible':[('location_dest_id','==',False)]}">
                         <tree editable="top" create="1">
@@ -60,6 +59,7 @@
                             <field name="notes" invisible="1"/>
                             <field name="request_material_line_id" invisible="1"/>
                             <field name="state" invisible="1"/>
+
                         </tree>
                     </field>
                 </group>
@@ -67,7 +67,7 @@
                 <footer>
                     <button name="create_request" string="Create request" type="object" class="oe_highlight"
                             attrs="{'invisible':[('wz_type','==','return')]}"/>
-                <!--TODO No creamos  request_return. Se hace desde el kanaban
+                    <!--TODO No creamos request_return. Se hace desde el kanaban
                     <button name="create_return" string="Create Return" type="object" class="oe_highlight"
                             attrs="{'invisible':[('wz_type','==','request')]}"/>-->
                     <button string="_Cancel" class="btn-default" special="cancel"/>
