@@ -170,6 +170,7 @@
                             / Returned:
                             <field name="returned_qty" nolabel="1" attrs="{'readonly': [('state','=','done')]}"
                                    class="oe_inline"/>
+
                             <field name="uom_id" class="oe_inline" readonly="1"/>
                             <div>
                             <group string="Expended" attrs="{'invisible': [('expended_qty','=',0)]}">
