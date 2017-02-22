@@ -89,7 +89,6 @@ class BuImport:
         except xmlrpclib.Fault, err:
             raise Exception(u'Error %s en search: %s' % (err.faultCode, err.faultString))
 
-
     def read(self, model, ids, fields, context={}):
         """
         Wrapper del método read.
@@ -103,7 +102,6 @@ class BuImport:
         except xmlrpclib.Fault, err:
             raise Exception(u'Error %s en read: %s' % (err.faultCode, err.faultString))
 
-
     def write(self, model, ids, field_values, context={}):
         """
         Wrapper del método write.
@@ -116,7 +114,6 @@ class BuImport:
             raise Exception(u'Conexión rechazada: %s!' % err)
         except xmlrpclib.Fault, err:
             raise Exception(u'Error %s en write: %s' % (err.faultCode, err.faultString))
-
 
     def unlink(self, model, ids, context={}):
         """
@@ -156,7 +153,6 @@ class BuImport:
             raise Exception('Conexión rechazada: %s!' % err)
         except xmlrpclib.Fault, err:
             raise Exception('Error %s en execute: %s' % (err.faultCode, err.faultString))
-
 
     def process_data(self):
         """
@@ -233,7 +229,6 @@ class BuImport:
                         #existe stock_ location
                         parent_location_id = self.search('stock.location', [('name','=', almacen)])
                         if not parent_location_id:
-
                             parent_location_id = self.create('stock.location', stock_location)
                             print "Creo el almacen padre: %s con id: %s"%(almacen, parent_location_id)
                         try:

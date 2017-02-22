@@ -164,17 +164,17 @@
                     </group>
                     <group string="Quantities">
                         <div>
-                            Returned:
-                            <field name="returned_qty" nolabel="1" attrs="{'readonly': [('state','=','done')]}"
-                                   class="oe_inline"/>
-                            / Requested:
+                            Requested:
                             <field name="requested_qty" class="oe_inline" attrs="{'readonly': [('state','!=','new')]}"
                                    nolabel="1"/>
+                            / Returned:
+                            <field name="returned_qty" nolabel="1" attrs="{'readonly': [('state','=','done')]}"
+                                   class="oe_inline"/>
                             <field name="uom_id" class="oe_inline" readonly="1"/>
                             <div>
-                            <group>
+                            <group string="Expended" attrs="{'invisible': [('expended_qty','=',0)]}">
                                 <field name="expended_qty" attrs="{'invisible': [('expended_qty','=',0)]}"/>
-                                <field name="request_type"/>
+                                <field name="request_type" attrs="{'readonly': [('state','!=','new')]}"/>
                             </group>
                             </div>
 

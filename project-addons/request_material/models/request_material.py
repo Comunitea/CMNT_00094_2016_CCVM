@@ -358,7 +358,7 @@ class RequestMaterialLine(models.Model):
 
         elif self.state == 'done':
             self.active = False
-        return
+
         return {
             'name': _('Request Material'),
             'view_type': 'form',
@@ -431,7 +431,9 @@ class RequestChangeQtWz(models.TransientModel):
 
     @api.multi
     def apply_changes(self):
-        return
+        if self.returned_qty > self.requested_qty:
+            raise ValidationError(_('Error. You can not return more quatity than delivered'))
+
         return {
             'name': _('Request Material'),
             'view_type': 'form',
