@@ -67,7 +67,7 @@
                 <footer>
                     <button name="create_request" string="Create request" type="object" class="oe_highlight"
                             attrs="{'invisible':[('wz_type','==','return')]}"/>
-                    <!--TODO No creamos request_return. Se hace desde el kanaban
+                <!--TODO No creamos  request_return. Se hace desde el kanaban
                     <button name="create_return" string="Create Return" type="object" class="oe_highlight"
                             attrs="{'invisible':[('wz_type','==','request')]}"/>-->
                     <button string="_Cancel" class="btn-default" special="cancel"/>
