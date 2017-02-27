@@ -106,6 +106,7 @@ class WzRequestMaterial(models.TransientModel):
         request_vals = {'location_dest_id': self.location_dest_id.id}
         new_request_ids = []
         for line in self.line_ids:
+
             if line.requested_qty == 0.00 or line.product_id.qty_available == 0.00:
                 raise ValidationError (_('Request with qty = 0 or stock = 0'))
 
@@ -114,17 +115,13 @@ class WzRequestMaterial(models.TransientModel):
             create_pick = True
             line.request_type = line.request_type or 'to_return'
 
-            if line.request_type == 'to_scrap':
-                returned_qty = 0.00
-            else:
-                returned_qty = line.requested_qty
-
             request_line_vals = {'selected': line.selected,
                                  'user_id': line.user_id.id,
                                  'product_id': line.product_id.id,
                                  'requested_qty': line.requested_qty,
+                                 'pending_qty':0.00,
                                  'request_type': line.request_type,
-                                 'returned_qty': returned_qty,
+                                 'returned_qty': 0.00,
                                  'location_dest_id': self.location_dest_id.id,
                                  'request_date': line.request_date,
                                  'notes': line.notes,
@@ -141,7 +138,7 @@ class WzRequestMaterial(models.TransientModel):
 
             new_request.write({'line_ids': new_request_ids})
 
-            if create_pick and False:
+            if create_pick:
                 new_pick = new_request.create_pick()
 
                 #new_request.do_requested_pick()
@@ -166,6 +163,12 @@ class WzRequestMaterial(models.TransientModel):
 class RequestMaterialWzLine(models.TransientModel):
     _name = 'request.material.wz.line'
 
+    @api.model
+    def default_get(self, fields):
+        #import ipdb; ipdb.set_trace()
+        res = super(RequestMaterialWzLine, self).default_get(fields)
+        return res
+
     request_material_wz_id = fields.Many2one('request.material.wz')
     selected = fields.Boolean("Selected", default=True)
     user_id = fields.Many2one('res.users', default=lambda self: self._uid)
@@ -182,7 +185,7 @@ class RequestMaterialWzLine(models.TransientModel):
                                          "To return: Material must be returned (Quantities)\n"
                                          "Tool : Must be returned always")
     request_date = fields.Datetime(string="Request date", default=fields.Datetime.now)
-    location_dest_id = fields.Many2one(related='request_material_wz_id.location_dest_id')
+    location_dest_id = fields.Many2one('stock.location')
 
     notes = fields.Text(
         'Notes', translate=True,

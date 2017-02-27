@@ -37,23 +37,73 @@
                                 </strong>
                             </div>
                         </group>
+                        <field name="change_qty" invisible="1"/>
 
+                    </group>
+
+                    <group strign="Cantidades">
+                     <group >
+                         <div>
+                         Solicitado:
+                         <button name="minus_requested" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','new')]}"/>
+
+                         <field name="requested_qty" nolabel="1" attrs="{'readonly': [('state','!=','new')]}" style="width:20%%"/>
+
+                         <button name="plus_requested" string="+" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','new')]}"/>
+                         </div>
+
+                         <div align="right">
+                         <button name="apply_new_qty" string="Aplicar cambios" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('change_qty','=',False)]}"/>
+
+                         <button name="apply_requested" string="Sacar de Almacen" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','new')]}"/>
+                        </div>
+                     </group>
+                     <group>
+
+                     </group>
                     </group>
                     <group>
-                        <div>
-                            Returned:
-                            <field name="returned_qty" nolabel="1" attrs="{'readonly': [('state','=','done')]}"
-                                   class="oe_inline"/>
-                            / Requested:
-                            <field name="requested_qty" class="oe_inline" attrs="{'readonly': [('state','!=','new')]}"
-                                   nolabel="1"/>
-                            <field name="uom_id" class="oe_inline" readonly="1"/>
+                         <group >
+                            <div>
+                             A devolver:
 
-                        </div>
+                             <button name="minus_returned" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
+
+                             <field name="returned_qty" attrs="{'readonly': [('state','=','new')]}" nolabel="1" style="width:20%%"/>
+
+                             <button name="plus_returned" string="+" type="object" class="btn-primary " attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
+                             </div>
+
+                             <div align="right" class="btn-primary">
+                             <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('returned_qty','=',0)]}"/>
+                             <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('returned_qty','=',0)]}"/>
+                             </div>
+                         </group>
+
+                         <group >
+                            <div>
+                             Pendiente:
+                             <field name="pending_qty" readonly="1" nolabel="1" style="width:20%%"/>
+                             </div>
+
+                             <div align="right">
+                             <button name="apply_returned_all" string="Todo a Almacen" type="object" class="btn-primary oe_inline"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('pending_qty','=',0)]}"/>
+                             <button name="apply_expensed_all" string="Desechar Todo" type="object" class="btn-primary oe_inline"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('pending_qty','=',0)]}"/>
+                            </div>
+
+                        </group>
                     </group>
+
+                    <field name="uom_id" class="oe_inline" readonly="1"/>
+
+
+
+
                     <footer>
                         <button name="apply_changes" string="_Apply" type="object" class="btn-primary"/>
                         <button string="Cancel" class="btn-default" special="cancel"/>
+
+
                     </footer>
                 </form>
             </field>
@@ -86,7 +136,7 @@
             <field name="model">request.material.line</field>
             <field name="arch" type="xml">
                 <search string="Request">
-
+                    <field name="outbuilding" string="Dependencia"/>
                     <field name="state" string="Open" domain="[('state', '=', 'open')]"/>
                     <separator/>
                     <filter string="My requests" name="user_id" domain="[('user_id','=',uid)]"/>
@@ -96,8 +146,10 @@
 
                     <separator/>
                     <group expand="0" string="Group By">
+                        <filter string="Dependencia" name="Dependencia" context="{'group_by':'outbuilding'}"/>
                         <filter string="State" name="State" context="{'group_by':'state'}"/>
                         <filter string="Create Day" name="Date" context="{'group_by':'request_date:day'}"/>
+
 
                     </group>
                 </search>
@@ -154,6 +206,8 @@
                         <h2>
                             <field name="name" no_label="1" readonly="1"/>
                         </h2>
+                        <field name="request_type" nolabel="1"/>
+
                         <h3>
                             <field name="product_id" no_label="1" readonly="1" invisible="1"/>
                         </h3>
@@ -164,18 +218,22 @@
                     </group>
                     <group string="Quantities">
                         <div>
-                            Requested:
-                            <field name="requested_qty" class="oe_inline" attrs="{'readonly': [('state','!=','new')]}"
+                            Solicitado:
+                            <field name="requested_qty" class="oe_inline" readonly="1"
                                    nolabel="1"/>
-                            /Returned:
-                            <field name="returned_qty" nolabel="1" attrs="{'readonly': [('state','=','done')]}"
+                            / Devuelto:
+                            <field name="returned_qty" nolabel="1" readonly="1"
+                                   class="oe_inline"/>
+                            / Pendiente:
+                            <field name="pending_qty" nolabel="1" readonly="1"
+                                   class="oe_inline"/>
+                            / Utilizado:
+                            <field name="pending_qty" nolabel="1" readonly="1"
                                    class="oe_inline"/>
 
                             <field name="uom_id" class="oe_inline" readonly="1"/>
                             <div>
                             <group>
-                                <field name="expended_qty" attrs="{'invisible': [('expended_qty','=',0)]}"/>
-                                <field name="request_type"/>
                             </group>
                             </div>
 
@@ -229,6 +287,7 @@
                     <field name="state"/>
                     <field name="name"/>
                     <field name="requested_qty"/>
+                    <field name="pending_qty"/>
                     <field name="location_dest_id"/>
                     <field name="request_date"/>
                     <templates>
@@ -253,15 +312,21 @@
                                     <div class="row">
                                         <div class="col-xs-12 o_kanban_primary_left">
                                             <button class="btn btn-primary oe_inline" name="get_next_action"
-                                                    type="object">
+                                                    type="object" invisible="1">
                                                 <span t-if="record.state.raw_value=='new'">
                                                     <field name="requested_qty"/>
                                                     To Deliver
                                                 </span>
                                                 <span t-if="record.state.raw_value=='open'">
-                                                    <field name="returned_qty"/>
-                                                    To Return
+                                                    <field name="pending_qty"/>
+                                                    Pendiente
+
                                                 </span>
+                                                <span t-if="record.state.raw_value=='done'">Hide</span>
+                                            </button>
+
+                                            <button t-if="record.state.raw_value=='done'" class="btn btn-primary oe_inline" name="get_next_action"
+                                                    type="object">
                                                 <span t-if="record.state.raw_value=='done'">Hide</span>
                                             </button>
 
@@ -276,11 +341,13 @@
 
                                     </div>
                                     <div>
-                                        <span>Quantity:
+                                        <span>Solicitado:
                                             <strong>
                                                 <field name="requested_qty"/>
                                                 <field name="uom_id"/>
                                             </strong>
+
+                                            (Pendiente <field name="pending_qty"/>)
                                         </span>
                                     </div>
                                     <div>
