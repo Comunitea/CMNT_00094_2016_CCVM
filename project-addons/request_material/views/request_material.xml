@@ -33,8 +33,12 @@
                                 </strong>
                                 to
                                 <strong>
-                                    <field name="location_dest_id" readonly="1"/>
+                                    <field name="location_dest_id_name" readonly="1"/>
                                 </strong>
+                            </div>
+                            <br/>
+                            <div>
+                                <field name="location_dest_id" attrs="{'readonly': [('state','!=','new')]}"/>
                             </div>
                         </group>
                         <field name="change_qty" invisible="1"/>
@@ -55,7 +59,7 @@
                          <div align="right">
                          <button name="apply_new_qty" string="Aplicar cambios" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('change_qty','=',False)]}"/>
 
-                         <button name="apply_requested" string="Sacar de Almacen" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','new')]}"/>
+                         <button name="apply_requested" string="Sacar de Almacen" type="object" class="btn-primary oe_inline" attrs="{'invisible': ['|',('change_qty','=',True),('state','!=','new')]}"/>
                         </div>
                      </group>
                      <group>
@@ -69,14 +73,14 @@
 
                              <button name="minus_returned" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
 
-                             <field name="returned_qty" attrs="{'readonly': [('state','=','new')]}" nolabel="1" style="width:20%%"/>
+                             <field name="move_qty" attrs="{'readonly': [('state','=','new')]}" nolabel="1" style="width:20%%"/>
 
                              <button name="plus_returned" string="+" type="object" class="btn-primary " attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
                              </div>
 
                              <div align="right" class="btn-primary">
-                             <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('returned_qty','=',0)]}"/>
-                             <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('returned_qty','=',0)]}"/>
+                             <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
+                             <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
                              </div>
                          </group>
 
@@ -100,7 +104,7 @@
 
 
                     <footer>
-                        <button name="apply_changes" string="_Apply" type="object" class="btn-primary"/>
+                        <button name="apply_changes" string="_Apply" type="object" class="btn-primary" invisible="1"/>
                         <button string="Cancel" class="btn-default" special="cancel"/>
 
 
@@ -228,7 +232,7 @@
                             <field name="pending_qty" nolabel="1" readonly="1"
                                    class="oe_inline"/>
                             / Utilizado:
-                            <field name="pending_qty" nolabel="1" readonly="1"
+                            <field name="expended_qty" nolabel="1" readonly="1"
                                    class="oe_inline"/>
 
                             <field name="uom_id" class="oe_inline" readonly="1"/>

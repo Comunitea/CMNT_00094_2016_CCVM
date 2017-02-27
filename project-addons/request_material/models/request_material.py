@@ -32,6 +32,7 @@ class RequestMaterial(models.Model):
         # Crea un picking adecuado, con sus stock_moves
         # los valida, reserva y crea stock_pack_operation
         print 'Crear un pick para %s: %s' % (self.id, type)
+         
 
         new_picking = self.env['stock.picking']
         request_line_vals = []
@@ -41,8 +42,11 @@ class RequestMaterial(models.Model):
         return_picking_type = request_picking_type.return_picking_type_id
         expend_picking_type = wh.expend_type_id
         origin = False
+        request_picking = False
         if type == 'request':
             picking_type = request_picking_type
+            domain = [('request_material_id', '=', self.id), ('picking_type_id', '=', picking_type.id)]
+            request_picking = pick.search(domain, limit=1)
         elif type == 'return':
             picking_type = return_picking_type
             origin = self.picking_ids and self.picking_ids[0].name or ''
@@ -61,9 +65,11 @@ class RequestMaterial(models.Model):
         line = []
 
         for product_line in self.line_ids:
+
             product_line.location_id = request_picking_type.default_location_src_id.id
             if product_line.state != 'new' and type == 'request':
                 raise ValidationError(_('Incorrect request state to ceate a request pick'))
+
             if product_line.selected:
                 line_vals = {
                     'date_expected': product_line.request_date,
@@ -73,20 +79,27 @@ class RequestMaterial(models.Model):
                     'picking_type_id': picking_type.id,
                     'product_id': product_line.product_id.id,
                     'product_uom': product_line.product_id.uom_id.id,
-                    'product_uom_qty': product_line.requested_qty,
+                    'product_uom_qty': product_line.move_qty,
                     'request_material_line_id': product_line.id,
                     'state': 'draft'}
+
+                if type == "request":
+                    if product_line.move_qty > product_line.product_id.qty_available:
+                        raise ValidationError(_('No hay cantidad suficiente\nStock de %s %s'%(product_line.product_id.name, product_line.product_id.uom_id.name)))
+
                 if type == 'return':
                     line_vals['location_id'] = product_line.location_dest_id.id
                     line_vals['location_dest_id'] = product_line.location_id.id
-                    line_vals['product_uom_qty'] = product_line.returned_qty
-                    product_line.pending_qty = product_line.pending_qty - product_line.returned_qty
+                    line_vals['product_uom_qty'] = product_line.move_qty
+                    product_line.pending_qty -= product_line.move_qty
+                    product_line.returned_qty += product_line.move_qty
 
                 if type == 'scrap':
                     line_vals['location_id'] = product_line.location_dest_id.id
                     line_vals['location_dest_id'] = picking_type.default_location_dest_id.id
-                    line_vals['product_uom_qty'] = product_line.returned_qty
-                    product_line.pending_qty = product_line.pending_qty - product_line.returned_qty
+                    line_vals['product_uom_qty'] = product_line.move_qty
+                    product_line.pending_qty -= product_line.move_qty
+                    product_line.expended_qty += product_line.move_qty
 
             line += [[0, False, line_vals]]
 
@@ -101,12 +114,12 @@ class RequestMaterial(models.Model):
             'origin': origin
         }
         # busco pick y si no lo creo, solo en request, en return se crea siempre (se crea, y se ejecuta
-        request_picking = False
+
         if type == 'request':
             vals['location_id'] = picking_type.default_location_src_id.id
             vals['location_dest_id'] = self.location_dest_id.id
-            domain = [('request_material_id', '=', self.id), ('picking_type_id', '=', picking_type.id)]
-            request_picking = pick.search(domain, limit=1)
+
+
         elif type == 'return':
             vals['location_id'] = self.location_dest_id.id
             vals['location_dest_id'] = request_picking_type.default_location_src_id.id
@@ -117,13 +130,36 @@ class RequestMaterial(models.Model):
 
         if not request_picking:
             request_picking = pick.create(vals)
-            self.picking_ids = [(4, request_picking.id)]
+
+
+        self.picking_ids = [(4, request_picking.id)]
         res = self.request_pick_action_asign(request_picking)
         return request_picking
 
+    def pick_update_moves(self, pick=False):
+        if not pick:
+            pick= self.picking_ids and self.picking_ids[0]
+        if not pick:
+            raise ValidationError(_('Pick Error'))
+
+        for product_line in self.line_ids:
+
+            line_vals = {
+                'date_expected': product_line.request_date,
+                'location_dest_id': product_line.location_dest_id.id,
+                'product_uom_qty': product_line.requested_qty,}
+
+
+            if product_line.requested_qty>product_line.product_id.qty_available:
+                raise ValidationError(_('No hay cantidad suficiente\nStock de %s %s'%(product_line.product_id.name, product_line.product_id.uom_id.name)))
+
+            pick.move_lines.write ([[1, product_line.move_line_ids[0], line_vals]])
+        return True
+
+
 
     def request_pick_action_asign(self, pick=False):
-
+         
         if not pick:
             pick= self.picking_ids and self.picking_ids[0]
 
@@ -137,6 +173,8 @@ class RequestMaterial(models.Model):
         if not pick.action_assign():
             raise ValidationError(_('Error en action assign. No stock'))
 
+        #if not pick.state=="assigned":
+        #    raise ValidationError(_('Error en el picking. Stock insuficiente en la ubicacion de aprovisionamiento'))
 
         for line in self.line_ids:
             product_id = line.product_id
@@ -155,7 +193,7 @@ class RequestMaterial(models.Model):
             for move in pick.move_lines:
                 if move.product_id == product_id:
 
-                    line.move_line_ids = [(4, move.id)]
+                    #line.move_line_ids = [(4, move.id)]
                     move.location_id = line.location_id
         for op in pick.pack_operation_product_ids:
             op.qty_done = op.product_qty
@@ -171,19 +209,24 @@ class RequestMaterial(models.Model):
         #res = self.request_pick_action_asign(pick)
 
         res = pick.do_transfer()
+
+
         if res:
             for line in self.line_ids:
                 line.state = "open"
         return True
 
     def do_return_pick(self, type='return', pick = False):
+         
         wh = self.env['stock.warehouse'].browse([1])
         request_picking_type = wh.request_type_id
         return_picking_type = request_picking_type.return_picking_type_id
         expend_picking_type = wh.expend_type_id
+
         if type == 'return':
             picking_type_id = return_picking_type
             location_dest_id = return_picking_type.default_location_dest_id.id
+            new_loc= False
             for op in self.picking_ids[0].pack_operation_ids:
                 new_loc = False
                 if op.product_id == self.line_ids[0].product_id:
@@ -206,8 +249,9 @@ class RequestMaterial(models.Model):
             for op in pick.pack_operation_product_ids:
                 if op.product_id == line.product_id:
                     line.pack_operation_product_ids = [(4, op.id)]
-                    qty_done = line.returned_qty
+                    qty_done = line.move_qty
                     op.qty_done = qty_done
+
                     op.location_dest_id = location_dest_id or line.location_id
             for move in pick.move_lines:
                 if move.product_id == line.product_id:
@@ -216,6 +260,7 @@ class RequestMaterial(models.Model):
 
 
         res = pick.do_transfer()
+
         return
         return {
             'name': _('Request Material'),
@@ -282,6 +327,7 @@ class RequestMaterialLine(models.Model):
     uom_id = fields.Many2one(related="product_id.uom_id")
     location_dest_id = fields.Many2one('stock.location', domain=[('outbuilding_location','=',True)])
     outbuilding = fields.Char(related='location_dest_id.name', string="Outbuilding")
+
     notes = fields.Text(
         'Notes', translate=True,
         help="Comments about this request")
@@ -293,8 +339,8 @@ class RequestMaterialLine(models.Model):
                              string='Status', required=True, readonly=True,
                              copy=False, default='new')
     color = fields.Integer('Kanban State Color Index', compute="get_color")
-
-    expended_qty = fields.Float('Expended quantity', compute=_get_expended_qty)
+    move_qty = fields.Float('Move quantity')
+    expended_qty = fields.Float('Expended quantity')
     returned_qty = fields.Float('Returned quantity', default=_get_returned_qty)
     pending_qty = fields.Float('Pending quantity')
 
@@ -350,6 +396,7 @@ class RequestMaterialLine(models.Model):
 
 
         elif self.state == 'open':
+
             self.check_return_picks(scrap=scrap)
 
         elif self.state == 'done':
@@ -365,9 +412,9 @@ class RequestMaterialLine(models.Model):
             'context': self.env.context}
 
     def check_return_picks(self, scrap=False):
-
-        print "returned qty : %s. Expended_qty: %s" % (self.returned_qty, self.expended_qty)
-        if not self.returned_qty:
+         
+        print "returned qty : %s. Expended_qty: %s" % (self.move_qty, self.expended_qty)
+        if not self.move_qty:
             raise ValidationError(_('Error no hay cantidad a devolver'))
         if scrap:
             type="scrap"
@@ -384,7 +431,7 @@ class RequestMaterialLine(models.Model):
 
 
         #self.pending_qty = self.pending_qty - self.returned_qty
-        self.returned_qty = 0.00
+        self.move_qty = 0.00
         if self.pending_qty == 0.00:
             self.state="done"
         return True
@@ -407,6 +454,24 @@ class RequestMaterialLine(models.Model):
             'context': self.env.context,
         }
 
+    def update_move_from_request(self, move=False):
+
+        for product_line in self:
+            for move in product_line.move_line_ids:
+                if move.product_id == product_line.product_id:
+                    line_vals = {
+                        'date_expected': product_line.request_date,
+                        'location_dest_id': product_line.location_dest_id.id,
+                        'product_uom_qty': product_line.requested_qty, }
+
+                    if product_line.requested_qty > product_line.product_id.qty_available:
+                        raise ValidationError(_('No hay cantidad suficiente\nStock de %s >> %s %s' % (
+                        product_line.product_id.name, product_line.product_id.qty_available, product_line.product_id.uom_id.name)))
+                    print "actualizando movimiento a %s"%line_vals
+                    move.write(line_vals)
+
+        return True
+
 
 class RequestChangeQtWz(models.TransientModel):
 
@@ -416,21 +481,26 @@ class RequestChangeQtWz(models.TransientModel):
     request_line_id = fields.Many2one('request.material.line')
     requested_qty = fields.Float(related='request_line_id.requested_qty')
     pending_qty = fields.Float(related='request_line_id.pending_qty')
-    returned_qty = fields.Float(related='request_line_id.returned_qty')
+    move_qty = fields.Float(related='request_line_id.move_qty')
 
     product_id = fields.Many2one(related='request_line_id.product_id', readonly=1)
     location_id = fields.Char(related='request_line_id.location_id.name', readonly=1)
-    location_dest_id = fields.Char(related='request_line_id.location_dest_id.name', readonly=1)
+    location_dest_id_name = fields.Char(related='request_line_id.location_dest_id.name')
+    location_dest_id = fields.Many2one(related='request_line_id.location_dest_id',
+                                       domain=[('outbuilding_location', '=', True)])
     uom_id = fields.Many2one(related="product_id.uom_id")
     state = fields.Selection(related='request_line_id.state')
     change_qty = fields.Boolean("Change_qty")
 
-    @api.onchange('requested_qty')
+    @api.onchange('requested_qty','location_dest_id')
     def onchange_qties(self):
-        if self.request_line_id.request_type != 'to_scrap' and self.state == 'new':
-            self.pending_qty = self.requested_qty
 
+        if self.move_qty > self.requested_qty and self.state=='open':
+            raise ValidationError(_('Error. You can not return more quatity than delivered'))
+        if self.move_qty:
+            self.move_qty = self.requested_qty
         self.change_qty = True
+        return True
 
     @api.multi
     def apply_new_qty(self):
@@ -443,46 +513,43 @@ class RequestChangeQtWz(models.TransientModel):
 
 
         pick = self.request_line_id.request_material_id.picking_ids[0]
+        pick.location_dest_id = self.location_dest_id
         print pick
         pick.do_unreserve()
-        if self.request_line_id.move_line_ids:
-            self.request_line_id.move_line_ids[0].product_uom_qty = self.requested_qty
+        self.move_qty = self.requested_qty
+        self.pending_qty = self.move_qty
+        if self.request_line_id.request_type!='scrap':
+            self.returned_qty=self.move_qty
 
+        update_moves = self.request_line_id.update_move_from_request()
         pick = self.request_line_id.request_material_id.request_pick_action_asign(pick)
         self.change_qty=False
-        return True
+        return self.return_wz()
 
     @api.multi
     def apply_changes(self):
 
-        if self.returned_qty > self.requested_qty:
+        if self.move_qty > self.requested_qty and self.state=='open':
             raise ValidationError(_('Error. You can not return more quatity than delivered'))
+        return self.return_wz()
 
-        return {
-            'name': _('Request Material'),
-            'view_type': 'form',
-            'view_mode': 'kanban,tree,form',
-            'res_model': 'request.material.line',
-            'type': 'ir.actions.act_window',
-            'context': self.env.context}
 
 
     @api.multi
     def apply_returned_all(self):
-        self.returned_qty = self.pending_qty
+        self.move_qty = self.pending_qty
         return self.apply_returned()
 
     @api.multi
     def apply_expensed_all(self):
-        self.returned_qty = self.pending_qty
+        self.move_qty = self.pending_qty
         return self.apply_expensed()
 
     @api.multi
     def apply_requested(self):
-        if self.change_qty:
-            self.apply_new_qty()
+
         request = self.request_line_id
-        if self.returned_qty > self.requested_qty:
+        if self.move_qty > self.requested_qty:
             raise ValidationError(_('Error. No puedes devolver esa cantidad'))
         if self.state!='new':
             raise ValidationError(_('Error. Estado erroneo de la solicitud. Ya ha sido entregada'))
@@ -491,7 +558,7 @@ class RequestChangeQtWz(models.TransientModel):
     @api.multi
     def apply_returned(self):
         request = self.request_line_id
-        if self.returned_qty > self.requested_qty:
+        if self.move_qty > self.requested_qty:
             raise ValidationError(_('Error. No puedes devolver esa cantidad'))
         if self.state != 'open':
             raise ValidationError(_('Error. Estado erroneo de la solicitud. No esta abierta'))
@@ -510,28 +577,36 @@ class RequestChangeQtWz(models.TransientModel):
     def minus_requested(self):
         if not self.requested_qty==0.00:
             self.requested_qty -=1
+            self.change_qty = True
+
         return self.return_wz()
 
     @api.multi
     def plus_requested(self):
         if self.requested_qty < self.product_id.virtual_available:
             self.requested_qty += 1
+            self.change_qty = True
+
+
         return self.return_wz()
 
     @api.multi
     def minus_returned(self):
-        if not self.returned_qty == 0.00:
-            self.returned_qty -= 1
+        if not self.move_qty == 0.00:
+            self.move_qty -= 1
+            #self.change_qty = True
         return self.return_wz()
 
     @api.multi
     def plus_returned(self):
-        if self.returned_qty < self.pending_qty:
-            self.returned_qty += 1
+        if self.move_qty < self.pending_qty:
+            self.move_qty += 1
+            #self.change_qty = True
 
         return self.return_wz()
 
     def return_wz(self):
+
         return {
             "type": "ir.actions.do_nothing",
         }

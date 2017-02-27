@@ -126,7 +126,8 @@ class WzRequestMaterial(models.TransientModel):
                                  'request_date': line.request_date,
                                  'notes': line.notes,
                                  'state': line.state,
-                                 'request_material_id': new_request.id}
+                                 'request_material_id': new_request.id,
+                                 'move_qty': line.requested_qty}
 
             if line.request_material_line_id:
                 new_request_ids.append((1, line.request_material_line_id.id, request_line_vals))
