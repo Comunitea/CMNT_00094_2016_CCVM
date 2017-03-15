@@ -11,7 +11,7 @@
     'license': 'AGPL-3',
     'description': 'Request Material',
     'depends': [
-        'base', 'product', 'stock'
+        'base', 'product', 'stock', 'purchase_requisition'
     ],
     'contributors': [
         "Comunitea",

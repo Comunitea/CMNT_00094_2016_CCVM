@@ -31,11 +31,16 @@ class WzRequestMaterial(models.TransientModel):
         request = self.env['request.material']
         request_vals = {'location_dest_id': self.location_dest_id.id}
         new_request_ids = []
+        purchase_lines = []
         for line in self.line_ids:
 
-            if line.requested_qty == 0.00 or \
-                    line.product_id.qty_available == 0.00:
+            if line.requested_qty == 0.00:
                 raise ValidationError(_('Request with qty = 0 or stock = 0'))
+            if line.requested_qty > line.product_id.qty_available:
+                line.state = 'stock_error'
+                purchase_lines.append(
+                    {'product_id': line.product_id.id,
+                     'product_qty': line.requested_qty - line.product_id.qty_available})
 
             new_request_ids = []
             new_request = request.create(request_vals)
@@ -69,7 +74,10 @@ class WzRequestMaterial(models.TransientModel):
 
             if create_pick:
                 new_pick = new_request.create_pick()
-
+        if purchase_lines:
+            self.env['purchase.requisition'].create(
+                {'line_ids': [(0, 0, x) for x in purchase_lines],
+                 'origin': 'solicitud'})
         context = dict(self.env.context or {})
         return {
             'name': _('Request Material'),
@@ -121,21 +129,18 @@ class RequestMaterialWzLine(models.TransientModel):
     state = fields.Selection([('new', 'New'),
                               ('open', 'Open'),
                               ('done', 'Delivered'),
+                              ('stock_error', 'Stock error'),
                               ('closed', 'Closed')
                               ],
                              string='Status', required=True, readonly=True,
                              copy=False, default='new')
 
-    @api.onchange('requested_qty')
+    @api.onchange('requested_qty', 'product_id')
     def onchange_requested_qty(self):
         if self.product_id:
-            if self.product_id.qty_available < self.requested_qty:
+            if self.requested_qty > self.product_id.qty_available:
                 raise ValidationError(
-                    _('No hay cantidad suficiente\nStock de %s %s' %
+                    _('No hay cantidad suficiente. \nStock de %s %s' %
                         (self.product_id.name, self.product_id.uom_id.name)))
 
             self.request_type = self.product_id.product_tmpl_id.request_type
-
-    @api.multi
-    def create(self, vals):
-        return super(RequestMaterialWzLine, self).create(vals)

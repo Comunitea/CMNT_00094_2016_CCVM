@@ -202,6 +202,9 @@
                         <button name="change_qty" states="open"
                             string="Change qty to return" type="object"
                             icon="fa-exchange" class="oe_highlight"/>
+                        <button name="check_stock" states="stock_error"
+                            string="Check stock" type="object"
+                            icon="fa-exchange" class="oe_highlight"/>
 
                         <field name="state" widget="statusbar" nolabel="1" readonly="1" />
                     </header>

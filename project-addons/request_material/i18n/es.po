@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* request_material
+#   * request_material
 #
 msgid ""
 msgstr ""
@@ -14,6 +14,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+
+#. module: request_material
+#: model:ir.ui.view,arch_db:request_material.request_material_form_view
+msgid "Check stock"
+msgstr "Comprobar stock"
+
+
+#. module: request_material
+#: selection:request.material.line,state:0
+#: selection:request.material.wz.line,state:0
+msgid "Stock error"
+msgstr "Error en stock"
 
 #. module: request_material
 #: model:ir.model.fields,field_description:request_material.field_res_users_sale_order_count
@@ -876,4 +889,3 @@ msgstr "request.material.wz.line"
 #: model:ir.ui.view,arch_db:request_material.view_request_change_qties
 msgid "to"
 msgstr "a"
-

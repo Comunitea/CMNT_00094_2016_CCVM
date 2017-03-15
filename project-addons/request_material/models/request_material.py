@@ -68,9 +68,9 @@ class RequestMaterial(models.Model):
         for product_line in self.line_ids:
 
             product_line.location_id = request_picking_type.default_location_src_id.id
-            if product_line.state != 'new' and type == 'request':
+            '''if product_line.state != 'new' and type == 'request':
                 raise ValidationError(
-                    _('Incorrect request state to ceate a request pick'))
+                    _('Incorrect request state to ceate a request pick'))'''
 
             if product_line.selected:
                 line_vals = {
@@ -84,13 +84,6 @@ class RequestMaterial(models.Model):
                     'product_uom_qty': product_line.move_qty,
                     'request_material_line_id': product_line.id,
                     'state': 'draft'}
-
-                if type == "request":
-                    if product_line.move_qty > product_line.product_id.qty_available:
-                        raise ValidationError(
-                            _('No hay cantidad suficiente\nStock de %s %s' %
-                                (product_line.product_id.name,
-                                 product_line.product_id.uom_id.name)))
 
                 if type == 'return':
                     line_vals['location_id'] = product_line.location_dest_id.id
@@ -336,6 +329,7 @@ class RequestMaterialLine(models.Model):
         help="Comments about this request")
     state = fields.Selection([('new', 'New'),
                               ('open', 'Delivered'),
+                              ('stock_error', 'Stock error'),
                               ('done', 'Returned'),
                               ('closed', 'Closed')
                               ],
@@ -436,6 +430,11 @@ class RequestMaterialLine(models.Model):
         return True
 
     @api.multi
+    def check_stock(self):
+        if self.requested_qty <= self.product_id.qty_available:
+            self.state = 'new'
+
+    @api.multi
     def change_qty(self):
 
         view = self.env.ref('request_material.view_request_change_qties')
@@ -455,7 +454,6 @@ class RequestMaterialLine(models.Model):
         }
 
     def update_move_from_request(self, move=False):
-
         for product_line in self:
             for move in product_line.move_line_ids:
                 if move.product_id == product_line.product_id:
