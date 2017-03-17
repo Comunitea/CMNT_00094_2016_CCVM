@@ -1,6 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+
+        <record id="asterisk_activecall_kanban_view" model="ir.ui.view">
+            <field name="name">asterisk_activecall_kanban</field>
+            <field name="model">asterisk.activecall</field>
+            <field name="arch" type="xml">
+                <kanban class="oe_background_grey o_kanban_dashboard o_project_kanban" default_group_id="state" create="0">
+                    <field name="state"/>
+                    <field name="partner_id"/>
+                    <field name="call_id"/>
+                    <field name="wait_time"/>
+                    <field name="talk_time"/><field name="call_bilsec"/>
+
+                    <field name="state"/>
+                    <field name="call_connectedline"/>
+                    <field name="call_cdrdest_channel"/>
+                    <field name="call_cdrseconds"/>
+
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="o_project_kanban_main">
+                                    <div class="o_kanban_card_content o_visible">
+                                        <div class="o_kanban_primary_left">
+                                            <!--<div class="o_primary">
+                                                <span>
+                                                    <strong>
+                                                        <field name="call_id"/>
+                                                    </strong>
+                                                </span>
+                                            </div>-->
+                                            <div class="text-muted">
+                                                <button class="btn btn-primary oe_inline" name="action_view_active_calls"
+                                                type="object">
+                                                    <field name="partner_id"/>: <field name ="call_src"/>
+                                                </button>
+
+                                            </div>
+                                            <div class="text-muted">
+                                                <strong>
+                                                    <field name="asterisk_dest_phone_id"/>: <field name="call_dst"/>
+                                                </strong>
+                                            </div>
+                                            <div class="text-muted">
+                                                <strong>
+                                                    <field name="state"/>
+                                                </strong>
+                                            </div>
+
+                                            <div class="text-muted">
+                                                <strong>
+                                                    <field name="call_connectedline"/>
+                                                </strong>
+
+                                            </div>
+                                            <div class="text-muted">
+                                                <field name="description"/>
+                                            </div>
+                                            <div class="text-muted">
+                                                <div><field name="call_channel"/></div>
+                                                <div><field name="call_context"/></div>
+                                                <div><field name="from_e"/></div>
+                                                <div><field name="write_date"/></div>
+                                                <div><field name="call_hangupcause"/></div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="o_project_kanban_boxes">
+                                    <div class="o_project_kanban_box">
+                                        <span t-if="record.state.raw_value=='R'" name="%(action_view_active_calls)d" type="action">
+                                            <span class="o_label">
+                                                <field name="wait_time" widget="gauge" style="width:75%;height: 25%; cursor: pointer;"/>
+                                            </span>
+                                        </span>
+                                        <span t-if="record.state.raw_value=='A'" name="%(action_view_active_calls)d" type="action">
+                                            <span class="o_label">
+                                                <field name="call_bilsec" widget="gauge" style="width:75%;height: 25%; cursor: pointer;"/>
+                                            </span>
+                                        </span>
+                                        <span t-if="record.state.raw_value in ['A','NR']" name="%(action_view_active_calls)d" type="action">
+                                            <span class="o_label">
+                                                <field name="call_cdrseconds" widget="gauge" style="width:75%;height: 25%; cursor: pointer;"/>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
+
+
+
+
+
+
+        <menuitem name="Asterisk" id="asterisk_menu" groups="group_asteriskcdr_user" sequence="2"/>
+        <record id="action_view_active_calls" model="ir.actions.act_window">
+            <field name="name">Active Calls</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">asterisk.activecall</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="asterisk_activecall_kanban_view"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a active call.
+                </p>
+            </field>
+        </record>
+         <record id="action_view_asterisk_linked_phones" model="ir.actions.act_window">
+            <field name="name">Asterisk Linked Phones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">asterisk.phone</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a active call.
+                </p>
+            </field>
+        </record>
+        <menuitem name="Active Calls" id="asterisk_active_calls" parent ="asterisk_menu"
+        action ="action_view_active_calls"/>
+        <menuitem name="Asterisk Phones" id="asterisk_linked_phones" parent ="asterisk_menu"
+        action ="action_view_asterisk_linked_phones"/>
+
+    </data>
+</openerp>
+        <!--
+
+        <menuitem id="menu_stock_request_material_control_2" groups="group_request_material_user"
+                  name="Requests Material" parent="menu_request_material_root" sequence="3"/>
         <menuitem name="Request" id="menu_request_material_root" sequence="30"
         groups="group_request_material_user"
         web_icon="stock,static/description/icon.png"/>
@@ -307,7 +452,7 @@
                                             </a>
                                         </div>
                                         <div class="o_secondary">
-                                            <!--<field class="o_secondary" name="state"/>-->
+                                            &lt;!&ndash;<field class="o_secondary" name="state"/>&ndash;&gt;
                                         </div>
 
                                     </div>
@@ -434,3 +579,4 @@
 
     </data>
 </openerp>
+-->
