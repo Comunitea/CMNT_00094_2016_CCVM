@@ -72,6 +72,21 @@
                 </xpath>
             </field>
         </record>
+
+        <record id="view_purchase_requisition_form_request_material" model="ir.ui.view">
+            <field name="name">view.purchase.requisition.form.req.material</field>
+            <field name="model">purchase.requisition</field>
+            <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='origin']" position="after">
+                    <label for="request_material_id" string=" "/>
+                    <field name="request_material_id" nolabel="1" attrs="{'invisible': [('origin', '!=', 'solicitud')]}"/>
+                </xpath>
+            </field>
+        </record>
+
+
+
     </data>
 </openerp>
 

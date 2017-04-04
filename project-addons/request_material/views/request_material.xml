@@ -69,18 +69,14 @@
                     <group>
                          <group >
                             <div>
-                             A devolver:
-
-                             <button name="minus_returned" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
-
-                             <field name="move_qty" attrs="{'readonly': [('state','=','new')]}" nolabel="1" style="width:20%%"/>
-
-                             <button name="plus_returned" string="+" type="object" class="btn-primary " attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
+                                 A devolver:
+                                 <button name="minus_returned" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
+                                 <field name="move_qty" attrs="{'readonly': [('state','=','new')]}" nolabel="1" style="width:20%%"/>
+                                 <button name="plus_returned" string="+" type="object" class="btn-primary " attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
                              </div>
-
                              <div align="right">
-                             <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
-                             <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
+                                 <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
+                                 <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
                              </div>
                          </group>
 

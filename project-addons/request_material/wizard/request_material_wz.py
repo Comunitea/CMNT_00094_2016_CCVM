@@ -40,6 +40,7 @@ class WzRequestMaterial(models.TransientModel):
                 line.state = 'stock_error'
                 purchase_lines.append(
                     {'product_id': line.product_id.id,
+                     'product_uom_id': line.uom_id.id,
                      'product_qty': line.requested_qty - line.product_id.qty_available})
 
             new_request_ids = []
@@ -78,6 +79,8 @@ class WzRequestMaterial(models.TransientModel):
             self.env['purchase.requisition'].create(
                 {'line_ids': [(0, 0, x) for x in purchase_lines],
                  'origin': 'solicitud'})
+
+
         context = dict(self.env.context or {})
         return {
             'name': _('Request Material'),

@@ -60,3 +60,10 @@ class StockPackOperationProduct(models.Model):
     _inherit = "stock.pack.operation"
     request_material_line_id = fields.Many2one("request.material.line",
                                                "Request Material Line")
+
+
+class PurchaseRequistion(models.Model):
+    _inherit = "purchase.requisition"
+
+    request_material_id = fields.Many2one('request.material')
+
