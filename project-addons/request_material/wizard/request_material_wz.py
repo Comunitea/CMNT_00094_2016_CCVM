@@ -85,9 +85,11 @@ class WzRequestMaterial(models.TransientModel):
                 new_pick = new_request.create_pick()
 
         if purchase_requestion_lines:
-            self.env['purchase.requisition'].create(
+
+            prl = self.env['purchase.requisition'].create(
                 {'line_ids': [(0, 0, x) for x in purchase_requestion_lines],
                  'origin': 'solicitud'})
+            print "Hay solicitudes de compra: %s" %prl
 
         if purchases:
             #creo un procurement.rule
@@ -105,6 +107,7 @@ class WzRequestMaterial(models.TransientModel):
                         'qty': purchase_line['product_qty']
                         }
                 new_procurement = self.env['make.procurement'].create(vals)
+                print "Hay solicitudes de compra: %s" % new_procurement
                 new_procurement.make_procurement()
 
         context = dict(self.env.context or {})
