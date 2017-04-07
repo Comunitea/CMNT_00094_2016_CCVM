@@ -82,7 +82,6 @@ class WzRequestMaterial(models.TransientModel):
             new_request.write({'line_ids': new_request_ids})
 
             if create_pick:
-                import ipdb; ipdb.set_trace()
                 new_pick = new_request.create_pick()
 
         if purchase_requestion_lines:
