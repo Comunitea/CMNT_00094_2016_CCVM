@@ -31,17 +31,25 @@ class WzRequestMaterial(models.TransientModel):
         request = self.env['request.material']
         request_vals = {'location_dest_id': self.location_dest_id.id}
         new_request_ids = []
-        purchase_lines = []
+        purchase_requestion_lines = []
+        purchases = []
         for line in self.line_ids:
 
             if line.requested_qty == 0.00:
                 raise ValidationError(_('Request with qty = 0 or stock = 0'))
             if line.requested_qty > line.product_id.qty_available:
                 line.state = 'stock_error'
-                purchase_lines.append(
-                    {'product_id': line.product_id.id,
-                     'product_uom_id': line.uom_id.id,
-                     'product_qty': line.requested_qty - line.product_id.qty_available})
+
+                new_purchase_line = {'product_id': line.product_id.id,
+                                     'product_uom_id': line.uom_id.id,
+                                     'product_qty': line.requested_qty - line.product_id.qty_available}
+
+
+                if line.product_id.seller_ids:
+                    new_purchase_line['partner_id'] = line.product_id.seller_ids[0].name.id
+                    purchases.append(new_purchase_line)
+                else:
+                    purchase_requestion_lines.append(new_purchase_line)
 
             new_request_ids = []
             new_request = request.create(request_vals)
@@ -74,12 +82,31 @@ class WzRequestMaterial(models.TransientModel):
             new_request.write({'line_ids': new_request_ids})
 
             if create_pick:
+                import ipdb; ipdb.set_trace()
                 new_pick = new_request.create_pick()
-        if purchase_lines:
+
+        if purchase_requestion_lines:
             self.env['purchase.requisition'].create(
-                {'line_ids': [(0, 0, x) for x in purchase_lines],
+                {'line_ids': [(0, 0, x) for x in purchase_requestion_lines],
                  'origin': 'solicitud'})
 
+        if purchases:
+            #creo un procurement.rule
+
+            domain = [('name', '=', 'Comprar')]
+            route = self.env['stock.location.route'].search(domain)
+            if not route:
+                raise ValidationError ("No se encuentra ruta de aprovisionamiento 'comprar'")
+            wh = self.env['stock.warehouse'].browse([1])
+            for purchase_line in purchases:
+                vals = {'action': 'buy',
+                        'warehouse_id': wh.id,
+                        'product_id': purchase_line['product_id'],
+                        'route_ids': (6, 0, route.id),
+                        'qty': purchase_line['product_qty']
+                        }
+                new_procurement = self.env['make.procurement'].create(vals)
+                new_procurement.make_procurement()
 
         context = dict(self.env.context or {})
         return {

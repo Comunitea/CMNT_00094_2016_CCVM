@@ -42,6 +42,18 @@ class StockPicking(models.Model):
         # request_material_id
         return super(StockPicking, self).write(vals)
 
+    def _prepare_pack_ops(self, quants, forced_qties):
+        vals = super(StockPicking, self)._prepare_pack_ops(quants, forced_qties)
+        wh = self.env['stock.warehouse'].browse([1])
+        for val in vals:
+            if self.picking_type_id == wh.in_type_id:
+                domain = [('product_id', '=', val['product_id']), ('location_id', 'child_of', wh.lot_stock_id.id)]
+                quant = self.env['stock.quant'].search(domain, order="qty desc", limit=1)
+                if quant:
+                    val['location_dest_id'] = quant.location_id.id
+        return vals
+
+
 
 class StockMove(models.Model):
     _inherit = "stock.move"

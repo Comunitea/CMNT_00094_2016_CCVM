@@ -33,6 +33,7 @@ class RequestMaterial(models.Model):
                     "Outbuilding"
 
     def create_pick(self, type='request'):
+
         # Crea un picking adecuado, con sus stock_moves
         # los valida, reserva y crea stock_pack_operation
         print 'Crear un pick para %s: %s' % (self.id, type)

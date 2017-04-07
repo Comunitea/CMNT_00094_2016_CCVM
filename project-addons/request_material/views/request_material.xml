@@ -50,15 +50,12 @@
                          <div>
                          Solicitado:
                          <button name="minus_requested" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','new')]}"/>
-
                          <field name="requested_qty" nolabel="1" attrs="{'readonly': [('state','!=','new')]}" style="width:20%%"/>
-
                          <button name="plus_requested" string="+" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','new')]}"/>
                          </div>
 
                          <div align="right">
                          <button name="apply_new_qty" string="Aplicar cambios" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('change_qty','=',False)]}"/>
-
                          <button name="apply_requested" string="Sacar de Almacen" type="object" class="btn-primary oe_inline" attrs="{'invisible': ['|',('change_qty','=',True),('state','!=','new')]}"/>
                         </div>
                      </group>
@@ -70,25 +67,25 @@
                          <group >
                             <div>
                                  A devolver:
-                                 <button name="minus_returned" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
-                                 <field name="move_qty" attrs="{'readonly': [('state','=','new')]}" nolabel="1" style="width:20%%"/>
-                                 <button name="plus_returned" string="+" type="object" class="btn-primary " attrs="{'invisible': [('state','in',['new', 'done'])]}"/>
+                                 <button name="minus_returned" string="-" type="object" class="btn-primary oe_inline" attrs="{'invisible': [('state','!=','open')]}"/>
+                                 <field name="move_qty" attrs="{'readonly': [('state','!','open')]}" nolabel="1" style="width:20%%"/>
+                                 <button name="plus_returned" string="+" type="object" class="btn-primary " attrs="{'invisible': [('state','!=','open')]}"/>
                              </div>
                              <div align="right">
-                                 <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
-                                 <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('move_qty','=',0)]}"/>
+                                 <button name="apply_returned" string="A Almacen" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','!=','open'),('move_qty','=',0)]}"/>
+                                 <button name="apply_expensed" string="Desechar" type="object" class="btn-primary oe_inline right"  attrs="{'invisible': ['|',('state','!=','open'),('move_qty','=',0)]}"/>
                              </div>
                          </group>
 
                          <group >
                             <div>
-                             Pendiente:
-                             <field name="pending_qty" readonly="1" nolabel="1" style="width:20%%"/>
-                             </div>
+                                 Pendiente:
+                                 <field name="pending_qty" readonly="1" nolabel="1" style="width:20%%"/>
+                                 </div>
 
-                             <div align="right">
-                             <button name="apply_returned_all" string="Todo a Almacen" type="object" class="btn-primary oe_inline"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('pending_qty','=',0)]}"/>
-                             <button name="apply_expensed_all" string="Desechar Todo" type="object" class="btn-primary oe_inline"  attrs="{'invisible': ['|',('state','in',['new', 'done']),('pending_qty','=',0)]}"/>
+                                 <div align="right">
+                                 <button name="apply_returned_all" string="Todo a Almacen" type="object" class="btn-primary oe_inline"  attrs="{'invisible': ['|',('state','!=','open'),('pending_qty','=',0)]}"/>
+                                 <button name="apply_expensed_all" string="Desechar Todo" type="object" class="btn-primary oe_inline"  attrs="{'invisible': ['|',('state','!=','open'),('pending_qty','=',0)]}"/>
                             </div>
 
                         </group>
@@ -333,13 +330,17 @@
                                                 <span t-if="record.state.raw_value=='done'">Hide</span>
                                             </button>
 
-
-                                            <button t-if="record.state.raw_value!='done'"
-                                                    class="btn btn-primary oe_inline" name="change_qty" type="object">
-                                                <span t-if="record.state.raw_value=='new'">Change qty to deliver</span>
-                                                <span t-if="record.state.raw_value!='new'">Change qty to return</span>
-                                            </button>
-
+                                            <div attrs="{'invisible': [('state', 'not in', ('new', 'open'))]}">
+                                                <button  class="btn btn-primary oe_inline" name="change_qty" type="object">
+                                                    <span t-if="record.state.raw_value=='new'">Change qty to deliver</span>
+                                                    <span t-if="record.state.raw_value=='open'">Change qty to return</span>
+                                                </button>
+                                            </div>
+                                            <div attrs="{'invisible': [('state', '!=', 'stock_error')]}">
+                                                <button class="btn btn-primary oe_inline" name="check_stock" type="object">
+                                                    <span>Comprobar Stock</span>
+                                                </button>
+                                            </div>
                                         </div>
 
                                     </div>
