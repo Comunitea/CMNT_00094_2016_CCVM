@@ -31,19 +31,29 @@ class WzRequestMaterial(models.TransientModel):
         request = self.env['request.material']
         request_vals = {'location_dest_id': self.location_dest_id.id}
         new_request_ids = []
+        new_available = []
+        new_to_buy = []
         purchase_requestion_lines = []
         purchases = []
         for line in self.line_ids:
-
+            new_available = []
+            new_to_buy = []
             if line.requested_qty == 0.00:
                 raise ValidationError(_('Request with qty = 0 or stock = 0'))
-            if line.requested_qty > line.product_id.qty_available:
+            requested_qty = line.requested_qty
+            qty_to_buy = 0.00
+            pending_qty = 0.00
+            if requested_qty > line.product_id.qty_available:
+                requested_qty = line.product_id.qty_available
+                qty_to_buy = line.requested_qty - line.product_id.qty_available
+                pending_qty = qty_to_buy - requested_qty
                 line.state = 'stock_error'
 
                 new_purchase_line = {'product_id': line.product_id.id,
                                      'product_uom_id': line.uom_id.id,
-                                     'product_qty': line.requested_qty - line.product_id.qty_available}
+                                     'product_qty': qty_to_buy}
 
+                print new_purchase_line
 
                 if line.product_id.seller_ids:
                     new_purchase_line['partner_id'] = line.product_id.seller_ids[0].name.id
@@ -51,15 +61,11 @@ class WzRequestMaterial(models.TransientModel):
                 else:
                     purchase_requestion_lines.append(new_purchase_line)
 
-            new_request_ids = []
-            new_request = request.create(request_vals)
-            create_pick = True
-            line.request_type = line.request_type or 'to_return'
 
             request_line_vals = {'selected': line.selected,
                                  'user_id': line.user_id.id,
                                  'product_id': line.product_id.id,
-                                 'requested_qty': line.requested_qty,
+                                 'requested_qty': requested_qty,
                                  'pending_qty': 0.00,
                                  'request_type': line.request_type,
                                  'returned_qty': 0.00,
@@ -67,25 +73,43 @@ class WzRequestMaterial(models.TransientModel):
                                  'request_date': line.request_date,
                                  'notes': line.notes,
                                  'state': line.state,
-                                 'request_material_id': new_request.id,
-                                 'move_qty': line.requested_qty}
+                                 'request_material_id': 0,
+                                 'move_qty': requested_qty}
+            ## para lo disponible
 
-            if line.request_material_line_id:
-                new_request_ids.append(
-                    (1, line.request_material_line_id.id, request_line_vals))
-            else:
-                new_request_ids.append((0, 0, request_line_vals))
+            create_pick = True
+            line.request_type = line.request_type or 'to_return'
 
-            if not new_request_ids:
-                raise ValidationError(_('No lines'))
+            if requested_qty:
+                new_request = request.create(request_vals)
+                request_line_vals['request_material_id'] = new_request.id
+                if line.request_material_line_id:
+                    new_available.append(
+                        (1, line.request_material_line_id.id, request_line_vals))
+                else:
+                    new_available.append((0, 0, request_line_vals))
+                if not new_available:
+                    raise ValidationError(_('No lines'))
+                new_request.write({'line_ids': new_available})
+                if create_pick:
+                    new_pick = new_request.create_pick()
+                new_request_ids.append(new_available)
 
-            new_request.write({'line_ids': new_request_ids})
+            if pending_qty:
+                request_line_vals['requested_qty'] = pending_qty
+                request_line_vals['move_qty'] = pending_qty
+                new_request = request.create(request_vals)
+                request_line_vals['request_material_id'] = new_request.id
+                new_to_buy.append((0, 0, request_line_vals))
+                if not new_to_buy:
+                    raise ValidationError(_('No lines'))
+                new_request.write({'line_ids': new_to_buy})
+                if create_pick:
+                    new_pick = new_request.create_pick()
+                new_request_ids.append(new_to_buy)
 
-            if create_pick:
-                new_pick = new_request.create_pick()
 
         if purchase_requestion_lines:
-
             prl = self.env['purchase.requisition'].create(
                 {'line_ids': [(0, 0, x) for x in purchase_requestion_lines],
                  'origin': 'solicitud'})
@@ -93,11 +117,10 @@ class WzRequestMaterial(models.TransientModel):
 
         if purchases:
             #creo un procurement.rule
-
             domain = [('name', '=', 'Comprar')]
             route = self.env['stock.location.route'].search(domain)
             if not route:
-                raise ValidationError ("No se encuentra ruta de aprovisionamiento 'comprar'")
+                raise ValidationError("No se encuentra ruta de aprovisionamiento 'comprar'")
             wh = self.env['stock.warehouse'].browse([1])
             for purchase_line in purchases:
                 vals = {'action': 'buy',
@@ -139,6 +162,7 @@ class RequestMaterialWzLine(models.TransientModel):
     selected = fields.Boolean("Selected", default=True)
     user_id = fields.Many2one('res.users', default=lambda self: self._uid)
     product_id = fields.Many2one('product.product', required=True)
+    qty_available = fields.Float (related='product_id.qty_available')
     uom_id = fields.Many2one(related='product_id.uom_id')
     requested_qty = fields.Float("Request quantity", default=1.00,
                                  required=True)
@@ -171,8 +195,11 @@ class RequestMaterialWzLine(models.TransientModel):
     def onchange_requested_qty(self):
         if self.product_id:
             if self.requested_qty > self.product_id.qty_available:
-                raise ValidationError(
-                    _('No hay cantidad suficiente. \nStock de %s %s' %
-                        (self.product_id.name, self.product_id.uom_id.name)))
+                if self.product_id.qty_available:
+                    raise ValidationError(
+                        _('No hay cantidad suficiente. \nHay %s %s  de %s\n\n'
+
+                          '\n\nSe crearan solicitudes de compra para el producto.' %
+                        (self.product_id.qty_available, self.product_id.uom_id.name, self.product_id.name)))
 
             self.request_type = self.product_id.product_tmpl_id.request_type
