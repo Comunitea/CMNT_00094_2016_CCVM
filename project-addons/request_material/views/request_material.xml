@@ -158,15 +158,18 @@
             <field name="model">request.material.line</field>
             <field name="arch" type="xml">
                 <tree editable="top" create="0">
-                    <field name="selected"/>
+                    <field name="sequence" widget="handle"/>
+                    <field name="selected" invisible="1"/>
                     <field name="user_id" invisible="1"/>
                     <field name="product_id" readonly="1"/>
                     <field name="outbuilding" readonly="1"/>
+                    <field name="location_id" />
                     <field name="location_dest_id" invisible="1"/>
                     <field name="requested_qty" readonly="1"/>
-                    <field name="uom_id" readonly="1"/>
-                    <field name="request_type" readonly="1"/>
-                    <field name="request_date" invisible="1"/>
+                    <field name="uom_id" readonly="1" invisible="1"/>
+                    <field name="request_type" invisible="0"/>
+                    <field name="request_date" readonly="1"/>
+                    <field name="state"/>
                     <field name="notes"/>
                 </tree>
             </field>

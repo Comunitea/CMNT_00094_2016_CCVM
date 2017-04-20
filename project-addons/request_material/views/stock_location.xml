@@ -12,6 +12,22 @@
             </field>
         </record>
 
+        <record id="view_stock_location_tree_sequence" model="ir.ui.view">
+            <field name="name">view.stock.location.sequence</field>
+            <field name="model">stock.location</field>
+            <field name="inherit_id" ref="stock.view_location_tree2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='display_name']" position="before">
+                    <field name="sequence" widget="handle"/>
+                </xpath>
+                 <xpath expr="//field[@name='usage']" position="after">
+                    <field name="outbuilding_location"/>
+                </xpath>
+            </field>
+        </record>
+
+
+
         <record id="view_product_template_with_request_type" model="ir.ui.view">
             <field name="name">product.template.with_request_type</field>
             <field name="model">product.template</field>
@@ -69,6 +85,17 @@
                     <group string="Request" name="requesting">
                         <field name="default_outbuilding_location_id"/>
                     </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_inventory_form_inherit" model="ir.ui.view">
+            <field name="name">stock.inventory.form.inherit</field>
+            <field name="model">stock.inventory</field>
+            <field name="inherit_id" ref="stock.view_inventory_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree/field[@name='product_id']" position="before">
+                    <field name="sequence" widget="handle"/>
                 </xpath>
             </field>
         </record>

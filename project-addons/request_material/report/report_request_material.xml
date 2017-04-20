@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <report
+            string="Listado de solicitudes"
+            id="action_report_request"
+            model="request.material.line"
+            report_type="qweb-pdf"
+            name="request_material.report_request"
+            file="request_material.report_request"
+        />
+
+        <template id="report_request">
+            <t t-call="report.html_container">
+
+
+                    <t t-call="report.external_layout">
+                        <div class="page">
+
+                            <h2>
+                            Listado de solicitudes
+                            </h2>
+                            <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th><strong>Fecha Impresion</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                         <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Almacen</strong></th>
+                                        <th><strong>Referencia</strong></th>
+                                        <th><strong>Dependencia</strong></th>
+                                        <th class="text-right"><strong>Cantidad</strong></th>
+                                        <th><strong>Fecha </strong></th>
+
+                                    </tr>
+                                </thead>
+                                <tr t-foreach="docs" t-as="line">
+
+                                    <td><span t-field="line.location_id.name"/></td>
+                                    <td><span t-field="line.product_id"/></td>
+                                    <td><span t-field="line.location_dest_id.name"/></td>
+                                    <td class="text-right">
+                                        <span t-field="line.requested_qty"/>
+                                        <span t-field="line.product_uom_id" groups="product.group_uom"/></td>
+                                    <td><span t-field="line.request_date"/></td>
+
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                 </t>
+
+        </template>
+    </data>
+</odoo>

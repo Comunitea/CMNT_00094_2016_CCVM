@@ -9,9 +9,11 @@ from odoo import fields, models, api
 
 class StockLocation(models.Model):
     _inherit = "stock.location"
+    _order = 'sequence, parent_left'
+
     outbuilding_location = fields.Boolean(
         "Outbuilding Location", help="Location to select in material request")
-
+    sequence = fields.Integer('Sequence')
 
 class ProductProduct(models.Model):
     _inherit = "product.template"
@@ -78,4 +80,11 @@ class PurchaseRequistion(models.Model):
     _inherit = "purchase.requisition"
 
     request_material_id = fields.Many2one('request.material')
+
+class StockInventoryLine(models.Model):
+
+    _inherit = "stock.inventory.line"
+    _order = "sequence"#, product_name ,inventory_id, location_name, product_code, prodlot_name"
+
+    sequence = fields.Integer("Sequence")
 

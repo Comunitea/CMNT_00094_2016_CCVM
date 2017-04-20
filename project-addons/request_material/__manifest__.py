@@ -21,7 +21,9 @@
         'security/ir.model.access.csv',
         'views/request_material.xml',
         'views/stock_location.xml',
-        'wizard/request_material_wz.xml'
+        'wizard/request_material_wz.xml',
+        'report/report_stock_inventory.xml',
+        'report/report_request_material.xml'
     ],
     "demo": [
 

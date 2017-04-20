@@ -84,7 +84,8 @@ class RequestMaterial(models.Model):
                     'product_uom': product_line.product_id.uom_id.id,
                     'product_uom_qty': product_line.move_qty,
                     'request_material_line_id': product_line.id,
-                    'state': 'draft'}
+                    'state': 'draft'
+                    }
 
                 if type == 'return':
                     line_vals['location_id'] = product_line.location_dest_id.id
@@ -183,6 +184,7 @@ class RequestMaterial(models.Model):
                     if not new_loc:
                         new_loc = op.location_id
                     line.location_id = new_loc
+                    line.sequence = new_loc.sequence
 
                     # line.pack_operation_product_id = op.id
                     # line.state='new'
@@ -269,7 +271,7 @@ class RequestMaterial(models.Model):
 class RequestMaterialLine(models.Model):
     _name = "request.material.line"
     _description = 'Request Material'
-    _order = 'request_date, id'
+    _order = 'sequence, request_date, id'
 
     def _get_request_type(self):
         return self.product_id and self.product_id.request_type or 'to_return'
@@ -304,6 +306,7 @@ class RequestMaterialLine(models.Model):
     name = fields.Char(related='product_id.name')
     default_code = fields.Char(related='product_id.default_code')
     location_id = fields.Many2one('stock.location')
+    sequence = fields.Integer("sequence")
     location_name = fields.Char(related='location_id.name')
     requested_qty = fields.Float(string="Requested quantity", default=1.00)
     by_us = fields.Boolean(
@@ -354,6 +357,13 @@ class RequestMaterialLine(models.Model):
     #         self.returned_qty = self.requested_qty
     #
     #     self.expended_qty = self.requested_qty - self.returned_qty
+
+    @api.onchange('location_id')
+    def onchange_location_id(self):
+        if self.location_id:
+            self.sequence = self.location_id.sequence
+        else:
+            self.sequence = False
 
     @api.onchange('product_id')
     def onchange_product_id(self):
